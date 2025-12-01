@@ -7,56 +7,274 @@
 \contentsline {paragraph}{}{vi}{section*.8}%
 \contentsline {paragraph}{}{vi}{section*.9}%
 \contentsline {paragraph}{}{vi}{section*.10}%
+\contentsline {paragraph}{}{vi}{section*.11}%
+\contentsline {paragraph}{}{vi}{section*.12}%
+\contentsline {paragraph}{}{vi}{section*.13}%
 \contentsline {chapter}{\numberline {1}自然数}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}你认为的自然数}{1}{section.1.1}%
-\contentsline {paragraph}{}{1}{section*.11}%
-\contentsline {paragraph}{}{1}{section*.12}%
-\contentsline {paragraph}{}{1}{section*.13}%
-\contentsline {paragraph}{}{2}{section*.14}%
-\contentsline {section}{\numberline {1.2}再认识自然数}{2}{section.1.2}%
-\contentsline {paragraph}{}{2}{section*.15}%
-\contentsline {subsection}{\numberline {1.2.1}从哪开始数}{2}{subsection.1.2.1}%
+\contentsline {paragraph}{}{1}{section*.14}%
+\contentsline {paragraph}{}{1}{section*.15}%
 \contentsline {paragraph}{}{2}{section*.16}%
 \contentsline {paragraph}{}{2}{section*.17}%
-\contentsline {paragraph}{}{3}{section*.18}%
-\contentsline {paragraph}{}{3}{section*.19}%
-\contentsline {paragraph}{}{3}{section*.20}%
+\contentsline {paragraph}{}{2}{section*.18}%
+\contentsline {paragraph}{}{2}{section*.19}%
+\contentsline {paragraph}{}{2}{section*.20}%
 \contentsline {paragraph}{}{3}{section*.21}%
-\contentsline {subsection}{\numberline {1.2.2}数学语言}{4}{subsection.1.2.2}%
-\contentsline {paragraph}{}{4}{section*.22}%
-\contentsline {paragraph}{}{5}{section*.23}%
-\contentsline {paragraph}{}{5}{section*.24}%
-\contentsline {paragraph}{}{5}{section*.25}%
-\contentsline {paragraph}{}{5}{section*.26}%
-\contentsline {paragraph}{}{6}{section*.27}%
-\contentsline {paragraph}{}{6}{section*.28}%
-\contentsline {subsection}{\numberline {1.2.3}我会数数了}{6}{subsection.1.2.3}%
-\contentsline {paragraph}{}{6}{section*.29}%
-\contentsline {paragraph}{}{6}{section*.30}%
+\contentsline {section}{\numberline {1.2}再认识自然数}{3}{section.1.2}%
+\contentsline {paragraph}{}{3}{section*.22}%
+\contentsline {subsection}{\numberline {1.2.1}从哪开始数}{3}{subsection.1.2.1}%
+\contentsline {paragraph}{}{3}{section*.23}%
+\contentsline {paragraph}{}{3}{section*.24}%
+\contentsline {paragraph}{}{3}{section*.25}%
+\contentsline {paragraph}{}{4}{section*.26}%
+\contentsline {paragraph}{}{4}{section*.27}%
+\contentsline {paragraph}{}{5}{section*.28}%
+\contentsline {paragraph}{}{5}{section*.29}%
+\contentsline {paragraph}{}{5}{section*.30}%
 \contentsline {paragraph}{}{6}{section*.31}%
 \contentsline {paragraph}{}{6}{section*.32}%
-\contentsline {paragraph}{}{7}{section*.33}%
-\contentsline {subsection}{\numberline {1.2.4}先填一个坑}{7}{subsection.1.2.4}%
-\contentsline {paragraph}{}{7}{section*.34}%
-\contentsline {paragraph}{}{7}{section*.35}%
-\contentsline {paragraph}{}{7}{section*.36}%
-\contentsline {paragraph}{}{8}{section*.37}%
-\contentsline {paragraph}{}{8}{section*.38}%
-\contentsline {paragraph}{}{8}{section*.39}%
-\contentsline {subsection}{\numberline {1.2.5}再填一个坑}{8}{subsection.1.2.5}%
+\contentsline {paragraph}{}{6}{section*.33}%
+\contentsline {paragraph}{}{6}{section*.34}%
+\contentsline {paragraph}{}{6}{section*.35}%
+\contentsline {paragraph}{}{6}{section*.36}%
+\contentsline {paragraph}{}{7}{section*.37}%
+\contentsline {paragraph}{}{7}{section*.38}%
+\contentsline {paragraph}{}{7}{section*.39}%
 \contentsline {paragraph}{}{8}{section*.40}%
-\contentsline {paragraph}{}{9}{section*.41}%
+\contentsline {subsection}{\numberline {1.2.2}数学语言}{8}{subsection.1.2.2}%
+\contentsline {paragraph}{}{8}{section*.41}%
 \contentsline {paragraph}{}{9}{section*.42}%
 \contentsline {paragraph}{}{9}{section*.43}%
-\contentsline {paragraph}{}{10}{section*.44}%
-\contentsline {paragraph}{}{10}{section*.45}%
+\contentsline {paragraph}{}{9}{section*.44}%
+\contentsline {paragraph}{}{9}{section*.45}%
 \contentsline {paragraph}{}{10}{section*.46}%
-\contentsline {paragraph}{}{11}{section*.47}%
-\contentsline {paragraph}{}{11}{section*.48}%
-\contentsline {subsection}{\numberline {1.2.6}填最后的坑}{11}{subsection.1.2.6}%
-\contentsline {paragraph}{}{11}{section*.49}%
-\contentsline {paragraph}{}{11}{section*.50}%
-\contentsline {paragraph}{}{12}{section*.51}%
-\contentsline {paragraph}{}{12}{section*.52}%
-\contentsline {chapter}{\numberline {2}整数}{13}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}构造负数}{13}{subsection.2.0.1}%
+\contentsline {paragraph}{}{10}{section*.47}%
+\contentsline {paragraph}{}{10}{section*.48}%
+\contentsline {subsection}{\numberline {1.2.3}我会数数了}{10}{subsection.1.2.3}%
+\contentsline {paragraph}{}{10}{section*.49}%
+\contentsline {paragraph}{}{10}{section*.50}%
+\contentsline {paragraph}{}{11}{section*.51}%
+\contentsline {paragraph}{}{11}{section*.52}%
+\contentsline {paragraph}{}{11}{section*.53}%
+\contentsline {subsection}{\numberline {1.2.4}先填一个坑}{11}{subsection.1.2.4}%
+\contentsline {paragraph}{}{11}{section*.54}%
+\contentsline {paragraph}{}{11}{section*.55}%
+\contentsline {paragraph}{}{12}{section*.56}%
+\contentsline {paragraph}{}{12}{section*.57}%
+\contentsline {paragraph}{}{12}{section*.58}%
+\contentsline {subsection}{\numberline {1.2.5}再填一个坑}{13}{subsection.1.2.5}%
+\contentsline {paragraph}{}{13}{section*.59}%
+\contentsline {paragraph}{}{13}{section*.60}%
+\contentsline {paragraph}{}{14}{section*.61}%
+\contentsline {paragraph}{}{14}{section*.62}%
+\contentsline {paragraph}{}{14}{section*.63}%
+\contentsline {paragraph}{}{15}{section*.64}%
+\contentsline {paragraph}{}{15}{section*.65}%
+\contentsline {paragraph}{}{15}{section*.66}%
+\contentsline {paragraph}{}{15}{section*.67}%
+\contentsline {subsection}{\numberline {1.2.6}填最后的坑}{15}{subsection.1.2.6}%
+\contentsline {paragraph}{}{15}{section*.68}%
+\contentsline {paragraph}{}{16}{section*.69}%
+\contentsline {paragraph}{}{16}{section*.70}%
+\contentsline {paragraph}{}{17}{section*.71}%
+\contentsline {paragraph}{}{17}{section*.72}%
+\contentsline {section}{\numberline {1.3}有趣的自然数}{17}{section.1.3}%
+\contentsline {paragraph}{}{17}{section*.73}%
+\contentsline {paragraph}{}{17}{section*.74}%
+\contentsline {paragraph}{}{18}{section*.75}%
+\contentsline {paragraph}{}{18}{section*.76}%
+\contentsline {paragraph}{}{19}{section*.77}%
+\contentsline {paragraph}{}{19}{section*.78}%
+\contentsline {subsection}{\numberline {1.3.1}我会加法、乘法了}{19}{subsection.1.3.1}%
+\contentsline {paragraph}{}{20}{section*.88}%
+\contentsline {paragraph}{}{20}{section*.89}%
+\contentsline {paragraph}{}{20}{section*.90}%
+\contentsline {paragraph}{}{21}{section*.91}%
+\contentsline {paragraph}{}{21}{section*.92}%
+\contentsline {paragraph}{}{21}{section*.93}%
+\contentsline {paragraph}{}{21}{section*.94}%
+\contentsline {paragraph}{}{22}{section*.104}%
+\contentsline {paragraph}{}{22}{section*.105}%
+\contentsline {paragraph}{}{22}{section*.106}%
+\contentsline {paragraph}{}{22}{section*.107}%
+\contentsline {paragraph}{}{22}{section*.108}%
+\contentsline {paragraph}{}{22}{section*.109}%
+\contentsline {paragraph}{}{23}{section*.110}%
+\contentsline {paragraph}{}{23}{section*.111}%
+\contentsline {paragraph}{}{23}{section*.112}%
+\contentsline {paragraph}{}{23}{section*.113}%
+\contentsline {paragraph}{}{24}{section*.114}%
+\contentsline {paragraph}{}{24}{section*.115}%
+\contentsline {paragraph}{}{24}{section*.116}%
+\contentsline {paragraph}{}{24}{section*.117}%
+\contentsline {paragraph}{}{24}{section*.127}%
+\contentsline {paragraph}{}{25}{section*.128}%
+\contentsline {subsection}{\numberline {1.3.2}一样，多了，少了？}{25}{subsection.1.3.2}%
+\contentsline {paragraph}{}{25}{section*.129}%
+\contentsline {paragraph}{}{26}{section*.136}%
+\contentsline {paragraph}{}{26}{section*.137}%
+\contentsline {paragraph}{}{26}{section*.138}%
+\contentsline {paragraph}{}{27}{section*.143}%
+\contentsline {paragraph}{}{27}{section*.145}%
+\contentsline {paragraph}{}{27}{section*.146}%
+\contentsline {paragraph}{}{28}{section*.147}%
+\contentsline {subsection}{\numberline {1.3.3}数一数，看谁多}{29}{subsection.1.3.3}%
+\contentsline {paragraph}{}{29}{section*.148}%
+\contentsline {paragraph}{}{29}{section*.149}%
+\contentsline {paragraph}{}{30}{section*.150}%
+\contentsline {paragraph}{}{30}{section*.151}%
+\contentsline {paragraph}{}{30}{section*.154}%
+\contentsline {paragraph}{}{30}{section*.155}%
+\contentsline {paragraph}{}{31}{section*.156}%
+\contentsline {paragraph}{}{31}{section*.157}%
+\contentsline {paragraph}{}{32}{section*.164}%
+\contentsline {paragraph}{}{32}{section*.165}%
+\contentsline {paragraph}{}{33}{section*.167}%
+\contentsline {chapter}{\numberline {2}可单位度量的数}{35}{chapter.2}%
+\contentsline {paragraph}{}{35}{section*.168}%
+\contentsline {paragraph}{}{35}{section*.169}%
+\contentsline {paragraph}{}{35}{section*.170}%
+\contentsline {section}{\numberline {2.1}负数}{36}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}定义整数}{36}{subsection.2.1.1}%
+\contentsline {paragraph}{}{36}{section*.171}%
+\contentsline {paragraph}{}{36}{section*.172}%
+\contentsline {paragraph}{}{36}{section*.173}%
+\contentsline {paragraph}{}{37}{section*.174}%
+\contentsline {paragraph}{}{37}{section*.175}%
+\contentsline {paragraph}{}{38}{section*.180}%
+\contentsline {paragraph}{}{38}{section*.181}%
+\contentsline {paragraph}{}{38}{section*.182}%
+\contentsline {subsection}{\numberline {2.1.2}整数的加法和乘法}{38}{subsection.2.1.2}%
+\contentsline {paragraph}{}{39}{section*.183}%
+\contentsline {paragraph}{}{39}{section*.184}%
+\contentsline {paragraph}{}{39}{section*.185}%
+\contentsline {paragraph}{}{40}{section*.186}%
+\contentsline {paragraph}{}{40}{section*.187}%
+\contentsline {paragraph}{}{40}{section*.188}%
+\contentsline {paragraph}{}{40}{section*.189}%
+\contentsline {paragraph}{}{40}{section*.190}%
+\contentsline {paragraph}{}{41}{section*.191}%
+\contentsline {paragraph}{}{41}{section*.192}%
+\contentsline {paragraph}{}{41}{section*.193}%
+\contentsline {paragraph}{}{41}{section*.194}%
+\contentsline {paragraph}{}{42}{section*.195}%
+\contentsline {paragraph}{}{42}{section*.196}%
+\contentsline {paragraph}{}{43}{section*.197}%
+\contentsline {paragraph}{}{43}{section*.198}%
+\contentsline {paragraph}{}{44}{section*.199}%
+\contentsline {paragraph}{}{44}{section*.200}%
+\contentsline {paragraph}{}{45}{section*.201}%
+\contentsline {subsection}{\numberline {2.1.3}比大小，谁更多}{45}{subsection.2.1.3}%
+\contentsline {paragraph}{}{45}{section*.202}%
+\contentsline {paragraph}{}{46}{section*.203}%
+\contentsline {paragraph}{}{46}{section*.204}%
+\contentsline {paragraph}{}{47}{section*.205}%
+\contentsline {paragraph}{}{48}{section*.206}%
+\contentsline {paragraph}{}{48}{section*.207}%
+\contentsline {paragraph}{}{48}{section*.208}%
+\contentsline {paragraph}{}{48}{section*.209}%
+\contentsline {paragraph}{}{48}{section*.210}%
+\contentsline {paragraph}{}{49}{section*.211}%
+\contentsline {paragraph}{}{49}{section*.212}%
+\contentsline {section}{\numberline {2.2}比例数}{50}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}比例数}{50}{subsection.2.2.1}%
+\contentsline {paragraph}{}{50}{section*.213}%
+\contentsline {paragraph}{}{50}{section*.214}%
+\contentsline {paragraph}{}{50}{section*.215}%
+\contentsline {paragraph}{}{51}{section*.220}%
+\contentsline {paragraph}{}{52}{section*.221}%
+\contentsline {paragraph}{}{52}{section*.222}%
+\contentsline {paragraph}{}{52}{section*.223}%
+\contentsline {subsection}{\numberline {2.2.2}数一数比例数}{52}{subsection.2.2.2}%
+\contentsline {paragraph}{}{52}{section*.224}%
+\contentsline {paragraph}{}{53}{section*.225}%
+\contentsline {paragraph}{}{53}{section*.226}%
+\contentsline {paragraph}{}{53}{section*.227}%
+\contentsline {paragraph}{}{54}{section*.228}%
+\contentsline {paragraph}{}{54}{section*.229}%
+\contentsline {paragraph}{}{54}{section*.230}%
+\contentsline {paragraph}{}{54}{section*.231}%
+\contentsline {subsection}{\numberline {2.2.3}数量战胜质量}{54}{subsection.2.2.3}%
+\contentsline {paragraph}{}{54}{section*.232}%
+\contentsline {paragraph}{}{55}{section*.233}%
+\contentsline {paragraph}{}{55}{section*.234}%
+\contentsline {paragraph}{}{55}{section*.235}%
+\contentsline {subsection}{\numberline {2.2.4}连分数}{55}{subsection.2.2.4}%
+\contentsline {paragraph}{}{55}{section*.236}%
+\contentsline {paragraph}{}{56}{section*.237}%
+\contentsline {paragraph}{}{56}{section*.238}%
+\contentsline {paragraph}{}{56}{section*.239}%
+\contentsline {paragraph}{}{57}{section*.240}%
+\contentsline {paragraph}{}{57}{section*.241}%
+\contentsline {paragraph}{}{58}{section*.242}%
+\contentsline {paragraph}{}{59}{section*.243}%
+\contentsline {paragraph}{}{61}{section*.244}%
+\contentsline {paragraph}{}{65}{section*.245}%
+\contentsline {paragraph}{}{65}{section*.246}%
+\contentsline {paragraph}{}{65}{section*.247}%
+\contentsline {paragraph}{}{66}{section*.248}%
+\contentsline {chapter}{\numberline {3}实数}{67}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}发现无理数}{67}{subsection.3.0.1}%
+\contentsline {paragraph}{}{67}{section*.249}%
+\contentsline {paragraph}{}{67}{section*.250}%
+\contentsline {paragraph}{}{67}{section*.251}%
+\contentsline {paragraph}{}{67}{section*.252}%
+\contentsline {paragraph}{}{68}{section*.253}%
+\contentsline {paragraph}{}{69}{section*.254}%
+\contentsline {paragraph}{}{69}{section*.255}%
+\contentsline {paragraph}{}{69}{section*.256}%
+\contentsline {paragraph}{}{70}{section*.257}%
+\contentsline {paragraph}{}{70}{section*.258}%
+\contentsline {subsection}{\numberline {3.0.2}戴德金分割}{73}{subsection.3.0.2}%
+\contentsline {paragraph}{}{73}{section*.259}%
+\contentsline {paragraph}{}{73}{section*.260}%
+\contentsline {paragraph}{}{73}{section*.261}%
+\contentsline {paragraph}{}{74}{section*.262}%
+\contentsline {paragraph}{}{74}{section*.263}%
+\contentsline {paragraph}{}{75}{section*.264}%
+\contentsline {paragraph}{}{75}{section*.265}%
+\contentsline {paragraph}{}{75}{section*.266}%
+\contentsline {paragraph}{}{76}{section*.267}%
+\contentsline {subsection}{\numberline {3.0.3}有界实数集的确界}{76}{subsection.3.0.3}%
+\contentsline {paragraph}{}{76}{section*.268}%
+\contentsline {paragraph}{}{76}{section*.269}%
+\contentsline {paragraph}{}{76}{section*.270}%
+\contentsline {paragraph}{}{76}{section*.271}%
+\contentsline {paragraph}{}{79}{section*.272}%
+\contentsline {subsection}{\numberline {3.0.4}实数的四则运算}{81}{subsection.3.0.4}%
+\contentsline {chapter}{\numberline {4}极限和级数}{83}{chapter.4}%
+\contentsline {paragraph}{}{83}{section*.273}%
+\contentsline {paragraph}{}{83}{section*.274}%
+\contentsline {paragraph}{}{83}{section*.275}%
+\contentsline {paragraph}{}{84}{section*.276}%
+\contentsline {paragraph}{}{84}{section*.277}%
+\contentsline {paragraph}{}{84}{section*.278}%
+\contentsline {paragraph}{}{84}{section*.279}%
+\contentsline {subsection}{\numberline {4.0.1}数列的极限}{85}{subsection.4.0.1}%
+\contentsline {paragraph}{}{86}{section*.280}%
+\contentsline {paragraph}{}{86}{section*.281}%
+\contentsline {paragraph}{}{86}{section*.282}%
+\contentsline {paragraph}{}{86}{section*.283}%
+\contentsline {paragraph}{}{89}{section*.284}%
+\contentsline {paragraph}{}{89}{section*.285}%
+\contentsline {paragraph}{}{91}{section*.286}%
+\contentsline {paragraph}{}{91}{section*.287}%
+\contentsline {paragraph}{}{92}{section*.288}%
+\contentsline {paragraph}{}{92}{section*.289}%
+\contentsline {paragraph}{}{92}{section*.290}%
+\contentsline {paragraph}{}{92}{section*.291}%
+\contentsline {paragraph}{}{92}{section*.292}%
+\contentsline {paragraph}{}{93}{section*.293}%
+\contentsline {paragraph}{}{93}{section*.294}%
+\contentsline {paragraph}{}{93}{section*.295}%
+\contentsline {paragraph}{}{94}{section*.296}%
+\contentsline {subsection}{\numberline {4.0.2}极限的基础和扩展}{95}{subsection.4.0.2}%
+\contentsline {paragraph}{}{95}{section*.297}%
+\contentsline {paragraph}{}{95}{section*.298}%
+\contentsline {paragraph}{}{95}{section*.299}%
+\contentsline {paragraph}{}{95}{section*.300}%
+\contentsline {paragraph}{}{95}{section*.301}%
+\contentsline {paragraph}{}{95}{section*.302}%
+\contentsline {paragraph}{}{96}{section*.303}%
+\contentsline {chapter}{\numberline {5}积分}{97}{chapter.5}%
+\contentsline {chapter}{\numberline {6}推导高中微分方程}{99}{chapter.6}%

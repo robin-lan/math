@@ -7,13 +7,82 @@
 \usepackage{amsmath,amsthm,hyperref,cleveref}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{empheq}
+\usepackage{cancel}
+\usepackage{graphicx}  % 用于插入图片的核心宏包
+\usepackage{float}  % 提供[H]选项固定图片位置
+\usepackage{amssymb}
+\usepackage{dialogue} % 需要导入宏包
+\usepackage{ulem}
 
+\usepackage{listings} % 代码插入宏包
+\usepackage{mdframed}
+
+\usepackage{booktabs}
+
+\newtheorem{theorem}{定理}
 \newtheorem{definision}{定义}
+\newtheorem{property}{性质}
+\newtheorem*{Proof}{证明}
+\newtheorem*{verification}{验证}
+\newtheorem*{convension}{约定}
+\newtheorem{corollary}{推论}[section]
+\newtheorem{dv_convension}{比例数分割约定}
 
+% 配置C代码样式
+\lstset{
+    language=C,
+basicstyle=\ttfamily\small,
+keywordstyle=\color{blue},
+commentstyle=\color{green!60!black},
+stringstyle=\color{red},
+numbers=left,
+numberstyle=\tiny\color{gray},
+frame=single,
+breaklines=true,
+showspaces=false,
+showstringspaces=false,
+xleftmargin=0pt,  % 左侧外边距设为0
+framexleftmargin=0pt,  % 边框左缘到代码的距离设为0
+aboveskip=10pt,   % 代码块上方间距
+belowskip=10pt    % 代码块下方间距
+}
+
+% 设置框的样式
+\tcbset{
+	theorembox/.style={
+		colback=white,
+		colframe=black,
+		boxrule=0.8pt,
+		arc=2pt,
+		left=8pt,
+		right=8pt,
+		top=6pt,
+		bottom=6pt,
+		width=0.95\textwidth,
+		center
+	}
+}
+
+\tcbset{
+	storybox/.style={
+		colback=white,        % 背景色
+		colframe=blue!70,     % 边框颜色
+		coltitle=blue!90,     % 标题颜色
+		fonttitle=\bfseries,  % 标题字体加粗
+		width=0.9\textwidth,  % 宽度为文本宽度的90%
+		center,               % 居中显示
+		arc=5pt,              % 边角弧度
+		boxrule=1pt          % 边框粗细
+	}
+}
 
 \begin{document}
 
-\author{蓝立强}
+\author{蓝立强、钟毅康}
 \title{从自然数到积分}
 \date{2025年6月19日}
 
@@ -25,6 +94,11 @@
 \mainmatter
 \include{./TeX_files/chapter01}
 \include{./TeX_files/chapter02}
+\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter04}
+\include{./TeX_files/chapter05}
+\include{./TeX_files/chapter06}
+
 
 \backmatter
 % bibliography, glossary and index would go here.

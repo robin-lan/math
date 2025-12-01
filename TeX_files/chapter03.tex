@@ -1,0 +1,422 @@
+\chapter{实数}
+\subsection{发现无理数}
+\paragraph{}接上回，比例数都可以化为有限的连分数，会不会有一种数不能用有限的连分数表示出来呢？有的！历史上因为这个问题，还发生了血案。
+\paragraph{}虽然我不吝言辞地赞美古希腊文明是现代文明的孵化器，然而伴随着权威的树立，恶也如影随形。古希腊的毕达哥拉斯学派就是当时的一个权威，这个学派在数学领域认为万物是比例数。它在数学最杰出的成就是证明了勾股定理，并广为传播。这个学派里有个刺头，希帕索斯，他用勾股定理刺破了万物皆数的“政治正确”。
+\paragraph{}当时的场景是这样的。希帕索斯怀揣着理想、梦想加入了毕达哥拉斯学派。学派也把宗门绝学“毕达哥拉斯定理”倾囊相授。
+\paragraph{}{ \itshape 直角三角形的两条直角边长度分别为 \(a\) 和 \(b\)，斜边长度为 \(c\)，则三边满足：
+	\[
+	\boxed{a \times a + b\times b = c \times c}
+	\]
+}
+\paragraph{}这时希帕索斯就盯着这个绝学开始琢磨点东西，拿上这把屠龙刀开始笔画起来：直角边都是 1 的直角三角形。根据定理：
+\begin{align*}
+	1 \times 1 + 1 \times 1 &= c \times c \\
+	2 &= c \times c
+\end{align*}
+根据万物皆数，c可以是$\frac{p}{q}$，其中p和q必须是一个奇数、一个偶数或者都是奇数。不然的话，就是还能化简。那么
+\begin{align*}
+	2 &= \frac{p \times p}{q \times q} \\
+	2 \times q \times q &= p \times p
+\end{align*}
+根据偶数的定义，2乘以任何自然数结果是偶数，所以p $\times$ p 应该是偶数。再根据奇数乘以奇数必然是奇数，而自然数除了奇数就是偶数，所以p应该是偶数。所以p可以2 $\times$ k。
+\begin{align*}
+	2 \times q \times q &= 2 \times k \times 2 \times k \\
+	q \times q &= 2 \times k \times k
+\end{align*}
+诶，也就是q也应该是偶数。可是在设定c是$\frac{p}{q}$的时候就约定了p和q不能都是偶数，出现了矛盾。不是万物皆数错了，就是勾股定理错了。
+于是希帕索斯把这个发现告诉毕达哥拉斯的弟子们。
+\paragraph{}
+\begin{tabular}{@{} r p{0.8\textwidth} @{}}
+	希帕索斯：& 直角边都是1的直角三角形，它的斜边不是数。真的。 \\
+	弟子们：& 你懂个屁！毕达哥拉斯学派是民族之光，迷信派卡脖子的时候就它敢硬刚，承认万物皆数是支持毕达哥拉斯，你这种只会盯挑刺，怕不是收了迷信派的钱吧？ \\
+	希帕索斯：& 我就事论事说证明，你帮我看看，证明是哪里有错误吗？ \\
+	弟子们：& 迷信派好，你让迷信派帮你看证明。它们连毕达哥拉斯定理都没有，你怎么不说。 \\
+	希帕索斯：& 你就帮我看看，是不是还有可以改进的地方，或者我没意识到的地方。 \\
+	弟子们：& 你那么厉害，你搞个定理，开个学派。你想想是谁第一个证明这个定理的，要有大局观，别给敌对势力递刀子！ \\
+	希帕索斯：& 来，我们就说这个证明，好吧。那条斜边是不是\dots\dots \\
+	弟子们：& 谁逼你证明直角边是1的三角形了，有矛盾不会自己消化！迷信派有这技术吗？也就你们这种人，享受着毕达哥拉斯的红利还天天骂娘！
+\end{tabular}
+\paragraph{}经过弟子们的一通商议：解决不了问题，还解决不了希帕索斯吗。乘着月高风黑，直接把希帕索斯绑了，然后一脚踢到海里，给沉了。回来的路上还骂：先有毕哥后有天。希帕索斯，该(gay)。
+\paragraph{}希帕索斯帮助我们找到并证明了一个不是比例数的数，这个数是画在直角三角形上的，那它到底是多少呢？我们用连分数描述它：
+\begin{align}
+	c \times c &= 2  & \text{} \label{sqr2:1}\\
+	c \times c - 1 &= 1 & \text{\ref{sqr2:1}两边减1} \label{sqr2:2}\\
+	c \times c - c + c - 1 &= 1 & \text{\ref{sqr2:2}左边加c减c} \label{sqr2:3} \\
+	(c + 1) \times (c - 1) &= 1 & \text{\ref{sqr2:3}左边乘法分配律} \label{sqr2:4}\\
+	c - 1 &= \frac{1}{c + 1} & \text{\ref{sqr2:4}两边同除c+1且c$\neq$-1} \label{sqr2:5}\\
+	c &= 1 + \frac{1}{1 + c} & \text{\ref{sqr2:5}两边同减1}
+\end{align}
+把c化简得到
+\[
+	\boxed{c = 1 + \frac{1}{1 + c}}
+\]
+把c代入到这个式子迭代看看：
+\paragraph{}
+\begin{align*}
+	c &= 1 + \cfrac{1}{1 + \left(1 + \cfrac{1}{1 + \left(1 + \frac{1}{1 + c}\right)}\right)} \\
+	  &= 1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{1 + c}}} \\
+	  &= 1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}} 
+\end{align*}
+\paragraph{}所以c = \([1; 2, 2, \dot{2}]\)。
+\begin{theorem}
+	无限连分数的每次渐进展开计算不断靠近某个数，奇数次渐进连分数递增，偶数次渐进连分数递减。
+	\[
+	\cfrac{p_1}{q_1}<\cfrac{p_3}{q_3}<\cdots<\cfrac{p_{n+1}}{q_{n+1}}<\cdots < x < \cdots<\cfrac{p_n}{q_n}<\cdots<\cfrac{p_2}{q_2}<\cfrac{p_0}{q_0}
+	\]
+\end{theorem}
+\begin{Proof}
+	设
+	{\itshape $x_{n}$是无限连分数的余项}
+	\begin{align}
+		x_n &= a_n + \cfrac{1}{a_{n+1} + \cfrac{1}{a_{n+2} + \cfrac{1}{\ddots}}} &\text{} \label{cf:pc1}\\
+		x_n &= a_n + \cfrac{1}{x_{n+1}} &\text{} \label{cf:pc2} \\
+		x_n &> a_n &\text{根据\ref{cf:pc2}} \label{cf:pc3} 
+	\end{align}
+	根据余项的定义可得：
+	\begin{align}
+		x_{n+1} &=  a_{n+1} + \cfrac{1}{a_{n+2} + \cfrac{1}{\ddots}} &\text{} \label{cf:pc4} \\
+		x_{n+1} &> a_{n+1} &\text{根据\ref{cf:pc4}} \label{cf:pc5} \\
+		\cfrac{1}{x_{n+1}} &< \cfrac{1}{a_{n+1}}  &\text{根据\ref{cf:pc5}} \label{cf:pc6} \\
+		x_{n} &< a_{n} + \cfrac{1}{a_{n+1}} &\text{根据\ref{cf:pc2}\ref{cf:pc6}} \label{cf:pc7}
+	\end{align}
+	根据\ref{cf:pc3}和\ref{cf:pc7}可得：
+	\begin{align}
+		a_{n} < x_{n} < a_{n} + \cfrac{1}{a_{n+1}} \label{cf:pc8}
+	\end{align}
+	把$a_{n}$和$a_{n} +\cfrac{1}{a_{n+1}}$代入
+\begin{align}
+	\cfrac{p_n}{q_n} = \cfrac{a_n \cdot p_{n-1} + p_{n-2}}{a_n \cdot q_{n-1} + q_{n-2}} \label{cf:cp9}
+\end{align}
+分别得到：
+\begin{align}
+	\ref{cf:cp9} &\Rightarrow f(a_n) = \cfrac{p_n}{q_n} \label{cf:cp10}\\
+	\ref{cf:cp9} &\Rightarrow f(a_{n} + \cfrac{1}{a_n+1}) = \cfrac{p_{n+1}}{p_{n+1}} \label{cf:cp11}
+\end{align}
+根据上个章节的连分数渐进分数的	奇数次渐进连分数递增，偶数次渐进连分数递减。\\
+	当n是奇数时，渐进连分数是根据变量递增的数，并且根据\ref{cf:pc8} \ref{cf:cp10} \ref{cf:cp11}：
+	\[
+	a_n < x_n < a_n + \cfrac{1}{a_{n+1}}  \Rightarrow \cfrac{p_n}{q_n} < f(x_n) < \cfrac{p_{n+1}}{q_{n+1}} 
+	\]
+	当n是偶数时，渐进连分数是根据变量递减的数，并且根据\ref{cf:pc8} \ref{cf:cp10} \ref{cf:cp11}：
+	\[
+	a_n < x_n < a_n + \cfrac{1}{a_{n+1}}  \Rightarrow \cfrac{p_n}{q_n} > f(x_n) > \cfrac{p_{n+1}}{q_{n+1}} 
+	\]
+	n属于自然数，只有奇数和偶数两种形式。不管奇数还是偶数，无限连分数的渐进展开都位于$\cfrac{p_n}{q_n}$和$\cfrac{p_{n+1}}{q_{n+1}}$之间，而且
+	根据上一章有限连分数的结论：
+	\[
+	\cfrac{p_1}{q_1}<\cfrac{p_3}{q_3}<\cdots<\cfrac{p_{n+1}}{q_{n+1}}<\cdots \leq x(\text{比例数}) \leq \cdots<\cfrac{p_n}{q_n}<\cdots<\cfrac{p_2}{q_2}<\cfrac{p_0}{q_0}
+	\]
+	所以无限连分数渐进计算之间的距离不断缩小，奇数次渐进连分数递增，偶数次渐进连分数递减。
+\end{Proof}
+由于是无限连分数，所以它不像有限连分数，最终会等于一个比例数值；无限连分数依赖目前的比例数概念，它不会等于某个比例数数，等于的话它就是有限连分数了。
+\[
+\cfrac{p_1}{q_1}<\cfrac{p_3}{q_3}<\cdots<\cfrac{p_{n+1}}{q_{n+1}}<\cdots < x(\text{非比例数}) < \cdots<\cfrac{p_n}{q_n}<\cdots<\cfrac{p_2}{q_2}<\cfrac{p_0}{q_0}
+\]
+通过分析上面的不等式，我们发现无限连分数的渐进连分数被一个特别的数分割为两个部分：左边没有最大比例数。理由是如果有一个$\cfrac{p_{n+1}}{q_{n+}}$，根据自然数没有最大值，还有$\cfrac{p_{n+3}}{q_{n+3}}$，$\cfrac{p_{n+1}}{q_{n+1}} < \cfrac{p_{n+3}}{q_{n+3}}$。同样的，右边没有最小比例数；而且这个特别的数不是比例数。
+
+\begin{definision}\label{def:partition}
+	分割：把一个非空集合分成两个非空集合，分成的两个集合中的元素不重复，合并两个集合的元素等于被分割的集合。
+\end{definision}
+因为比例数的稠密性，所以我们可以把大于或者小于x（非比例数）的渐进连分数（比例数）扩大到所有比例数去定义无理数。
+\begin{definision}\label{def:Irration}
+	一个特定的非比例数数把比例数分割为两部分，其中一部分没有最大比例数，另一部分没有最小比例数。定义这个数为无理数。
+\end{definision}
+\subsection{戴德金分割}
+回顾自然数、整数、比例数的创建和表示过程：自然数利用与集合的基（元素个数）等价的方式建立，整数利用自然数加法等价的方式建立，比例数利用整数乘法等价的方式建立，实数呢？很显然，利用需要用到比例数。
+\paragraph{}就像无理数的定义，无理数把比例数分割成了两个部分，其中一部分是没有最大比例数，另一部分是没有最小比例数，但把这两部分的所有比例数合并起来，得到的是所有的比例数。这遵循\textbf{定义\ref{def:partition}--分割的定义}：分割得出的集合非空、并集为全集、交集为空集。
+\begin{dv_convension}\label{dv:1}
+	比例数分割成A、B两个集合。对任意a $\in$ A、b $\in$ B都有a $<$ b。
+\end{dv_convension}
+\paragraph{}把比例数集分割成两部分，有以下四种情况：
+\begin{itemize}
+	\item 集合A\textbf{有}最大比例数，集合B\textbf{有}最小比例数。
+	\item 集合A\textbf{有}最大比例数，集合B\textbf{没有}最小比例数。
+	\item 集合A\textbf{没有}最大比例数，集合B\textbf{有}最小比例数。
+	\item 集合A\textbf{没有}最大比例数，集合B\textbf{没有}最小比例数。
+\end{itemize}
+\paragraph{}如果分割的数是比例数集合，那么\textit{“集合A\textbf{有}最大比例数，集合B\textbf{有}最小比例数。”}这种情况是不可能出现的。
+\begin{Proof}
+	反证法：
+	\begin{itemize}[label=]
+		\item 比例数A集合最大的数是a；
+		\item 比例数B集合最小的数是b。
+	\end{itemize}
+	根据\textbf{推论}\ref{cor:ration1}：比例数的加、减、乘、除还是比例数。
+	\begin{align}
+		& c = \cfrac{a + b}{2} = a + \cfrac{b - a}{2} = b - \cfrac{b - a}{2} \quad c \in Q \label{pf:errsplit0_1} \\
+		& c = a + \cfrac{b - a}{2} \quad \Rightarrow \quad c > a \label{pf:errsplit0_2} \\
+		& c = b - \cfrac{b - a}{2} \quad \Rightarrow \quad c < b \label{pf:errsplit0_3}
+	\end{align}
+	根据\ref{pf:errsplit0_2}和\textit{“比例数A集合最大的数是a”}，c不是A集合的元素；根据\ref{pf:errsplit0_3}和\textit{“比例数B集合最小的数是b”}，c不是B集合的元素。根据\textbf{定义\ref{def:partition}}--分割的定义：分割得出的集和的并集为全集。比例数A集合和比例数B集合的并集不是全体比例数，因为还遗漏了c这个比例数。
+\end{Proof}
+\begin{itemize}
+	\item 集合A\textbf{有}最大比例数，集合B\textbf{没有}最小比例数。
+	\item 集合A\textbf{没有}最大比例数，集合B\textbf{有}最小比例数。
+	\item 集合A\textbf{没有}最大比例数，集合B\textbf{没有}最小比例数。
+\end{itemize}
+\paragraph{}分割的是比例数，\textit{“集合A\textbf{有}最大比例数，集合B\textbf{没有}最小比例数”}和\textit{“集合A\textbf{没有}最大比例数，集合B\textbf{有}最小比例数”}都可以唯一地确定一个比例数。比如比例数2：
+\begin{align}
+	\text{比例数集合A\textbf{有}最大比例数2，比例数集合B\textbf{没有}最小比例数。} \label{re:split_ration1}\\
+	\text{比例数集合A\textbf{没有}最大比例数，比例数集合B\textbf{有}最小比例数2。} \label{re:split_reation2}
+\end{align}
+\paragraph{}分割的是比例数，根据无理数的\textbf{定义\ref{def:Irration}}，\textit{“集合A\textbf{没有}最大比例数，集合B\textbf{没有}最小比例数”}，确定了一个无理数。
+\begin{corollary}\label{co:split_q2r}
+	比例数分割唯一地确认了一个实数。
+\end{corollary}
+\paragraph{}因为\textit{“集合A\textbf{有}最大比例数，集合B\textbf{没有}最小比例数”}和\textit{“集合A\textbf{没有}最大比例数，集合B\textbf{有}最小比例数”}都可以唯一地确定一个比例数。为了便于讨论，只取一种兼容确定无理数的分割\textit{“集合A\textbf{没有}最大比例数，集合B\textbf{没有}最小比例数”}表达方式，所以做出以下约定：
+\begin{dv_convension}\label{dv:2}
+	 “集合A没有最大比例数”的切割为合法的切割。
+\end{dv_convension}
+\begin{definision}\label{df:proper_subset}
+	真子集是指一个集合的所有元素都属于另一个集合，但两个集合并不完全相等（即后者至少包含一个前者没有的元素）。A是B的真子集：
+	\[
+	A \subsetneqq B \iff (\forall x(x \in A \implies x \in B)) \land (\exists y(y \in B \land y \notin A))
+	\]
+\end{definision}
+\paragraph{}分割确认了一个实数点，评估这个分割点的办法可以是比较分割后的集合里的比例数的集合。设$a_0$、$a_1$是两个分割点，$A0_{q}$、$B0_{q}$是以$a_0$为分割点，分割比例数的集合；$A1_{q}$、$B1_{q}$是以$a_1$为分割点，分割比例数的集合；其中集合A的比例数小于集合B的比例数。
+\begin{definision}
+	根据分割约定：实数点a把比例数分割为两个非空集合A、B，集合A的所有比例数都小于集合B任意的比例数，且集合A没有最大比例数。
+	\begin{itemize}[label=$\circ$]
+		\item 完备性：$\forall$x $\in$ $\mathbb{Q}$(x $\in$ A $\lor$ x $\in$ B) $\iff$ A $\cup$ B = $\mathbb{Q}$
+		\item 非空性：$\exists$x $\in$ $\mathbb{Q}$(x $\in$ A) $\land$ $\exists$y $\in$ $\mathbb{Q}$(y $\in$ B)
+		\item 互斥性：$\neg$($\exists$x $\in$ $\mathbb{Q}$(x $\in$ A $\land$ x $\in$ B))
+		\item 有序性：$\forall$x $\in$ A $\forall$y $\in$ B(x $<$ y)
+		\item 下集无最大比例数：$\forall$x $\in$ A $\exists$$x'$ $\in$ A(x$<$$x'$)
+	\end{itemize}
+\end{definision}
+\paragraph{}完备性由\textbf{分割定义\ref{def:partition}}（并集是全局）得出；非空性也是由\textbf{分割定义\ref{def:partition}}（分割成两个非空集）得出；互斥性同样由\textbf{分割定义\ref{def:partition}}（不交）得出；有序性由\textbf{分割约定\ref{dv:1}}得出；下集无最大比例数由\textbf{分割约定\ref{dv:2}}得出。
+\begin{definision}\label{def:realex}
+	一个实数在比例数分割约定的条件下，等价集合$A_{q}$或集合$B_{q}$。
+\end{definision}
+\paragraph{}\textbf{定义\ref{def:realex}}的目的是说，单个实数可以用比例数分割后的集合来表示。当谈论一个实数时，可以认为谈论的是一个比例数集合。
+\begin{definision}
+	实数是比例数和无理数的统称。实数集是比例数集和无理数集的并集。实数集用符号$\mathbb{R}$表示。
+\end{definision}
+\subsection{有界实数集的确界}
+\paragraph{}下集无最大比例数的逻辑符号（$\forall$x $\in$ A $\exists$$x'$ $\in$ A(x$<$$x'$)），这样读试试：所有在集合A的数，都存在另一个在集合A的数比它（所有在集合A的数）大。明显有问题：既然是所有的元素了，怎么还能有另一个，感觉是自己比自己大？所以严格的来说$\forall$应该是“任意”，而不是通常语言的“所有”；任意是从个体推广到所有，严格逻辑博弈的视角。例如，\{1,2,3,4\}的所有元素都小于5，\{1,2,3,4\}中任何一个元素都小于5，这两句话都是正确的；但我们要进行证明时，有限的集合可以枚举所有，但无限的集合采用“任意”这条路会更加的简单，方便。
+\paragraph{}$\forall$x $\in$ A $\exists$$x'$ $\in$ A(x$<$$x'$)是2步骤博弈，博弈是真是假由x$<$$x'$决定。博弈的目的是让自己的利益最大化，逻辑博弈中最终的命题语句前的逻辑词是一方。在这个逻辑语句里，x$<$$x'$前的$\exists$是一方，另一方就是$\forall$，$\exists$目的是x$<$$x'$为真。首先由$\forall$一方出牌，拿出集合A中的任意一个数x；然后由另一方$\exists$在A中找出是否存在一个数$x'$；如果x$<$$x'$成立，那么$\exists$一方获胜，整个命题成立。
+\paragraph{}尝试把$\forall$的命题转为否定形式。例如：所有的鸟都会飞，$\forall$ 鸟(会飞)。这句话的否定是：至少存在一只鸟它不会飞，$\exists$ 鸟（不会飞）。$\forall$的否定规则：
+\[
+\boxed{\neg(\forall x P(x)) = \exists x (\neg P(x))}
+\]
+\paragraph{}再次尝试把 P$\iff$Q 转为否定形式。P$\iff$Q 的逻辑含义是它们同时真或者同时假，也就是 (P$\land$Q) $\lor$ ($\neg$P $\land$ $\neg$Q)。同真同假的否定是一真一假，一真一假是 ($\neg$P$\land$Q) $\lor$ (P$\land$$\neg$Q)。P$\iff$Q的否定规则：
+\[
+\boxed{\neg(P \iff P) = (\neg P \land Q)\lor(P \land \neg Q)}
+\]
+\begin{definision}\label{df:real_order}
+	两个实数间的序关系：
+\begin{itemize}
+	\item $a_0 = a_1 \iff A0_q = A1_q \iff \forall x (x \in A0_q \iff x \in A1_q)$
+	\item $a_0 < a_1 \iff A0_q  \subsetneqq A1_q \iff \exists x (x \in A0_q \land x \notin A1_q)$
+	\item $a_0 > a_1 \iff A0_q  \supsetneqq A1_q \iff \exists x (x \in A1_q \land x \notin A0_q)$
+\end{itemize}
+\end{definision}
+\begin{corollary}\label{co:real_order}
+	两个实数序的关系，有且只有以下一种关系成立：等于（=）、小于（$<$）、大于（$>$）。
+\end{corollary}
+\begin{Proof}
+	需要证明“有”、“只有一种关系”
+	\begin{itemize}[label=$\circ$]
+		\item 有（至少有一种关系存在）\\
+		反证法证明，如果能证明$a_0 = a_1$、$a_0 < a_1$、$a_0 > a_1$不能同时成立，则至少有一种关系是成立的。\\ 
+		假设$a_0 = a_1$不成立，那么需要否定$\forall x (x \in A0_q \iff x \in A1_q)$。根据$\forall$的否定规则：
+		\[
+		\neg(\forall x(x \in A0_q \iff x \in A1_q)) = \exists x (\neg(x \in A0_q \iff x \in A1_q)))
+		\]
+		再根据P $\iff$ Q的否定规则：
+		\[
+		\exists x (\neg(x \in A0_q \iff x \in A1_q)) = \exists x((x \in A0_q \land x \notin A1_q) \lor (x \notin A0_q \land x \in A1_q))
+		\]
+		$\exists x((x \in A0_q \land x \notin A1_q) \lor (x \notin A0_q \land x \in A1_q))$可分解为
+		\begin{align}
+			[\exists x(x \in A0_q \land x \notin A1_q)]
+			\lor [\exists x(x \notin A0_q \land x \in A1_q)] \label{re:s1}
+		\end{align}	
+		总结：如果$a_0 = a_1$不成立为真，那么\ref{re:s1}也为真。然而\ref{re:s1}要为真，则需
+		\begin{align}
+			\exists x(x \in A0_q \land x \notin A1_q) \label{re:s2} \\
+			\exists x(x \notin A0_q \land x \in A1_q) \label{re:s3}
+		\end{align}
+		其中之一为真就可以。如果\ref{re:s2}为真，则$a_0 < a_1$；如果\ref{re:s3}为真，则\text{$a_0 > a_1$}。\\
+		所以$a_0 = a_1$、$a_0 < a_1$、$a_0 > a_1$不能同时不成立
+		\item 只有一种关系（不可能多种关系）\\
+			1. $a_0 = a_1 \iff \forall x (x \in A0_q \iff x \in A1_q)$，即对任意一个x，如果属于$A0_q$，就属于$A1_q$。\\
+			2. $a_0 < a_1 \iff \exists x (x \in A0_q \land x \notin A1_q)$，即存在x，属于$A0_q$，但不属于$A1_q$。\\
+			3. $a_0 > a_1 \iff \exists x (x \in A1_q \land x \notin A0_q)$，即存在x，属于$A1_q$，但不属于$A0_q$。\\
+			\begin{itemize}[label=]
+				\item $a_0 = a_1$显然是不能和$a_0 < a_1$、$a_0 > a_1$共存的。因为$a_0 = a_1$是任意一个x在$A0_q$，也在$A1_q$；在$A1_q$，也在$A0_q$。而$a_0 < a_1$存在x在$A0_q$，但不在$A1_q$；$a_0 > a_1$存在x在$A1_q$，但不在$A0_q$。
+				\item 那么$a_0 < a_1$和$a_0 > a_1$是否可以共存呢？\\
+				当 
+				\[
+				a_0 < a_1 \iff \exists x_0 (x_0 \in A0_q \land x_0 \notin A1_q)
+				\]
+				由完备性$A_q \cup B_q = \mathbb{Q}$，$x_0 \notin A1_q$可推导得出$x_0 \in B1_q$，则：
+				\begin{align}
+				a_0 < a_1 \iff \exists x_0 (x_0 \in A0_q \land x_0 \in B1_q)	\label{re:s4}			
+				\end{align}
+				当 
+				\[
+				a_0 > a_1 \iff \exists x_1 (x_1 \in A1_q \land x_1 \notin A0_q)
+				\]
+				由完备性$A_q \cup B_q = \mathbb{Q}$，$x_1 \notin A0_q$可推导得出$x_1 \in B0_q$，则：
+				\begin{align}
+				a_0 > a_1 \iff \exists x_1 (x_1 \in A1_q \land x_1 \in B0_q)	\label{re:s5}			
+				\end{align}
+				由\ref{re:s4}\ref{re:s5}：
+				\[
+					\exists x_0 \exists x_1(x_0 \in A0_q \land x_1 \in B0_q \land  x_1 \in A1_q \land x_0 \in B1_q)
+				\]
+				结合比例数的有序性：
+				\[
+				\forall x \in A \forall y \in B(x < y)
+				\]
+				得到：
+				\begin{align}
+					(x_0 < x_1) \land (x_1 < x_0) \label{re:s6}
+				\end{align}
+				由于$x_0$、$x_1$是比例数，根据两个比例数关系=、$<$、$>$有且只有一种情况\ref{rat:rat2}，所以\ref{re:s6}矛盾，也就是$a_0 < a_1$和$a_0 > a_1$不能同时存在。
+			\end{itemize}
+	\end{itemize}
+\end{Proof}
+\paragraph{}设E是一个实数集合。
+\begin{definision}
+	如果E的每个元素，都小于或者等于实数$\alpha$，则称$\alpha$为集合E的\textbf{上界}。
+	\[
+		\forall x \in E, x \leq \alpha
+	\]
+	根据实数序的定义：x $\leq$ $\alpha$，则$X_q \subseteq A_q$。$\alpha$是E集合的上界，等价表示为：
+	\[
+		\forall x \in E, X_q \subseteq A_q
+	\]
+\end{definision}
+\begin{definision}
+	如果$\alpha$是E的上界，并且任何的实数$\beta < \alpha$，$\beta$都不是E的上界。则称$\alpha$是E的\textbf{上确界}，也称为\textbf{最小上界}，记作$\alpha$ = $\sup$E。
+	\[
+		\alpha = \sup E \Leftrightarrow (\forall x \in E, x \leq \alpha) \land (\forall \beta \in \mathbb{R}, \beta < \alpha \Rightarrow \exists x_0 \in E, x_0 > \beta)
+	\]
+	根据实数的序关系，上确界可以表达为：
+	\[
+		\alpha = \sup E \Leftrightarrow (\forall x \in E, X_q \subseteq A_q) \land (\forall \beta \in \mathbb{R}, B_q \subsetneqq A_q \Rightarrow \exists x_0 \in E, B_q \subsetneqq X0_q)
+	\]
+\end{definision}
+\begin{corollary}
+	非空有上界的实数集必有上确界
+\end{corollary}
+\begin{Proof}
+	首先根据戴德金分割，符号描述非空有上界的实数集：
+	\begin{itemize}[label=$\circ$]
+		\item S: 非空有上界的实数集。
+		\item $A_\alpha$: 根据\textbf{定义\ref{def:realex}}实数$\alpha$所对应的“没有最大比例数”的集合。
+		\item $\bigcup_{\alpha \in S} A_\alpha$: 集合S中所有元素“没有最大比例数”的集合的并集。
+	\end{itemize}
+	 \[
+	 A^* = \bigcup_{\alpha \in S} A_\alpha
+	 \]
+	 \indent 如果能证明$A^*$是戴德金分割的“没有最大比例数”的集合；再根据\textbf{推论\ref{co:split_q2r}}戴德金比例数分割唯一地确定了一个实数$\sigma$；最后根据\textbf{推论\ref{co:real_order}}实数的序关系可以得出$\sigma$是这个有上界实数集的上确界。\\
+	 \indent 首先证明$A^*$匹配分割的定义：
+	 \begin{itemize}[label=$\circ$]
+	 	\item 非空： 根据命题，S是非空的实数集，所以存在一个属于S的实数$\alpha$。根据\textbf{定义\ref{def:realex}}，$\alpha$等价的$A_\alpha$非空。那么$A_\alpha$的并集$A^*$也非空。
+	 	\item 非全集： 根据命题，S是有上界的实数。根据上界的定义，存在一个实数$\beta$，所有属于S的实数都小于等于$\beta$。根据实数序的定义，所有属于S的实数等价对应的$A_q$都是$A_\beta$的子集。由于$A_\beta$不是比例数的全集，那么$A_q$的并集$A^*$也不会是比例数全集。
+	 	\item 并集为全集：属于$A^*$的比例数是一个集合，那么可以让不属于$A^*$的比例数是另一个集合$A^{other}$。这两个集合的并集是比例数的全集。
+	 \end{itemize}
+	 \indent 其次证明$A^*$和$A^{other}$符合\textbf{比例数分割约定\ref{dv:1}}：对任何的$a \in A^*$、$b \in A^{other}$都有$a < b$。
+	 \begin{itemize}[label=$\circ$]
+	 	\item 因为$A^*$是集合S的实数对应的“没有最大比例数”的集合的并集，所以任何一个属于$A^*$的比例数a，必然在集合S中存在一个“没有最大比例数”的集合$A_a$，这个集合包含了比例数a。这里把这个集合对应的实数设为$\alpha'$。根据实数的分割约定\ref{dv:2}：$a < \alpha'$。
+	 	\item 因为任意$A^{other}$中的比例数b，不属于任何$A^*$。等价地b都不属于集合S中的实数对应的“没有最大比例数”的集合。根据实数的分割约定\ref{dv:2}，b与S中的实数的关系必然不是小于的关系。再根据实数的序关系：b只会是会大于等于集合S中任何的实数。
+	 \end{itemize}
+	 \indent 结合前面推导：\\
+	 \indent $
+	 \begin{cases}
+	 	\forall a \in A^*, \exists \alpha' \in S (a < \alpha') \\
+	 	\forall b \in A^{other}, \forall \alpha' \in S (\alpha' \leq b)
+	 \end{cases}
+	 \implies a < \alpha' \leq b \implies a < b $\\ \\
+	 最后证明$A^*$符合\textbf{比例数分割约定\ref{dv:2}}：集合$A^*$没有最大比例数。\\
+	 \indent 反证法，假设在$A^*$里存在一个最大的比例数$\beta$，因为$A^*$是$A_a$集合的并，所以必然存在一个$A_a$包含$\beta$。而$A_a$等价的是一个实数，这个实数是符合\textbf{比例数分割约定\ref{dv:2}}，也就是说$A_a$没有最大比例数，那么也就是说$\beta$不会是包含$\beta$的“没有最大比例数”集合里最大的比例数。\\
+	 \indent 根据上面的证明可以得出$A^*$是戴德金分割，并且根据\textbf{推论\ref{co:split_q2r}}：比例数分割唯一的确认了一个实数。那么存在一个实数s，是集合$A^*$所等价的实数。最后证明s是S这个实数集合的上确界。
+	 \begin{itemize}[label=$\circ$]
+	 	\item s是S集合的上界（$\forall x \in S, X_q \subseteq A^*$）。$A^*$是集合S里所有实数等价的比例数分割类$X_q$的并，所以$X_q \subseteqq A^*$，根据\textbf{定义\ref{df:real_order}}两个实数间序的关系可以得出:
+	 	\[
+	 		\forall x \in S, x \leq s
+	 	\]
+	 	\item s是S集合的最小上界（$\forall \beta \in \mathbb{R}, B_q \subsetneqq A^* \Rightarrow \exists x \in S, B_q \subsetneqq X_q$）。假设一个实数$\beta$小于s，根据实数序关系，得到$B_q \subsetneqq A^*$。因为$B_q$是$A^*$的真子集，根据\textbf{真子集定义\ref{df:proper_subset}}，$A^*$集合中必然存在一个比例数x是$B_q$所没有的，也就是说必然存在一个包含比例数x的集合$X_x$（$X_x \subsetneqq A^*$）。$X_x$对应的实数是x，那么
+	 	\[
+	 		\exists x \in S, x > \beta
+	 	\]
+	 	总结是：
+	 	\[
+	 		\forall \beta \in \mathbb{R}, B_q \subsetneqq A^* \Rightarrow \exists x \in S, B_q \subsetneqq X_q
+	 	\]
+	 \end{itemize}
+\end{Proof}
+\subsection{实数的四则运算}
+根据两个实数的等于关系，可以定义实数间的加、减、乘、除：
+\begin{definision}
+	两个实数$\alpha$=($A_q$, $B_q$)、$\beta$=($C_q$, $D_q$)的加法：$\alpha$ + $\beta$ = ($E_q$, $F_q$)。
+	\begin{align*}
+		& E_q = \{a + c\ |\ a \in A \land c \in C\} \\
+		& F_q = \mathbb{Q} \setminus E_q \quad	(\text{$\setminus$是集合的减法符号})
+	\end{align*}
+\end{definision}
+\begin{definision}
+	实数$\alpha$=($A_q$, $B_q$)的负数-$\alpha$=($C_q$, $D_q$)。
+	\begin{align*}
+		& \text{$\alpha$是有理数：}  &&\text{}\\
+		& \text{}		&& C_q = \{-c\ |\ c \in B_q \land c \neq \alpha \} \\
+		& \text{}		&& D_q = \mathbb{Q} \setminus C_q\text{是有理数}  \\
+		& \text{$\alpha$是无理数：}  &&\text{}\\
+		& \text{}		&& C_q = \{-c\ |\ c \in B_q \} \\
+		& \text{}		&& D_q = \mathbb{Q} \setminus C_q
+	\end{align*}
+\end{definision}
+\begin{definision}
+	实数$\alpha$、$\beta$的减法：$\alpha$ - $\beta$ = $\alpha$ + (-$\beta$)
+\end{definision}
+\begin{definision}
+	实数$\alpha$的绝对值$|\alpha|$：
+	\begin{itemize}
+		\item  $\alpha$ $>$ 0时，$|\alpha|$ = $\alpha$。
+		\item  $\alpha$ $<$ 0时，$|\alpha|$ = -$\alpha$。 
+	\end{itemize}
+\end{definision}
+\begin{definision}
+	两个实数$\alpha$=($A_q$, $B_q$)、$\beta$=($C_q$, $D_q$)的乘法：
+	\begin{itemize}
+		\item $\alpha$ $>$ 0、$\beta$ $>$ 0：$\alpha$ $\times$ $\beta$ = ($E_q$, $F_q$)
+		\begin{align*}
+			& E_q = \{a \times b \ |\ (a \in A_q) a > 0 \land (b \in C_q) b > 0\} \cup \{x\ |\ (x \in \mathbb{Q}) x < 0\} \\
+			& F_q = \mathbb{Q} \setminus E_q
+		\end{align*}
+		\item $\alpha$ $<$ 0、$\beta$ $>$ 0：
+		\[
+			\alpha \times \beta = -((-\alpha) \times \beta)
+		\]
+		\item $\alpha$ $>$ 0、$\beta$ $<$ 0：
+		\[
+		\alpha \times \beta = -(\alpha \times (-\beta))
+		\]
+		\item $\alpha$ $<$ 0、$\beta$ $<$ 0：
+		\[
+		\alpha \times \beta = (-\alpha) \times (-\beta))
+		\]
+	\end{itemize}
+\end{definision}
+\begin{definision}
+	实数$\alpha$=($A_q$, $B_q$)的倒数$\cfrac{1}{\alpha}$=($C_q$, $D_q$)。
+	\begin{itemize}
+		\item $\alpha$ $>$ 0：
+		\begin{align*}
+			& C_q = \{\cfrac{1}{a}\ |\ (a \in B_q)a > 0\} \cup \{x\ |\ (x \in \mathbb{Q})x \leq 0\} \\
+			& D_q = \mathbb{Q} \setminus C_q
+		\end{align*}
+		\item $\alpha$ $<$ 0：
+		\[
+		\cfrac{1}{\alpha} = -(\cfrac{1}{-\alpha})
+		\]
+	\end{itemize}
+\end{definision}
+\begin{definision}
+	实数$\alpha$除以$\beta$：$\alpha$ $\times$ $\cfrac{1}{\beta}$
+\end{definision}
+
+

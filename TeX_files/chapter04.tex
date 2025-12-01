@@ -1,0 +1,348 @@
+\chapter{极限和级数}
+\paragraph{}只要接触了一点极限的概念，凭着感觉和一目了然也能计算出很多的极限算式。既然是凭感觉，那极限真的天然就有的吗？如果是这样的话，为什么几千年前没有像自然数那样在全世界普遍的存在和使用。0.33$\dot{3}$很容易就认为它是比例数$\cfrac{1}{3}$的值，但如果说0.99$\dot{9}$是1的值的话，就必然觉得不可思议。
+\paragraph{}历史上割圆法求圆的周长和面积被认为是天才的、正确的方法：
+\paragraph{}\includegraphics[width=0.6\textwidth]{splitcircle.png}
+\paragraph{}下面这幅无限逼近圆周长求$\pi$等4却是错误的方法：
+\paragraph{}\includegraphics[width=0.6\textwidth]{pi_equal_4.png}
+\paragraph{}所以一目了然是不可靠的，就如同问西方伪史论者：为什么古希腊历史是假的？回答：一眼假，太新了。
+
+\paragraph{}这个章节主要思考下面的问题：
+\begin{itemize}
+	\item 实数满足不断逼近吗，是否还需要扩展？就像从比例数扩展到实数，需要从实数扩展到什么数吗？
+	\item 如果满足不断逼近，那么不断逼近是精确到某个实数，还是确定到某个实数
+\end{itemize}
+
+\subsection{数列的极限}
+\begin{corollary}\label{limit:m4}
+	两个不同的实数间，必存在比例数。
+\end{corollary}
+\begin{Proof}
+	设分割点为$\alpha$、$\beta$的两个不同实数。根据实数序关系，不相等的情况下，只有$\alpha < \beta$或者$\alpha > \beta$两种情况。这里只证明$\alpha < \beta$，另一种情况证明类似。\\
+	\indent $\alpha < \beta$的情况：\\
+	\indent 根据实数序的\textbf{定义\ref{df:real_order}}：
+	\[
+	 \alpha < \beta \iff A_q  \subsetneqq B_q \iff \exists x (x \in B_q \land x \notin B_q)
+	\] \\
+	\indent $\alpha > \beta$的证明类似，略。
+\end{Proof}
+\begin{corollary}\label{limit:m3}
+	两个不同的比例数之间必存在无理数。
+\end{corollary}
+\begin{Proof}
+	假设两个不同的比例数是$\alpha$、$\beta$。根据比例数的关系，不等的话必然存在大小关系，那么可以假设：
+	\[
+	\alpha < \beta
+	\]
+	因为
+	\[
+		\cfrac{\sqrt{2}}{2} \approx 0.707 < 1
+	\]
+	所以可以构造一个位于$\alpha$和$\beta$之间的数$\lambda$：
+	\[
+		\lambda = \alpha + (\beta - \alpha) \times \cfrac{\sqrt{2}}{2}
+	\]
+	反证法证明$\lambda$是无理数：\\
+	假设$\lambda$是比例数，则：
+	\[
+		\alpha + (\beta - \alpha) \times \cfrac{\sqrt{2}}{2} = n \quad \alpha,\beta,n \in \mathbb{Q}
+	\]
+	则：
+	\[
+		\sqrt{2} = \cfrac{2 \times (n - \alpha)}{\beta - \alpha} \quad \alpha,\beta,n \in \mathbb{Q}
+	\]
+	根据比例数章节的推论：比例数的加、减、乘、除的结果依旧是比例数。所以可得$\cfrac{2 \times (n - \alpha)}{\beta - \alpha}$数，那么$\sqrt{2}$也是比例数，而这与$\sqrt{2}$是无理数矛盾，所以$\lambda$是无理数。
+\end{Proof}
+\paragraph{}根据\textbf{推论\ref{limit:m4}和推论\ref{limit:m3}}可得实数稠密性的推论：
+\begin{corollary}\label{limit:m3_1}
+	两个不同的实数间，必存在实数。
+\end{corollary}
+\textbf{推论\ref{limit:m3_1}}的逆否命题是：
+\begin{corollary}\label{limit:m3_2}
+若两个实数之间不存在任何实数，则这两个数是相等的实数。
+\end{corollary}
+\paragraph{}下面要推导出一个结论，我觉得这个结论是进入极限论的关键节点。每次碰到无限时，脑袋就宕机无法处理。例如0.33$\dot{3}$很容易就认为它是比例数$\cfrac{1}{3}$的值，但如果说0.99$\dot{9}$是1的值的话，就必然觉得不可思议，0.99$\dot{9}$和1之间一定还差了那么一点点。难道1有什么特别吗？可能是观念里根深蒂固的单位量必须是完整、有限。
+\paragraph{}0.33$\dot{3}$被认为是$\cfrac{1}{3}$，很大的原因是0.33$\dot{3}$是$\cfrac{1}{3}$做小数除法运算后的结果，每运算一次，小数末尾加上1个3。这种运算的（动态的）、无限次数的问题需要一种方法，把问题转变成静态。动态、无限一般用$\forall$来表示，需要把动态转换为静态，关键在于用“存在($\exists$)”让动态的变化静止下来。
+\paragraph{}\textit{0.99$\dot{9}$等于1}
+\begin{Proof}
+	根据\textbf{推论\ref{limit:m3_2}}，只要证明0.99$\dot{9}$和1之间不存在任何的实数，那么就证明了0.99$\dot{9}$等于1。\\
+	反证法证明：\\
+	假设0.99$\dot{9}$和1之间存在一个实数r。根据实数的全序性质有：
+	\begin{align}
+			0.99 < 0.99\dot{9}  <  r  <  1 \label{limit:pm1}
+	\end{align}
+	则可以得到：
+	\begin{align}
+		d = 1 - r  \quad(0.01 < d < 1) \label{limit:pm3}
+	\end{align}
+	根据阿基米德公理：任意的大于0的$\alpha$、$\beta$的两个数，则必然存在一个正整数n，使得$\alpha$ $\times$ n $>$ $\beta$。\\
+	大于0的d、$\cfrac{1}{10}$的两个实数，则必然存在一个正整数n，使得：
+	\begin{align}
+		d \times n > \cfrac{1}{10} \label{limit:p0}
+	\end{align}	
+	又由于n不能等于1，否则与 d $>$ 0.01矛盾。根据n $>$ 1可得：
+	\begin{align}
+		10^{n - 1} > n  \Rightarrow d \times 10^{n - 1} > d \times n \quad(n > 1) \label{limit:p1}
+	\end{align}
+	结合\ref{limit:p1}和\ref{limit:p0}可得：
+	\begin{align}
+		d \times 10^{n-1} > d \times n > \cfrac{1}{10} \quad(n > 1) \label{limit:p2}
+	\end{align}
+	把\ref{limit:p2}都除以$10^{n-1}$得：
+	\begin{align}
+		d > \cfrac{d \times n}{10^{n-1}} > \cfrac{1}{10^n} \quad(n > 1) \label{limit:p3}
+	\end{align}
+	由于0.99$\dot{9}$是无限循环小数，所以
+	\begin{align}
+		0.9_{1}9_{2}9_{3}\dots 9_{n} < 0.99\dot{9} \label{limit:pm2}
+	\end{align}
+	合并\ref{limit:pm1}不等式和\ref{limit:pm2}得到：
+	\begin{align}
+		0.9_{1}9_{2}9_{3}\dots 9_{n} < 0.99\dot{9} < r < 1 \label{limit:p4}
+	\end{align}
+	由合并的不等式得：
+	\begin{align}
+		1 - r  < 1 - 0.9_{1}9_{2}9_{3}\dots 9_{n} \label{limit:p5}
+	\end{align}
+	又由于
+	\begin{align}
+		1 - 0.9_{1}9_{2}9_{3}\dots 9_{n} = \cfrac{1}{10^{n}} \label{limit:p6}
+	\end{align}
+	把\ref{limit:pm3}和\ref{limit:p6}代入\ref{limit:p5}得到：
+	\begin{align}
+		d < \cfrac{1}{10^{n}} \label{limit:p7}
+	\end{align}
+	由于\ref{limit:p7}和\ref{limit:p3}矛盾，所以0.99$\dot{9}$和1之间不存在一个实数。
+\end{Proof}
+
+根据\textbf{推论\ref{limit:m3_1}}和\textbf{推论\ref{limit:m3_2}}，我们有了一种判断两个实数是否相等的方法：查看两个实数之间是否存在另一个实数。接下来介绍另外两种方法：一种是用另外的两个数夹住需要比较的数，然后根据夹住的距离判断被夹住的两个数是否相等；一种是直接根据两个实数的距离判断这两个数是否相等。使用上下界（夹住）获得数值再累计，这是推导黎曼积分的思路。
+\begin{corollary}\label{limit:m2}
+	任意的两个实数$\alpha$、$\beta$，如果任意的一个大于0的实数$e$，数$\alpha$和$\beta$都在同一对实数$s$和$s'$之间：
+	\[
+	s < \alpha < s' \quad \quad s < \beta < s'
+	\]
+	这对数的差小于$e$：
+	\[
+	s' - s < e
+	\]
+	则数 $\alpha$ 等于 $\beta$。
+	\[
+	\forall \alpha,\beta \in \mathbb{R} (\forall e > 0 \exists s,s'((s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e))) \Rightarrow \alpha = \beta
+	\]
+\end{corollary}
+\begin{Proof}
+	反证法：根据命题逻辑结构顺序，首先固定任意的$\alpha$、$\beta$，然后假设$\alpha$不等于$\beta$。根据$\alpha$不等于$\beta$，那么可以有$\alpha$ $<$ $\beta$。根据实数的稠密性，$\alpha$和$\beta$之间必有实数r：
+	\[
+	\alpha < r < \beta
+	\]
+	根据实数的稠密性，r和$\beta$之间必有实数$r'$：
+	\[
+	\alpha < r < r' < \beta
+	\]
+	再根据推论描述$s < \alpha < s' \quad \quad s < \beta < s'$，所以有：
+	\begin{align}
+		s < \alpha < r < r' <\beta < s'	\label{re:s7}
+	\end{align}
+	根据推论前提$s' - s$小于任意的实数$e$。但是根据\ref{re:s7}的不等式，$e$不能是任意的实数，它必需大于$r' - r$。
+	\paragraph{}\includegraphics[width=1\textwidth]{resplit2.png}
+\end{Proof}
+\paragraph{}也就是说：只要两个数不相等，必然存在一个确定的，不能被忽略的差距。只有两个数相等，那么它们的差距会小于任意大于0的数。前面是上下界夹两个数的版本，下面推导两个数距离的版本。
+\begin{corollary}\label{limit:m1}
+	任意的两个实数$\alpha$、$\beta$的差的绝对值，如果小于任意的一个大于0的实数$e$，那么$\alpha$和$\beta$相等。
+	\[
+	\forall \alpha,\beta \in \mathbb{R} (\forall e > 0 (|\alpha - \beta| < e)) \quad \Rightarrow \quad \alpha = \beta
+	\]
+\end{corollary}
+\begin{Proof}
+	前一个推论的逻辑表示是：
+	\[
+	\forall \alpha,\beta \in \mathbb{R} (\forall e > 0 \exists s,s'((s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e))) \Rightarrow \alpha = \beta
+	\]
+	只要证明
+	\[
+	\exists s,s'((s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e)
+	\]
+	和
+	\[
+	|\alpha - \beta| < e
+	\]
+	等价，那么这个命题的真假和前一个命题是相等的，即得证明。\\
+	$\circ$由
+	\[
+	(s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e)
+	\]
+	可推导出：
+	\[
+	|\alpha - \beta| < s' - s < e \Rightarrow |\alpha - \beta| < e
+	\]
+	$\circ$现在证明由
+	\[
+	|\alpha - \beta| < e
+	\]
+	可推导出：
+	\[
+	(s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e)
+	\]
+	由于
+	\[
+	|\alpha - \beta| < e
+	\]
+	根据实数序关系，可知$|\alpha - \beta|$ 和 $e$是两个不同的实数。
+	由\textbf{推论\ref{limit:m3_1}}“两个不同的实数间，必存在实数”，设这个实数为r，则
+	\begin{align}
+		|\alpha - \beta| < r < e \label{re:s8}
+	\end{align}
+	根据$\exists$$s$,$s'$（存在$s$、$s'$），能构造出符合条件的$s$、$s'$即可。\\
+	定义:
+	\[
+	f_{min}(\alpha, \beta)\text{：取出不大于另一个数的值；较小或者相等的值}
+	\]
+	\[
+	f_{max}(\alpha, \beta)\text{：取出不小于另一个数的值。较大或者相等的值}
+	\]
+	构造：
+	\begin{align}
+		s = f_{min}(\alpha, \beta) - \cfrac{r - |\alpha - \beta|}{2} \label{re:s9}
+	\end{align}
+	\begin{align}
+		s' = f_{max}(\alpha, \beta) + \cfrac{r - |\alpha - \beta|}{2} \label{re:s10}
+	\end{align}
+	由$\cfrac{r - |\alpha - \beta|}{2} > 0$ 可得：
+	\begin{align}
+		(s < \alpha < s') \land (s < \beta < s') \label{re:s11}
+	\end{align}
+	由$f_{max}$和$f_{min}$的定义可以得到：
+	\begin{align}
+		f_{max}(\alpha, \beta) - f_{min}(\alpha, \beta) = |\alpha - \beta| \label{re:s11_1}
+	\end{align}
+	由\ref{re:s9}、\ref{re:s10}和\ref{re:s11_1}得到：
+	\begin{align}
+		s' - s = |\alpha - \beta| + \cfrac{r - |\alpha - \beta|}{2} - \cfrac{r - |\alpha - \beta|}{2} \label{re:s12}
+	\end{align}
+	根据\ref{re:s12}和\ref{re:s8}得：
+	\begin{align}
+		s' - s = |\alpha - \beta| < r < e \label{re:s13}
+	\end{align}
+	结合\ref{re:s11}和\ref{re:s13}：
+	\[
+	(s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e)
+	\]
+\end{Proof}
+\paragraph{}回顾0.99$\dot{9}$等于1。0.99$\dot{9}$可以用无限循环小数的形式表示，前面还提到$\sqrt{2}$可以用连分数[1;2,2,$\dot{2}$]表示。然而无理数确没办法用无限循环小数表示，并且连分数也有无限不循环的形式。数学界需要新的概念来表示这种形式的运算，19世纪的法国数学家柯西提出这是一个函数形式的序列，输入是整数集合的一个整数，输出是集合$\{x_{n}\}_{n=1}^{n=\infty}$中输入整数n对应的项。$\infty$是无限的意思，当使用场景是自然数时，表示的是自然数的无限；场景是整数时，有负数的无限：-$\infty$。场景是实数时，$\infty$表示正实数的无限，相应的-$\infty$表示负的实数的无限。自然数的$\infty$可以认为它的值是$\aleph_{0}$。
+\paragraph{}例如0.99$\dot{9}$的序列是：
+\begin{align}
+	\{0.9_{1},\quad0.9_{1}9_{2},\quad0.9_{1}9_{2}9_{3}\quad \dots \}_{n=1}^{n=\infty} \label{list:1}
+\end{align}
+
+$\sqrt{2}$的连分数[1;2,2,$\dot{2}$]序列是：
+\begin{align}
+	\{1,\quad 1.5,\quad 1.4,\quad 1.416,\quad 1.413\quad \dots\}_{n=1}^{n=\infty} \label{list:sqr2}
+\end{align}
+$\cfrac{1}{n}$的序列是：
+\begin{align}
+	\{\cfrac{1}{1},\quad \cfrac{1}{2},\quad \cfrac{1}{3},\quad \cfrac{1}{4}\quad \cdots\}_{n=1}^{n=\infty} \label{list:cfrac0}
+\end{align}
+\paragraph{}序列的表示是第一步，它让序列的每一项清晰、明白。而大多数时候，我们希望把序列当做一个整体看待，例如希望\textbf{序列\ref{list:1}}表示的是1，确实0.99$\dot{9}$等于1；希望\textbf{序列\ref{list:sqr2}}等于$\sqrt{2}$，因为这个序列是$\sqrt{2}$连分数的展开。所以在微积分大厦已经搭建完成，需要给微积分规范化的趋势下，在鸦片战争后的1年，1841年提出用$\lim$这个符号表示这个运算。后来在1908年再次改进，使用$\lim\limits_{n \to \infty}f(n)$表示$\{f(1), f(2), f(3) \dots\}_{n=1}^{n=\infty}$，$\lim$这个运算符号读作“极限”。
+\paragraph{}数列的序列有很多，不是任意的序列都可以做有效的极限运算。我们引入极限的目的是让这个运算得到一个明确的值，例如\textbf{序列\ref{list:1}}极限运算后要等于1；\textbf{序列\ref{list:sqr2}}极限运算要等于$\sqrt{2}$。下面的序列不能做极限运算：
+\begin{align}
+	&\{1_{1},\quad -1_{2},\quad 1_{3},\quad -1_{4} \dots\}_{n=1}^{n=\infty} \label{list:nolist1} \\
+	&\{\dots 4_{-2},\quad 2_{-1},\quad 0_{0},\quad 2_{1},\quad 4_{2} \dots\}_{n=-\infty}^{n=\infty} \label{list:nolist2}
+\end{align}
+\paragraph{}\textbf{序列\ref{list:nolist1}}在1和-1轮流取值，不能取明确的值。\textbf{序列\ref{list:nolist2}}也是同样的问题，无法获得明确的值。
+\paragraph{}回顾\textbf{推论\ref{limit:m1}}：\textit{任意的两个实数$\alpha$、$\beta$的差的绝对值，如果小于任意的一个大于0的实数$e$，那么$\alpha$和$\beta$相等。
+	\[
+	\forall \alpha,\beta \in \mathbb{R} (\forall e > 0 (|\alpha - \beta| < e)) \quad \Rightarrow \quad \alpha = \beta
+	\]
+}\\
+需要利用这个推论中的两个部分，一个是任意一个大于0的实数$e$($\forall e > 0$)，另一个是两个数之间的距离与$e$的关系($|\alpha - \beta| < e$)。另外在逻辑结构上\textbf{推论\ref{limit:m1}}是先固定$\alpha$、$\beta$，然后再让$e$任意取值。而接下来极限的定义先固定任意一个大于0的实数$\epsilon$，然后再确保数列n项后的任意项与确切的值的距离小于$\epsilon$。
+\paragraph{}设$\{a_n\}_{n=1}^{n=\infty}$是一个实数数列，$a_n$是数列$\{a_n\}_{n=1}^{n=\infty}$的第n项。A是一个确切的实数。
+\begin{definision}
+	若对任意给定的正实数$\epsilon$，都存在一个正整数N，使得\mbox{$n>N$}的正整数n，都满足不等式$|a_n - A|<\epsilon$，则称数列${a_n}$极限为实数A，记作：
+	\[
+		\lim\limits_{n \to \infty}a_n = A
+	\]
+\end{definision}
+\paragraph{}当时我看到这个定义的时候，我在想：我要证明这个定义。后来我想明白了，\textbf{定义}是不需要证明，是为了统一标准而人为设定的。那为什么这个极限定义这么别扭：又是任意，又是存在；能不能把存在放前面，把任意放后面。回答是：这个定义必须这样，不能有任何改动，真的！改了这个定义就不能用了。原因有两个，一个是逻辑上的严密，另一个是可以证明、计算。
+\paragraph{}定义的逻辑是严密的。如果把存在的N放前面，那么对任意的$\epsilon$，不等式$|a_n - A|<\epsilon$不会每次都成立。例如0.99$\dot{9}$的数列：
+\[
+	0.99\dot{9} = \{1-\cfrac{1}{10^n}\}_{n=0}^{n=\infty}
+\]
+我们需要让这个极限是1：
+\[
+	\lim\limits_{n \to \infty}(1 - \cfrac{1}{10^n}) = 1
+\]
+如果设N=100，这时候如果
+\[
+	\epsilon = 1 - \cfrac{1}{10^{1000}}
+\]
+那么n在101到1000都不能满足
+\[
+	|(1 - \cfrac{1}{10^n}) - 1| < \epsilon
+\]
+也就是这个定义会是个不完整的定义，是个假定义。
+\paragraph{}那把任意的$\epsilon$放前面，就能让不等式$|a_n - A|<\epsilon$成立吗？是的！一定还会有人疑问：“任意诶。你不可能把所有都遍历吧，没遍历，怎么知道是任意？”对于这个问题，就得提到逻辑博弈了。这个定义是两步骤博弈。“任意”手里有任意多的牌，“存在”的目的是让不等式$|a_n - A|<\epsilon$成立。“任意”肯定会说：我可以任意小的，你（存在）真的不会比我更小了。”“存在”说：“别废话，定义说得很清楚，你排前面，出牌吧。”也就是不管“任意”出什么牌，只要“存在”能找到符合$|a_n - A|<\epsilon$都成立的N，那“存在”就胜利了，这个命题是真命题，是完整的定义，真的定义。当然，这个定义是符合我们希望的一个实数数列映射到一个确切实数的要求，并且是\textbf{推论\ref{limit:m1}}向极限定义的延伸。
+\paragraph{}定义的计算、证明是可行的。把任意放前面，那么就可以先把任意的值固定，然后根据固定的值再去找存在。例如证明当$x_n = \cfrac{1}{n}$的极限是0。
+\begin{Proof}
+	$\lim\limits_{n \to \infty}\cfrac{1}{n}$ = 0，即对于任一给定的大于0的$\epsilon$，求N=f($\epsilon$)，使得当$n > N$时，$|x_n - 0| < \epsilon$。
+		\begin{table}[htbp]
+		\centering
+		\begin{tabular}{c|c|c|c|c|c} % 6个"c"表示6列均居中对齐，无竖线定义
+			\toprule  % 顶部粗横线（比\hline更美观）
+			$\epsilon$ & \quad0.1\quad & \quad0.01\quad & \quad0.001\quad & \quad0.0001\quad & \dots \\
+			\midrule  % 中间细线（分隔表头与内容，若只有两行可省略）
+			N & \quad10\quad & \quad100\quad & \quad1000\quad & \quad10000\quad & \dots \\
+			\bottomrule % 底部粗横线
+		\end{tabular}
+	\end{table}
+	\begin{align}
+		|x_n - 0| = \cfrac{1}{n}	\label{limit:eq1}
+	\end{align}
+	按照定义，对于任意给定的$\epsilon > 0$，都要:
+	\begin{align}
+		|x_n - 0| < \epsilon		\label{limit:eq2}
+	\end{align}
+	把\ref{limit:eq1}代入\ref{limit:eq1}得：
+	\begin{align}
+		\cfrac{1}{n} < \epsilon \quad\Rightarrow\quad \cfrac{1}{\epsilon} < n
+	\end{align}
+	根据定义，取$N = \lfloor\cfrac{1}{\epsilon}\rfloor$，则只要$n > N$，都能使得$|x_n - 0| < \epsilon$。\\
+	所以
+	\[
+		\lim\limits_{n \to \infty}\cfrac{1}{n} = 0
+	\]
+\end{Proof}
+\subsection{极限的基础和扩展}
+\paragraph{}根据极限的定义，要判断$\{a_n\}_{n=1}^{n=\infty}$实数数列是否有极限，还是有猜的成分在里边。因为首先要猜这个实数数列的极限值，然后倒回到数列极限的定义去验证。
+\paragraph{}比如前面求$\{\cfrac{1}{n}\}_{n=1}^{n=\infty}$的极限。往往是列出下面的表格，不断增加N的值，然后代入到$\cfrac{1}{n}$，猜$\cfrac{1}{n}$会不断接近什么值，最后代入到定义去验证。
+\paragraph{}
+\begin{tabular}{c|c|c|c|c|c} % 6个"c"表示6列均居中对齐，无竖线定义
+	\toprule  % 顶部粗横线（比\hline更美观）
+	$\epsilon$ & \quad0.1\quad & \quad0.01\quad & \quad0.001\quad & \quad0.0001\quad & \dots \\
+	\midrule  % 中间细线（分隔表头与内容，若只有两行可省略）
+	N & \quad10\quad & \quad100\quad & \quad1000\quad & \quad10000\quad & \dots \\
+	\bottomrule % 底部粗横线
+\end{tabular}
+\paragraph{}所以为了严格确定$\{a_n\}_{n=1}^{n=\infty}$实数数列是否有极限。出生于法国大革命那年（1789年）的巴黎人柯西，为了推动数学分析严格化（我们现在看到的微积分99\%的的结论在当时都已经得出，但需要剔除主观的、模糊的定义。例如无穷小、逐渐接近等。），于1821年，在他的著作《分析教程》中，为解决 “级数收敛性判断” 问题，首次描述了 “柯西序列”：
+\begin{definision}
+若对任意小的正数$\epsilon$，存在正整数N，使得当$n > N$且$p > 0$时，有$|S_n - S_{n+p}| < \epsilon$，则称部分和数列$\{S_n\}$有极限。
+\end{definision}
+\paragraph{}然而，前面这种定义反而增加了一个步骤，还得求部分和。所以经过改造后，柯西数列的定义如下：
+\begin{definision}
+若对任意给定的正实数$\epsilon$，总存在一个正整数N，使得当$i > N$且$j > N$时，都满足不等式$|a_i - a_j| < \epsilon$，则称数列$a_n$为柯西数列。
+\end{definision}
+\paragraph{}\itshape{有极限的实数数列必然是柯西数列吗？}
+\begin{Proof}
+	首先根据实数的四则运算，任意的一个大于0的实数$\epsilon$，都存在一个大于0的实数$\epsilon'$。
+	\[
+		\epsilon' = \cfrac{\epsilon}{2}
+	\]
+	把上面的命题用逻辑语言表示：
+	\[
+	\forall \epsilon \in \mathbb{R}^+, \exists \epsilon' \in \mathbb{R}^+ (\epsilon' = \cfrac{\epsilon}{2})
+	\]
+	一般人都会有疑问：$\epsilon'$是否保持了任意（$\forall$）的属性，毕竟$\epsilon'$前面的量词是存在（$\exists$）。这个问题要回到任意（$\forall$）的本质，$\forall$这个符号在英文中是\itshape{for all}，\itshape{for all}的意思是对于范围内的所有，集合的说法是对于集合的所有元素。
+	
+	\paragraph{}根据极限定义：若对任意给定的正实数$\epsilon$，都存在一个正整数N，使得\mbox{$n>N$}的正整数n，都满足不等式$|a_n - A|<\epsilon$，则称数列${a_n}$极限为实数A，记作：
+	\[
+	\lim\limits_{n \to \infty}a_n = A
+	\]
+\end{Proof}

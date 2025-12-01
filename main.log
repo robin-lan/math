@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  26 JUN 2025 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  1 DEC 2025 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,8 +849,256 @@ File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
-\c@definision=\count340
 
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen272
+\lightrulewidth=\dimen273
+\cmidrulewidth=\dimen274
+\belowrulesep=\dimen275
+\belowbottomsep=\dimen276
+\aboverulesep=\dimen277
+\abovetopsep=\dimen278
+\cmidrulesep=\dimen279
+\cmidrulekern=\dimen280
+\defaultaddspace=\dimen281
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen282
+\@belowrulesep=\dimen283
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen284
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2024/08/09 v2.17 Emphasizing equations
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count344
+\calc@Bcount=\count345
+\calc@Adimen=\dimen285
+\calc@Bdimen=\dimen286
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count346
+\calc@Cskip=\skip62
+)
+\g_MT_multlinerow_int=\count347
+\l_MT_multwidth_dim=\dimen287
+\origjot=\skip63
+\l_MT_shortvdotswithinadjustabove_dim=\dimen288
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen289
+\l_MT_above_intertext_sep=\dimen290
+\l_MT_below_intertext_sep=\dimen291
+\l_MT_above_shortintertext_sep=\dimen292
+\l_MT_below_shortintertext_sep=\dimen293
+\xmathstrut@box=\box80
+\xmathstrut@dim=\dimen294
+)
+\l_EQ_equationtype_int=\count348
+\l_EQ_alignmentmode_int=\count349
+\l_EQ_totalwidth_dim=\dimen295
+\l_EQ_displaywidth_dim=\dimen296
+\l_EQ_temp_linewidth_dim=\dimen297
+\l_EQ_linewidth_dim=\dimen298
+\EmphEqdelimitershortfall=\dimen299
+\EmphEqdelimiterfactor=\count350
+\g_EQ_toptag_height_dim=\dimen300
+\g_EQ_bottomtag_depth_dim=\dimen301
+\g_EQ_toprow_height_dim=\dimen302
+\g_EQ_bottomrow_depth_dim=\dimen303
+\g_EQ_widesttag_dim=\dimen304
+\EQ_mathdisplay_box=\box81
+\EQ_tag_box=\box82
+\g_EQ_temprow_int=\count351
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count352
+\float@exts=\toks48
+\float@box=\box83
+\@float@everytoks=\toks49
+\@floatcapt=\box84
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/frankenstein/dialogue.sty
+Package: dialogue 1999/03/01 v1.1 dialogue environment (Frankenstein's mouth)
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/frankenstein/blkcntrl.sty
+Package: blkcntrl 2001/08/31 v1.2 block control
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/frankenstein/moredefs.sty
+Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
+
+\sc@toks@a=\toks50
+\sc@toks@b=\toks51
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)))
+(d:/Program Files/texlive/2025/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box85
+\UL@hyphenbox=\box86
+\UL@skip=\skip64
+\UL@hook=\toks52
+\UL@height=\dimen305
+\UL@pe=\count353
+\UL@pixel=\dimen306
+\ULC@box=\box87
+Package: ulem 2019/11/18
+\ULdepth=\dimen307
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.st
+y
+Package: xparse 2024-08-16 L3 Experimental document command parser
+) (d:/Program Files/texlive/2025/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count354
+Package zref Info: New property: abspage on input line 67.
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip65
+\c@mdf@globalstyle@cnt=\count355
+\mdf@skipabove@length=\skip66
+\mdf@skipbelow@length=\skip67
+\mdf@leftmargin@length=\skip68
+\mdf@rightmargin@length=\skip69
+\mdf@innerleftmargin@length=\skip70
+\mdf@innerrightmargin@length=\skip71
+\mdf@innertopmargin@length=\skip72
+\mdf@innerbottommargin@length=\skip73
+\mdf@splittopskip@length=\skip74
+\mdf@splitbottomskip@length=\skip75
+\mdf@outermargin@length=\skip76
+\mdf@innermargin@length=\skip77
+\mdf@linewidth@length=\skip78
+\mdf@innerlinewidth@length=\skip79
+\mdf@middlelinewidth@length=\skip80
+\mdf@outerlinewidth@length=\skip81
+\mdf@roundcorner@length=\skip82
+\mdf@footenotedistance@length=\skip83
+\mdf@userdefinedwidth@length=\skip84
+\mdf@needspace@length=\skip85
+\mdf@frametitleaboveskip@length=\skip86
+\mdf@frametitlebelowskip@length=\skip87
+\mdf@frametitlerulewidth@length=\skip88
+\mdf@frametitleleftmargin@length=\skip89
+\mdf@frametitlerightmargin@length=\skip90
+\mdf@shadowsize@length=\skip91
+\mdf@extratopheight@length=\skip92
+\mdf@subtitleabovelinewidth@length=\skip93
+\mdf@subtitlebelowlinewidth@length=\skip94
+\mdf@subtitleaboveskip@length=\skip95
+\mdf@subtitlebelowskip@length=\skip96
+\mdf@subtitleinneraboveskip@length=\skip97
+\mdf@subtitleinnerbelowskip@length=\skip98
+\mdf@subsubtitleabovelinewidth@length=\skip99
+\mdf@subsubtitlebelowlinewidth@length=\skip100
+\mdf@subsubtitleaboveskip@length=\skip101
+\mdf@subsubtitlebelowskip@length=\skip102
+\mdf@subsubtitleinneraboveskip@length=\skip103
+\mdf@subsubtitleinnerbelowskip@length=\skip104
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box88
+\mdf@footnotebox=\box89
+\mdf@splitbox@one=\box90
+\mdf@splitbox@two=\box91
+\mdf@splitbox@save=\box92
+\mdfsplitboxwidth=\skip105
+\mdfsplitboxtotalwidth=\skip106
+\mdfsplitboxheight=\skip107
+\mdfsplitboxdepth=\skip108
+\mdfsplitboxtotalheight=\skip109
+\mdfframetitleboxwidth=\skip110
+\mdfframetitleboxtotalwidth=\skip111
+\mdfframetitleboxheight=\skip112
+\mdfframetitleboxdepth=\skip113
+\mdfframetitleboxtotalheight=\skip114
+\mdffootnoteboxwidth=\skip115
+\mdffootnoteboxtotalwidth=\skip116
+\mdffootnoteboxheight=\skip117
+\mdffootnoteboxdepth=\skip118
+\mdffootnoteboxtotalheight=\skip119
+\mdftotallinewidth=\skip120
+\mdfboundingboxwidth=\skip121
+\mdfboundingboxtotalwidth=\skip122
+\mdfboundingboxheight=\skip123
+\mdfboundingboxdepth=\skip124
+\mdfboundingboxtotalheight=\skip125
+\mdf@freevspace@length=\skip126
+\mdf@horizontalwidthofbox@length=\skip127
+\mdf@verticalmarginwhole@length=\skip128
+\mdf@horizontalspaceofbox=\skip129
+\mdfsubtitleheight=\skip130
+\mdfsubsubtitleheight=\skip131
+\c@mdfcountframes=\count356
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count357
+\c@mdf@env@i=\count358
+\c@mdf@env@ii=\count359
+\c@mdf@zref@counter=\count360
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+\c@theorem=\count361
+\c@definision=\count362
+\c@property=\count363
+\c@corollary=\count364
+\c@dv_convension=\count365
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+)
 (d:/Program Files/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Program Files/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.ch
@@ -861,106 +1109,120 @@ File: UTF8.chr 2021/10/16 4.8.5
 LaTeX Warning: Unused global option(s):
     [ctexart].
 
-(./main.aux (./TeX_files/chapter00.aux) (./TeX_files/chapter01.aux)
-(./TeX_files/chapter02.aux))
+(./main.aux (./TeX_files/chapter00.aux) (./TeX_files/chapter01.aux
+
+LaTeX Warning: Label `df:add1' multiply defined.
+
+
+LaTeX Warning: Label `df:add1@cref' multiply defined.
+
+
+LaTeX Warning: Label `df:add2' multiply defined.
+
+
+LaTeX Warning: Label `df:add2@cref' multiply defined.
+
+) (./TeX_files/chapter02.aux) (./TeX_files/chapter03.aux)
+(./TeX_files/chapter04.aux) (./TeX_files/chapter05.aux)
+(./TeX_files/chapter06.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 (d:/Program Files/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
-\scratchdimen=\dimen272
-\scratchbox=\box80
-\nofMPsegments=\count342
-\nofMParguments=\count343
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count344
-\MPscratchDim=\dimen273
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count366
+\scratchdimen=\dimen308
+\scratchbox=\box93
+\nofMPsegments=\count367
+\nofMParguments=\count368
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen309
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
+\everyMPtoPDFconversion=\toks54
 )
 (d:/Program Files/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.
 sty
@@ -973,18 +1235,33 @@ g
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 83.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-\c@lstlisting=\count347
-LaTeX Font Info:    Trying to load font information for C70+rm on input line 22
+\c@lstlisting=\count372
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 91
 .
 
 (d:/Program Files/texlive/2025/texmf-dist/tex/latex/ctex/fd/c70rm.fd
 File: c70rm.fd 2022/07/14 v2.5.10 Chinese font definition (CTEX)
 )
+LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
+quanjiao) on input line 91.
+
 
 
 (d:/Program Files/texlive/2025/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-win
@@ -1000,26 +1277,23 @@ BK.sfd}{Unicode.sfd}) [1
 
 [2
 
-] (./main.toc)
+] (./main.toc
+
+[3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
 
-[3]
+[4]
 \openout2 = `./TeX_files/chapter00.aux'.
 
  (./TeX_files/chapter00.tex
 
-[4
+[5
 
 
 ]
-Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
-quanjiao) on input line 2.
-
-
-[5]
 Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
 e (quanjiao) on input line 12.
 )
@@ -1030,6 +1304,9 @@ e (quanjiao) on input line 12.
  (./TeX_files/chapter01.tex
 Chapter 1.
 
+Underfull \vbox (badness 1629) has occurred while \output is active []
+
+
 
 [1
 
@@ -1038,7 +1315,15 @@ Chapter 1.
 
 
 ]
-Overfull \hbox (0.69945pt too wide) in paragraph at lines 29--30
+<countapple.png, id=443, 2055.68pt x 2055.68pt>
+File: countapple.png Graphic file (type png)
+<use countapple.png>
+Package pdftex.def Info: countapple.png  used on input line 23.
+(pdftex.def)             Requested size: 312.00119pt x 311.97728pt.
+
+
+[2 <./countapple.png (PNG copy)>]
+Overfull \hbox (0.69945pt too wide) in paragraph at lines 30--31
  [][] \C70/rm/m/n/12/73 ∞ \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/5c 1\OT1/cmr/m/n/1
 2 0\C70/rm/m/n/12/5c ^ \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/5c ^ \C70/rm/m/n/12
 /4e é \C70/rm/m/n/12/81 Í \C70/rm/m/n/12/71 6 \C70/rm/m/n/12/65 p|\C70/rm/m/n/1
@@ -1051,25 +1336,58 @@ Overfull \hbox (0.69945pt too wide) in paragraph at lines 29--30
 
 
 
-[2]
-Underfull \vbox (badness 1466) has occurred while \output is active []
-
-
-
 [3]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-3.
- (d:/Program Files/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
+<liberty_leading_people.png, id=491, 532.389pt x 419.76825pt>
+File: liberty_leading_people.png Graphic file (type png)
+<use liberty_leading_people.png>
+Package pdftex.def Info: liberty_leading_people.png  used on input line 44.
+(pdftex.def)             Requested size: 312.00119pt x 246.00218pt.
+
+Underfull \vbox (badness 8000) has occurred while \output is active []
+
+
+
+[4 <./liberty_leading_people.png>]
+
+[5]
+
+[6]
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.123 \subsection
+                 {Êï∞Â≠¶ËØ≠Ë®Ä}
+pdfTeX warning (ext4): destination with the same identifier (name{table.1.2}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.123 \subsection
+                 {Êï∞Â≠¶ËØ≠Ë®Ä}]
+Package mdframed Info: mdframed works in twoside mode on input line 139.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 139.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+45.
+
+(d:/Program Files/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 
 
-[4]
+[8]
+Package mdframed Info: Not enough space on this page on input line 146.
 
-[5]
-Overfull \hbox (8.02461pt too wide) in paragraph at lines 81--82
+
+[9]
+
+[10]
+Overfull \hbox (8.02461pt too wide) in paragraph at lines 175--176
  [][] \C70/rm/m/n/12/90 £\OT1/cmr/m/n/12 2\C70/rm/m/n/12/52 0 \C70/rm/m/n/12/5e
  ï \C70/rm/m/n/12/89 Å \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/4f U \C70/rm/m/n/12/4
 e Œ 
@@ -1084,12 +1402,10 @@ MS/cmsy/m/n/12 ;$\C70/rm/m/n/12/66 /
 
 
 
-[6]
+[11]
 
-[7]
-
-[8]
-Overfull \hbox (1.14949pt too wide) in paragraph at lines 167--168
+[12]
+Overfull \hbox (1.14949pt too wide) in paragraph at lines 257--258
  [][] \C70/rm/m/n/12/8b ˚ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/5b f \C70/rm/m/n/1
 2/8b Ì \C70/rm/m/n/12/8a ^^@|\C70/rm/m/n/12/ff ^^Z| \C70/rm/m/n/12/8f Ÿ \C70/rm
 /m/n/12/53 Â \C70/rm/m/n/12/65 p \C70/rm/m/n/12/5b f \C70/rm/m/n/12/8b Ì \C70/r
@@ -1104,8 +1420,10 @@ n/12/62 ^^V|\C70/rm/m/n/12/20 ^^]||\C70/rm/m/n/12/30 ^^A||\C70/rm/m/n/12/20 ^^\
 
 
 
-[9]
-Overfull \hbox (3.59993pt too wide) in paragraph at lines 203--204
+[13]
+
+[14]
+Overfull \hbox (3.59993pt too wide) in paragraph at lines 293--294
 \OMS/cmsy/m/n/12 f$;$g|\C70/rm/m/n/12/ff ^^L| \OMS/cmsy/m/n/12 ff$;$|\C70/rm/m/
 n/12/30 ^^A| \OMS/cmsy/m/n/12 f$;$ggg\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C
 70/rm/m/n/12/7d   \C70/rm/m/n/12/66 /\OMS/cmsy/m/n/12 f$;$|\C70/rm/m/n/12/30 ^^
@@ -1117,9 +1435,7 @@ m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/66 /\OMS/cmsy/m/n/12 f$;$|\C70
  []
 
 
-
-[10]
-Overfull \hbox (5.61005pt too wide) in paragraph at lines 206--208
+Overfull \hbox (5.61005pt too wide) in paragraph at lines 296--298
  [][] \C70/rm/m/n/12/4e Œ 
  \C70/rm/m/n/12/97 b \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/90   \C70/rm/m/n/12/81 
 Í \C70/rm/m/n/12/71 6 \C70/rm/m/n/12/65 p|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12
@@ -1131,56 +1447,725 @@ m/m/n/12/67 Ñ \C70/rm/m/n/12/90   \C70/rm/m/n/12/4e  ^^@ * \C70/rm/m/n/12/81 Í
 /12 =
  []
 
+
+
+[15]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 299.
+
+Overfull \hbox (5.74986pt too wide) in paragraph at lines 309--310
+ [][] $[]$\C70/rm/m/n/12/4e ‘ \C70/rm/m/n/12/7e ∆ \C70/rm/m/n/12/89 ¬
+ []
 
 
-[11])
 
-[12]
+[16]
+
+[17]
+
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.7}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.381 \end{Proof}
+                 ]
+
+[19]
+
+[20]
+Overfull \hbox (2.244pt too wide) in paragraph at lines 433--434
+[]\C70/rm/bx/n/12/6b œ \C70/rm/bx/n/12/4e * \C70/rm/bx/n/12/81 Í \C70/rm/bx/n/1
+2/71 6 \C70/rm/bx/n/12/65 p\OT1/cmr/bx/n/12 x|\C70/rm/bx/n/12/ff ^^L| \C70/rm/b
+x/n/12/67 	 \C70/rm/bx/n/12/55 / \C70/rm/bx/n/12/4e ^^@ \C70/rm/bx/n/12/76 Ñ\OT
+1/cmr/bx/n/12 S(x)|\C70/rm/bx/n/12/ff ^^L| \OT1/cmr/bx/n/12 S(x)\C70/rm/bx/n/12
+/4e _ \C70/rm/bx/n/12/66 / \C70/rm/bx/n/12/81 Í \C70/rm/bx/n/12/71 6 \C70/rm/bx
+/n/12/65 p\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 9\OT1/cmr/m/n/12 !\OML/cmm/m/it/12
+ S\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 x \OMS/
+cmsy/m/n/12 2 \U/msb/m/n/12 N \OMS/cmsy/m/n/12 ^ \OML/cmm/m/it/12 S\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2
+ []
+
+
+
+[21]
+
+[22]
+
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+[27
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.51
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.648 	\end{align}
+                  ]
+
+[28]
+
+[29{d:/Program Files/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
+ts1.enc}]
+
+[30]
+Overfull \hbox (13.76868pt too wide) in paragraph at lines 760--761
+[]\C70/rm/bx/n/12/8b ¡ \C70/rm/bx/n/12/66 ^^N\OT1/cmr/bx/n/12 . []\C70/rm/m/it/
+12/53 Í \C70/rm/m/it/12/89 Å \C70/rm/m/it/12/4e $ * \C70/rm/m/it/12/96 ∆ \C70/r
+m/m/it/12/54 ^^H \C70/rm/m/it/12/51 C \C70/rm/m/it/12/7d   \C70/rm/m/it/12/80 ˝
+ \C70/rm/m/it/12/4e ^^@ ^^@ \C70/rm/m/it/12/5b ˘ \C70/rm/m/it/12/5e î|\C70/rm/m
+/it/12/ff ^^L| \C70/rm/m/it/12/90 £ \C70/rm/m/it/12/4e H \C70/rm/m/it/12/5b É \
+C70/rm/m/it/12/4e Ï \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/57 ˙ \C70/rm/m/it/12/6
+5 p \C70/rm/m/it/12/66 / \C70/rm/m/it/12/76 ¯ \C70/rm/m/it/12/7b I \C70/rm/m/it
+/12/76 Ñ|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12/68 9 \C70/rm/m/it/12/63 n[]|\C
+70/rm/m/it/12/ff ^^L|
+ []
+
+
+
+[31]
+Overfull \hbox (10.0363pt too wide) in paragraph at lines 793--794
+[]\C70/rm/bx/n/12/8b ¡ \C70/rm/bx/n/12/66 ^^N\OT1/cmr/bx/n/12 . []\C70/rm/m/it/
+12/67 Ñ \C70/rm/m/it/12/90   \C70/rm/m/it/12/96 ∆ \C70/rm/m/it/12/54 ^^H \OT1/c
+mr/m/it/12 S=$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \U/msb/m/
+n/12 N\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/1
+2 M\OMS/cmsy/m/n/12 g$|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12/75 1 \C70/rm/m/i
+t/12/81 Í \C70/rm/m/it/12/71 6 \C70/rm/m/it/12/65 p \C70/rm/m/it/12/76 Ñ \C70/r
+m/m/it/12/5b ö \C70/rm/m/it/12/4e I \C70/rm/m/it/12/53 Ô \C70/rm/m/it/12/77 Â|\
+C70/rm/m/it/12/ff ^^Z| \OT1/cmr/m/it/12 S=$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 0\
+OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2 [] \OML
+/cmm/m/it/12 M\OMS/cmsy/m/n/12 g$|\C70/rm/m/it/12/ff ^^L|
+ []
+
+
+
+[32])
+
+[33]
 \openout2 = `./TeX_files/chapter02.aux'.
 
  (./TeX_files/chapter02.tex
-Chapter 2.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 2.
-
-)
-
-[13
+[34
 
 
 
 
 ]
+Chapter 2.
 
-[14
+Underfull \vbox (badness 5077) has occurred while \output is active []
+
+
+
+[35]
+
+[36]
+Overfull \hbox (0.60037pt too wide) detected at line 47
+[]
+ []
+
+
+
+[37]
+Underfull \vbox (badness 2635) has occurred while \output is active []
+
+
+
+[38]
+Overfull \hbox (40.44269pt too wide) in paragraph at lines 72--74
+[]\C70/rm/m/it/12/6e · \C70/rm/m/it/12/8d ≥ \C70/rm/m/it/12/65 t p \C70/rm/m/it
+/12/5b ö \C70/rm/m/it/12/4e I[]|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/8f ÿ \C
+70/rm/m/it/12/97 ^^@ \C70/rm/m/it/12/89 Å \C70/rm/m/it/12/8b ¡ \C70/rm/m/it/12/
+66 ^^N / \C70/rm/m/it/12/54 & \C70/rm/m/it/12/6e · \C70/rm/m/it/12/8d ≥[]|\C70/
+rm/m/it/12/30 ^^B| \C70/rm/m/it/12/68 9 \C70/rm/m/it/12/63 n \C70/rm/m/it/12/65
+ t p \C70/rm/m/it/12/5b ö \C70/rm/m/it/12/4e I[]|\C70/rm/m/it/12/ff ^^Z|
+ []
+
+<matrix_transformation_1.png, id=1837, 1498.398pt x 1542.36224pt>
+File: matrix_transformation_1.png Graphic file (type png)
+<use matrix_transformation_1.png>
+Package pdftex.def Info: matrix_transformation_1.png  used on input line 106.
+(pdftex.def)             Requested size: 234.00238pt x 240.8523pt.
+
+
+[39]
+
+[40 <./matrix_transformation_1.png>]
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+
+
+[41]
+
+[42]
+
+[43]
+
+[44]
+
+[45]
+
+[46]
+
+[47]
+Overfull \hbox (13.76868pt too wide) in paragraph at lines 454--455
+[]\C70/rm/bx/n/12/8b ¡ \C70/rm/bx/n/12/66 ^^N\OT1/cmr/bx/n/12 . []\C70/rm/m/it/
+12/53 Í \C70/rm/m/it/12/89 Å \C70/rm/m/it/12/4e $ * \C70/rm/m/it/12/96 ∆ \C70/r
+m/m/it/12/54 ^^H \C70/rm/m/it/12/51 C \C70/rm/m/it/12/7d   \C70/rm/m/it/12/80 ˝
+ \C70/rm/m/it/12/4e ^^@ ^^@ \C70/rm/m/it/12/5b ˘ \C70/rm/m/it/12/5e î|\C70/rm/m
+/it/12/ff ^^L| \C70/rm/m/it/12/90 £ \C70/rm/m/it/12/4e H \C70/rm/m/it/12/5b É \
+C70/rm/m/it/12/4e Ï \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/57 ˙ \C70/rm/m/it/12/6
+5 p \C70/rm/m/it/12/66 / \C70/rm/m/it/12/76 ¯ \C70/rm/m/it/12/7b I \C70/rm/m/it
+/12/76 Ñ|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12/68 9 \C70/rm/m/it/12/63 n[]|\C
+70/rm/m/it/12/ff ^^L|
+ []
+
+
+
+[48]
+Overfull \hbox (8.53072pt too wide) in paragraph at lines 509--510
+[]\C70/rm/m/it/12/53 U \C70/rm/m/it/12/5c ^^D\OT1/cmr/m/it/12 : \C70/rm/m/it/12
+/82 Â$\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n
+/12 )\OML/cmm/m/it/12 ; n[]\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/54 å$\OML/cmm/m/it
+/12 f\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/
+12 ; n[]\OT1/cmr/m/n/12 )$|\C70/rm/m/it/12/ff ^^L| $\OML/cmm/m/it/12 n[] \OT1/c
+mr/m/n/12 = \OML/cmm/m/it/12 n[]$|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12/68 9 
+\C70/rm/m/it/12/63 n[]|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/53 Ô \C70/rm/m/i
+t/12/5f ó$\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (10.06392pt too wide) in paragraph at lines 510--511
+[]\C70/rm/m/it/12/6e · \C70/rm/m/it/12/5c ^^D|\C70/rm/m/it/12/ff ^^Z| [] \OT1/c
+mr/m/it/12 n $\OMS/cmsy/m/n/12 2$ $\U/msb/m/n/12 N$|\C70/rm/m/it/12/ff ^^L| \C7
+0/rm/m/it/12/4e ^^T \C70/rm/m/it/12/68 9 \C70/rm/m/it/12/63 n[]\OT1/cmr/m/it/12
+ n\C70/rm/m/it/12/90 ˝ \C70/rm/m/it/12/80 ˝ \C70/rm/m/it/12/62 ~ \C70/rm/m/it/1
+2/52 0 \C70/rm/m/it/12/54 ^^H \C70/rm/m/it/12/90 ^^B \C70/rm/m/it/12/76 Ñ\OT1/c
+mr/m/it/12 x|\C70/rm/m/it/12/ff ^^L| \OT1/cmr/m/it/12 y\C70/rm/m/it/12/6e · \C7
+0/rm/m/it/12/8d ≥ \C70/rm/m/it/12/51 ˝ \C70/rm/m/it/12/65 p[]|\C70/rm/m/it/12/3
+0 ^^B|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+
+[49
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.82
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.511 \end{itemize}
+                   	
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.82
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.511 \end{itemize}
+                   	
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.82
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.511 \end{itemize}
+                   	]
+Overfull \hbox (12.60037pt too wide) detected at line 524
+[]
+ []
+
+
+
+[50]
+
+[51]
+
+[52]
+
+[53
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.636 \paragraph
+                {}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.636 \paragraph
+                {}]
+
+[54]
+<unit_line_divisions.png, id=2631, 995.3988pt x 353.8821pt>
+File: unit_line_divisions.png Graphic file (type png)
+<use unit_line_divisions.png>
+Package pdftex.def Info: unit_line_divisions.png  used on input line 687.
+(pdftex.def)             Requested size: 390.0pt x 138.65062pt.
+
+Overfull \hbox (11.74988pt too wide) in paragraph at lines 687--688
+ [][] [] 
+ []
+
+
+
+[55]
+
+[56 <./unit_line_divisions.png>]
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+
+
+[58
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10
+4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.766 	\]
+         ]
+
+[59]
+
+[60]
+Missing character: There is no å in font cmr12!
+
+
+[61]
+
+[62]
+
+[63]
+Underfull \vbox (badness 2828) has occurred while \output is active []
+
+
+
+[64])
+
+[65]
+
+[66]
+\openout2 = `./TeX_files/chapter03.aux'.
+
+ (./TeX_files/chapter03.tex
+Chapter 3.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
+
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+
+
+[67
+
+
+
+
+]
+Overfull \hbox (5.75108pt too wide) in paragraph at lines 29--39
+ [][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[68]
+
+[69]
+Underfull \vbox (badness 7963) has occurred while \output is active []
+
+
+
+[70]
+
+[71]
+
+[72]
+
+[73]
+Overfull \hbox (2.21312pt too wide) in paragraph at lines 157--158
+ [][] \C70/rm/m/n/12/52 ^^F r \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/66 / \C70/rm/m
+/n/12/6b ‘ \C70/rm/m/n/12/4f ã \C70/rm/m/n/12/65 p|\C70/rm/m/n/12/ff ^^L||\C70/
+rm/m/it/12/20 ^^\|\C70/rm/m/it/12/96 ∆ \C70/rm/m/it/12/54 ^^H\OT1/cmr/m/it/12 A
+\C70/rm/bx/it/12/67 	[][] ^^@ \C70/rm/m/it/12/59 ' \C70/rm/m/it/12/6b ‘ \C70/rm
+/m/it/12/4f ã \C70/rm/m/it/12/65 p|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/96 ∆
+ \C70/rm/m/it/12/54 ^^H\OT1/cmr/m/it/12 B\C70/rm/bx/it/12/6c °[][] \C70/rm/bx/i
+t/12/67 	[][] ^^@ \C70/rm/m/it/12/5c ^^O \C70/rm/m/it/12/6b ‘ \C70/rm/m/it/12/4
+f ã \C70/rm/m/it/12/65 p|\C70/rm/m/it/12/20 ^^]| \C70/rm/m/n/12/54 å |\C70/rm/m
+/it/12/20 ^^\|\C70/rm/m/it/12/96 ∆
+ []
+
+
+
+[74]
+
+[75]
+
+[76]
+Overfull \hbox (38.54752pt too wide) detected at line 229
+\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A\OT1/cmr/m/n/1
+2 0[]  \OMS/cmsy/m/n/12 ([])  \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \OML/cmm/m/
+it/12 A\OT1/cmr/m/n/12 1[])) = \OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 x\OT1/cmr/m/n
+/12 ((\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A\OT1/cmr/m/n/12 0
+[] \OMS/cmsy/m/n/12 ^ \OML/cmm/m/it/12 x [] A\OT1/cmr/m/n/12 1[]) \OMS/cmsy/m/n
+/12 _ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x [] A\OT1/cmr/m/n/12 0[] \OMS/cmsy/m/n
+/12 ^ \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A\OT1/cmr/m/n/12 1
+[]))
+ []
+
+
+Overfull \hbox (35.2977pt too wide) in paragraph at lines 239--242
+\C70/rm/m/it/12/51 v \C70/rm/bx/it/12/4e - K ^^@ : \C70/rm/m/it/12/77 ^^_ \C70/
+rm/m/it/12/5c 1 \C70/rm/m/it/12/53 Ô \C70/rm/bx/it/12/4e Â|\C70/rm/m/it/12/30 ^
+^B| \C70/rm/m/it/12/59 Ç \C70/rm/bx/it/12/67 ú[]\OT1/cmr/m/it/12 3.24[]\C70/rm/
+bx/it/12/4e : \C70/rm/m/it/12/77 ^^_|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/52
+ ^^Y$\OML/cmm/m/it/12 a[] < a[]$|\C70/rm/m/it/12/ff ^^[| \C70/rm/m/it/12/59 Ç \
+C70/rm/bx/it/12/67 ú[]\OT1/cmr/m/it/12 3.25[]\C70/rm/bx/it/12/4e : \C70/rm/m/it
+/12/77 ^^_|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/52 ^^Y[]|\C70/rm/m/it/12/30 
+^^B|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+
+
+[77]
+Overfull \hbox (14.47159pt too wide) in paragraph at lines 247--248
+\C70/rm/m/it/12/61 ^^O \C70/rm/bx/it/12/4e ^^@ *\OT1/cmr/m/it/12 x\C70/rm/m/it/
+12/57 ($\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 0[]$|\C70/rm/m/it/12/ff ^^L| \C70/rm/
+bx/it/12/4e _ \C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 1[]$|\C70/
+rm/m/it/12/ff ^^[| \C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 1[]$|
+\C70/rm/m/it/12/ff ^^L| \C70/rm/bx/it/12/4e _ \C70/rm/m/it/12/57 ($\OML/cmm/m/i
+t/12 A\OT1/cmr/m/n/12 0[]$|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12/80 ^^L$\OML/
+cmm/m/it/12 a[] < a[]$\C70/rm/bx/it/12/5b X \C70/rm/m/it/12/57 (\OT1/cmr/m/it/1
+2 x\C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 0[]$|\C70/rm/m/it/12/
+ff ^^L|
+ []
+
+
+
+[78]
+Overfull \hbox (0.61493pt too wide) in paragraph at lines 314--317
+\C70/rm/bx/it/12/8b ∫[][][]\OT1/cmr/bx/it/12 3.0.1[]\C70/rm/m/it/12/62 4 \C70/r
+m/m/it/12/5f ∑ \C70/rm/m/it/12/91 — \C70/rm/m/it/12/6b ‘ \C70/rm/m/it/12/4f ã \
+C70/rm/m/it/12/65 p \C70/rm/m/it/12/52 ^^F r \C70/rm/m/it/12/55 / \C70/rm/bx/it
+/12/4e ^^@ \C70/rm/m/it/12/57 0 \C70/rm/bx/it/12/78 n \C70/rm/bx/it/12/5b ö \C7
+0/rm/bx/it/12/4e Ü ^^@ * \C70/rm/bx/it/12/5b û \C70/rm/m/it/12/65 p$\OML/cmm/m/
+it/12 ^^[$|\C70/rm/m/it/12/ff ^^[| \C70/rm/bx/it/12/67 ^^@ \C70/rm/m/it/12/54 ^
+^N \C70/rm/m/it/12/68 9 \C70/rm/bx/it/12/63 n ®[][] \C70/rm/bx/it/12/8b ∫[][][]
+\OT1/cmr/bx/it/12 3.0.2[]\C70/rm/bx/it/12/5b û
+ []
+
+
+
+[79]
+Overfull \hbox (9.33228pt too wide) in paragraph at lines 325--326
+[]\C70/rm/m/it/12/56 ‡ \C70/rm/bx/it/12/4e : ˚ \C70/rm/m/it/12/61 ^^O$\OML/cmm/
+m/it/12 A[]$\C70/rm/bx/it/12/4e - \C70/rm/m/it/12/76 Ñ \C70/rm/bx/it/12/6b ‘ \C
+70/rm/bx/it/12/4f ã \C70/rm/bx/it/12/65 p\OT1/cmr/m/it/12 b|\C70/rm/m/it/12/ff 
+^^L| \C70/rm/bx/it/12/4e ^^M \C70/rm/bx/it/12/5c ^ \C70/rm/bx/it/12/4e é ˚ \C70
+/rm/bx/it/12/4f U$\OML/cmm/m/it/12 A[]$|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12
+/7b I \C70/rm/bx/it/12/4e ˜ \C70/rm/m/it/12/57 0\OT1/cmr/m/it/12 b\C70/rm/m/it/
+12/90 ˝ \C70/rm/bx/it/12/4e ^^M \C70/rm/bx/it/12/5c ^ \C70/rm/bx/it/12/4e é \C7
+0/rm/m/it/12/96 ∆ \C70/rm/m/it/12/54 ^^H\OT1/cmr/m/it/12 S\C70/rm/bx/it/12/4e -
+
+ []
+
+
+Overfull \hbox (2.37471pt too wide) in paragraph at lines 325--326
+\OT1/cmr/m/it/12 b\C70/rm/bx/it/12/4e ^^N\OT1/cmr/m/it/12 S\C70/rm/bx/it/12/4e 
+- \C70/rm/m/it/12/76 Ñ \C70/rm/bx/it/12/5b û \C70/rm/bx/it/12/65 p \C70/rm/m/it
+/12/76 Ñ \C70/rm/m/it/12/51 s \C70/rm/m/it/12/7c ˚ \C70/rm/m/it/12/5f ≈ \C70/rm
+/m/it/12/71 6 \C70/rm/bx/it/12/4e ^^M \C70/rm/m/it/12/66 / \C70/rm/bx/it/12/5c 
+^^O \C70/rm/bx/it/12/4e é \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/51 s \C70/rm/m/i
+t/12/7c ˚|\C70/rm/m/it/12/30 ^^B| \C70/rm/m/it/12/51 ç \C70/rm/m/it/12/68 9 \C7
+0/rm/bx/it/12/63 n \C70/rm/bx/it/12/5b û \C70/rm/bx/it/12/65 p \C70/rm/m/it/12/
+76 Ñ \C70/rm/m/it/12/5e è \C70/rm/m/it/12/51 s \C70/rm/m/it/12/7c ˚|\C70/rm/m/i
+t/12/ff ^^Z| \OT1/cmr/m/it/12 b\C70/rm/m/it/12/53 Í
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--337
+
+ []
+
+
+
+[80]
+
+[81])
+
+[82]
+\openout2 = `./TeX_files/chapter04.aux'.
+
+ (./TeX_files/chapter04.tex
+Chapter 4.
+<splitcircle.png, id=3145, 715.2321pt x 714.2685pt>
+File: splitcircle.png Graphic file (type png)
+<use splitcircle.png>
+Package pdftex.def Info: splitcircle.png  used on input line 4.
+(pdftex.def)             Requested size: 234.00238pt x 233.68214pt.
+
+
+[83
+
+
+
+
+ <./splitcircle.png>]
+<pi_equal_4.png, id=3155, 351.3125pt x 495.8525pt>
+File: pi_equal_4.png Graphic file (type png)
+<use pi_equal_4.png>
+Package pdftex.def Info: pi_equal_4.png  used on input line 6.
+(pdftex.def)             Requested size: 234.00238pt x 330.2901pt.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 15.
+
+
+
+[84 <./pi_equal_4.png>]
+
+[85]
+
+[86]
+
+[87]
+Overfull \hbox (10.04253pt too wide) in paragraph at lines 119--120
+[]\C70/rm/bx/n/12/63 ® \C70/rm/bx/n/12/8b ∫ \OT1/cmr/bx/n/12 4.0.5. []\C70/rm/b
+x/it/12/4e ˚ \C70/rm/m/it/12/61 ^^O \C70/rm/m/it/12/76 Ñ \C70/rm/bx/it/12/4e $ 
+* \C70/rm/bx/it/12/5b û \C70/rm/bx/it/12/65 p$\OML/cmm/m/it/12 $|\C70/rm/m/it/
+12/30 ^^A| $\OML/cmm/m/it/12 ^^L$|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/59 Ç 
+\C70/rm/bx/it/12/67 ú \C70/rm/bx/it/12/4e ˚ \C70/rm/m/it/12/61 ^^O \C70/rm/m/it
+/12/76 Ñ \C70/rm/bx/it/12/4e ^^@ * \C70/rm/m/it/12/59 ' \C70/rm/bx/it/12/4e é\O
+T1/cmr/m/it/12 0\C70/rm/m/it/12/76 Ñ \C70/rm/bx/it/12/5b û \C70/rm/bx/it/12/65 
+p$\OML/cmm/m/it/12 e$|\C70/rm/m/it/12/ff ^^L| \C70/rm/bx/it/12/65 p$\OML/cmm/m/
+it/12 $\C70/rm/m/it/12/54 å$\OML/cmm/m/it/12 ^^L$\C70/rm/m/it/12/90 ˝
+ []
+
+
+Overfull \hbox (15.73238pt too wide) in paragraph at lines 133--134
+\C70/rm/bx/it/12/8b æ$\OML/cmm/m/it/12 $\C70/rm/bx/it/12/4e ^^M \C70/rm/m/it/1
+2/7b I \C70/rm/bx/it/12/4e é$\OML/cmm/m/it/12 ^^L$|\C70/rm/m/it/12/30 ^^B| \C70
+/rm/m/it/12/68 9 \C70/rm/bx/it/12/63 n$\OML/cmm/m/it/12 $\C70/rm/bx/it/12/4e ^
+^M \C70/rm/m/it/12/7b I \C70/rm/bx/it/12/4e é$\OML/cmm/m/it/12 ^^L$|\C70/rm/m/i
+t/12/ff ^^L| \C70/rm/m/it/12/90 £ \C70/rm/bx/it/12/4e H \C70/rm/m/it/12/53 Ô \C
+70/rm/bx/it/12/4e Â \C70/rm/bx/it/12/67 	$\OML/cmm/m/it/12 $ $<$ $^^L$|\C70/rm
+/m/it/12/30 ^^B| \C70/rm/m/it/12/68 9 \C70/rm/bx/it/12/63 n \C70/rm/bx/it/12/5b
+ û \C70/rm/bx/it/12/65 p \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/7a   \C70/rm/bx/i
+t/12/5b ∆ \C70/rm/m/it/12/60 '|\C70/rm/m/it/12/ff ^^L| $\OML/cmm/m/it/12 $\C70
+/rm/m/it/12/54 å$\OML/cmm/m/it/12 ^^L$\C70/rm/bx/it/12/4e K
+ []
+
+<resplit2.png, id=3218, 860.013pt x 426.393pt>
+File: resplit2.png Graphic file (type png)
+<use resplit2.png>
+Package pdftex.def Info: resplit2.png  used on input line 146.
+(pdftex.def)             Requested size: 390.0pt x 193.35849pt.
+
+Overfull \hbox (12.00012pt too wide) in paragraph at lines 146--147
+ [][] [] 
+ []
+
+
+
+[88]
+
+[89 <./resplit2.png>]
+
+[90]
+Overfull \hbox (6.62685pt too wide) in paragraph at lines 230--231
+ [][] \C70/rm/m/n/12/56 ﬁ \C70/rm/m/n/12/98 ~\OT1/cmr/m/n/12 0.99$[]$\C70/rm/m/
+n/12/7b I \C70/rm/m/n/12/4e é\OT1/cmr/m/n/12 1|\C70/rm/m/n/12/30 ^^B| \OT1/cmr/
+m/n/12 0.99$[]$\C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/75 ( \C70
+/rm/m/n/12/65 ‡ \C70/rm/m/n/12/96 P \C70/rm/m/n/12/5f ™ \C70/rm/m/n/12/73 Ø \C7
+0/rm/m/n/12/5c ^^O \C70/rm/m/n/12/65 p \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5f b 
+^^O \C70/rm/m/n/12/88 h \C70/rm/m/n/12/79 :|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/
+12/52 M \C70/rm/m/n/12/97 b \C70/rm/m/n/12/8f ÿ \C70/rm/m/n/12/63 – \C70/rm/m/n
+/12/52 0$[]$\C70/rm/m/n/12/53 Ô
+ []
+
+
+Overfull \hbox (24.23839pt too wide) in paragraph at lines 244--245
+\C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/5e ^^L \C70/rm/m/n/12/
+67 ^^[ \C70/rm/m/n/12/62 ä \C70/rm/m/n/12/5e è \C70/rm/m/n/12/52 ^^W \C70/rm/m/
+n/12/5f S \C70/rm/m/n/12/50 Z \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/65 t \C70/
+rm/m/n/12/4f S \C70/rm/m/n/12/77  \C70/rm/m/n/12/5f Ö|\C70/rm/m/n/12/ff ^^L| \
+C70/rm/m/n/12/4f ã \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/5e ^^L \C70/rm/m/n/12/67 
+^^[ \C70/rm/bx/n/12/5e è \C70/rm/bx/n/12/52 ^^W[]\OT1/cmr/bx/n/12 4.20[]\C70/rm
+/m/n/12/88 h \C70/rm/m/n/12/79 : \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/66 /\OT1/cm
+r/m/n/12 1|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/78 n \C70/rm/m/n/12/5b û\OT1/c
+mr/m/n/12 0.99$[]$\C70/rm/m/n/12/7b I
+ []
+
+
+Overfull \hbox (4.80989pt too wide) in paragraph at lines 244--245
+\C70/rm/m/n/12/4f ^^? \C70/rm/m/n/12/75 ($[] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 
+(\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/88 h \C70/rm/m/n/12/79 :$\O
+MS/cmsy/m/n/12 f\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (1)\OML/cmm/m/it/12 ; f\OT1/c
+mr/m/n/12 (2)\OML/cmm/m/it/12 ; f\OT1/cmr/m/n/12 (3) [] \OMS/cmsy/m/n/12 g[]$|\
+C70/rm/m/n/12/ff ^^L| $[]$\C70/rm/m/n/12/8f Ÿ \C70/rm/m/n/12/4e * \C70/rm/m/n/1
+2/8f – \C70/rm/m/n/12/7b ó & \C70/rm/m/n/12/53 ˜ \C70/rm/m/n/12/8b ˚ \C70/rm/m/
+n/12/4f \ |\C70/rm/m/n/12/20 ^^\|\C70/rm/m/n/12/67 Å \C70/rm/m/n/12/96 P|\C70/r
+m/m/n/12/20 ^^]||\C70/rm/m/n/12/30 ^^B|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+
+[91]
+
+[92]
+
+[93]
+
+[94]
+Overfull \hbox (5.79955pt too wide) in paragraph at lines 330--331
+[]\C70/rm/bx/n/12/5b ö \C70/rm/bx/n/12/4e I \OT1/cmr/bx/n/12 60. []\C70/rm/m/it
+/12/82 Â \C70/rm/bx/it/12/5b ˘ \C70/rm/bx/it/12/4e ˚ \C70/rm/m/it/12/61 ^^O \C7
+0/rm/bx/it/12/7e Ÿ \C70/rm/bx/it/12/5b ö \C70/rm/m/it/12/76 Ñ \C70/rm/bx/it/12/
+6b c \C70/rm/bx/it/12/5b û \C70/rm/bx/it/12/65 p$\OML/cmm/m/it/12 ^^O$|\C70/rm/
+m/it/12/ff ^^L| \C70/rm/m/it/12/60 ; \C70/rm/bx/it/12/5b X \C70/rm/m/it/12/57 (
+ \C70/rm/bx/it/12/4e ^^@ * \C70/rm/bx/it/12/6b c \C70/rm/bx/it/12/65 t p\OT1/cm
+r/m/it/12 N|\C70/rm/m/it/12/ff ^^L| \C70/rm/bx/it/12/4f ^^? \C70/rm/m/it/12/5f 
+ó S$\OML/cmm/m/it/12 i > N$\C70/rm/bx/it/12/4e ^^T$\OML/cmm/m/it/12 j >
+ []
+
+
+
+[95]
+Overfull \hbox (25.34822pt too wide) in paragraph at lines 344--345
+ [][] \C70/rm/m/it/12/68 9 \C70/rm/bx/it/12/63 n \C70/rm/bx/it/12/67 Å \C70/rm/
+bx/it/12/96 P \C70/rm/bx/it/12/5b ö \C70/rm/bx/it/12/4e I|\C70/rm/m/it/12/ff ^^
+Z| \C70/rm/m/it/12/82 Â \C70/rm/bx/it/12/5b ˘ \C70/rm/bx/it/12/4e ˚ \C70/rm/m/i
+t/12/61 ^^O \C70/rm/bx/it/12/7e Ÿ \C70/rm/bx/it/12/5b ö \C70/rm/m/it/12/76 Ñ \C
+70/rm/bx/it/12/6b c \C70/rm/bx/it/12/5b û \C70/rm/bx/it/12/65 p$\OML/cmm/m/it/1
+2 ^^O$|\C70/rm/m/it/12/ff ^^L| \C70/rm/m/it/12/90 ˝ \C70/rm/bx/it/12/5b X \C70/
+rm/m/it/12/57 ( \C70/rm/bx/it/12/4e ^^@ * \C70/rm/bx/it/12/6b c \C70/rm/bx/it/1
+2/65 t p\OT1/cmr/m/it/12 N|\C70/rm/m/it/12/ff ^^L| \C70/rm/bx/it/12/4f ^^? \C70
+/rm/m/it/12/5f ó[]\C70/rm/m/it/12/76 Ñ
+ []
+
+)
+
+[96]
+\openout2 = `./TeX_files/chapter05.aux'.
+
+ (./TeX_files/chapter05.tex
+Chapter 5.
+)
+
+[97
+
+
+
+
+]
+\openout2 = `./TeX_files/chapter06.aux'.
+
+ (./TeX_files/chapter06.tex
+
+[98
+
+
+
+
+]
+Chapter 6.
+)
+
+[99]
+
+[100
 
 
 
 ] (./main.aux (./TeX_files/chapter00.aux) (./TeX_files/chapter01.aux)
-(./TeX_files/chapter02.aux))
+(./TeX_files/chapter02.aux) (./TeX_files/chapter03.aux)
+(./TeX_files/chapter04.aux) (./TeX_files/chapter05.aux)
+(./TeX_files/chapter06.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D96F3B04E334E4DBB97BDC343BBDDF0F;1090.
+(rerunfilecheck)             Checksum: 5078339359F9A938026B4577635FE274;3403.
  ) 
 Here is how much of TeX's memory you used:
- 30743 strings out of 473190
- 599212 string characters out of 5712651
- 949579 words of memory out of 5000000
- 53032 multiletter control sequences out of 15000+600000
- 629182 words of font info for 291 fonts, out of 8000000 for 9000
+ 37025 strings out of 473190
+ 703511 string characters out of 5712651
+ 1210307 words of memory out of 5000000
+ 58137 multiletter control sequences out of 15000+600000
+ 706068 words of font info for 579 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,10n,106p,1226b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
-imkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows
-/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:
-/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
-.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Font
+ 102i,22n,106p,1538b,1236s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
+imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows
+/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
+/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei
+.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
+s/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Wind
+ows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf>
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
+sun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/F
+onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
+indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
+tf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/
+simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
+s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
+:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhe
+i.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
+ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Win
+dows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf
+><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/si
+mkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/
+Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/
+Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.
+ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts
+/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windo
+ws/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><
+c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sims
+un.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fo
+nts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wi
+ndows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.tt
+c><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
+imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
+/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:
+/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai
+.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Font
 s/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Wind
 ows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf>
 <c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/sim
@@ -1190,40 +2175,11 @@ indows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.t
 tf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/
 simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Window
 s/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c
-:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsu
-n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
-ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Win
-dows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf
-><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/si
-mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
-Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/
-Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
-ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts
-/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windo
-ws/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><
-c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simk
-ai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fo
-nts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Wi
-ndows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.tt
-f><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/s
-imkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows
-/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:
-/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai
-.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Font
-s/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Wind
-ows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf>
-<c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
-sun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/F
-onts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/W
-indows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.t
-tc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
-simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
-s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
-:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
-n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
-ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
-dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
-><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/si
+:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simka
+i.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fon
+ts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Win
+dows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf
+><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/si
 msun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/
 Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
 Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
@@ -1235,25 +2191,53 @@ un.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fo
 nts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wi
 ndows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.tt
 c><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
-imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows
+imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
 /Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:
 /Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei
-.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
+.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
 s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wind
 ows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>
-<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
-sun.ttc><c:/Windows/Fonts/simsun.ttc><d:/Program Files/texlive/2025/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/Program Files/texlive/2025/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Program Files/texlive/2025/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Files/texlive/20
-25/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program Files/texlive
-/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><d:/Program Files/te
-xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Fil
-es/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (20 pages, 905843 bytes).
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
+sun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/F
+onts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/W
+indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
+tf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
+simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
+s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
+:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
+n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
+ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
+dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf
+><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/si
+mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
+Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
+Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
+ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts
+/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windo
+ws/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><
+c:/Windows/Fonts/simsun.ttc><d:/Program Files/texlive/2025/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><d:/Program Files/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbxti10.pfb><d:/Program Files/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Program Files/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Program Files/texlive/202
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Program Files/texlive
+/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Files/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Program Files/
+texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program Fil
+es/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><d:/Progra
+m Files/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/P
+rogram Files/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
+pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+latxfont/line10.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb><d:/Program Files/texlive/2025/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (106 pages, 9518132 bytes).
 PDF statistics:
- 1073 PDF objects out of 1200 (max. 8388607)
- 768 compressed objects within 8 object streams
- 85 named destinations out of 1000 (max. 500000)
- 433 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4271 PDF objects out of 4296 (max. 8388607)
+ 2419 compressed objects within 25 object streams
+ 804 named destinations out of 1000 (max. 500000)
+ 648 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,2 +1,966 @@
-\chapter{整数}
-\subsection{构造负数}
+\chapter{可单位度量的数}
+\paragraph{}前两个小节(减法，负数)(除法，分数)非常无聊，它们的内容是利用自然数对，在加法规则和乘法规则下，构造负数和分数。其他的小节可以看看，或许有你喜欢的内容。
+\paragraph{}学习，思考过自然数后，可以开始总结“数”包含哪些关键的东西，怎样构造新的数。我们思考：自然数有哪些值得关注的东西。首先，自然数是一个\{0,1,2……\}的集合；其次，构造自然数的方法：0和后继；再次，然数有加法和乘法的运算法则；最后，自然数有等价和严格偏序。我们可以把以上的总结，组成一个集合，这个集合叫数集。一个数集包含最关键的是这些信息：数字的集合，关系，运算法则，特殊数字。自然数集可以表示为：\{$\mathbb{N}$,\{+$\times$\},\{=$<$$>$\},{0}\}。
+\paragraph{}我一直以为是减法创造了负数，除法创造了分数，根号创造了无理数。渐渐地我改变了这种观点，运算法则最多是启发，创造谈不上。新的数集的创造是观念、思想上的突破，全部的负数、分数能用减法、除法运算获得，但全部的实数确不能用某个运算获得。从离散的数到完备的实数，从能力有限的黎曼积分到完备的勒贝格积分，都是观念、思想上的突破。这样看，减法和负数的关系，除法和分数的关系更像是一种美丽的巧合。
+\section{负数}
+\subsection{定义整数}
+\paragraph{}既然学了等价类，那我们根据加法，数对的等价类集合来表示自然数:
+\begin{align*}
+	\mathbb{N} = \{&\{(0, 0)\}, \\
+	&\{(0, 1), (1, 0)\}, \\
+	&\{(0, 2), (1, 1), (2, 0)\} \\
+	&\{(0, 3), (1, 2), (2, 1), (3, 0)\} \\
+	& \cdots\}
+\end{align*}
+从上面的自然数枚举可以看出来，通过数对结合加法运算法则也是可以遍历自然数。例如第一行数是数对，和是0的等价类，第二行是数对，和是1的等价类，第三行是数对，和是2的等价类。我们希望这些数对能兼容其他的运算法则和运算规律。以3$\times$7为例：
+\begin{align*}
+	3 \times 7 &= 21 \\
+	(1 + 2) \times (3 + 4) &= 1 \times (3 + 4) + 2 \times (3 + 4) \\
+	                       &= 7 + (2 \times 3 + 2 \times 4) \\
+	                       &= 7 + 14 \\
+	                       &= 21
+\end{align*}
+很棒！数对保持了自然数的运算法则和运算规律，当然这是由加法和乘法的运算法则和规律保证的(\eqref{add:ex} $\sim$ \eqref{addmul:dis})。
+\paragraph{}继续观察，交换两个数对里元素的顺序，是否有新的发现，以7等价的数对为例：(5, 2)、(4, 3)。
+\begin{equation}
+	[(5, 2) \quad (4, 3)] \quad \underline{\text{交换数对后项}} \rightarrow \quad [(5, 3) \quad (4, 2)]
+\end{equation}
+\paragraph{}交换数对后项后的数对是(5, 3) (4, 2)。发现可以给数对里的数存在相同的大于关系，5 $>$ 3、4 $>$ 2。根据大于的定义：3 + 2 = 5, 2 + 2 = 5。好像有点意思了，总结是：两个等价数对(例如(5, 2)和(4, 3))后项交换，得到新数对(例如：(5, 3)和(4, 2))，新数对里的数的差额(例如(5, 3)的差额是2)是等价的。
+\paragraph{}现在我们测试这种差额是否在运算律中保持等价，我们用?表示这个差额关系，让?保持+的运算律。
+如果保持等价关系，那么：(5 ? 3) $\times$ (4 ? 2) = 2 $\times$ 2 = 4
+\begin{align*}
+	(5 \;?\; 3) \times (4 \;?\; 2) &= 5 \times (4 \;?\; 2) \;?\; 3 \times (4 \;?\; 2) \\
+						   &= (20 \;?\; 10) \;?\; (12 \;?\; 6) \\
+\end{align*}
+	\text{根据大于的定义：10 + \underline{10} = 20；6 + \underline{6} = 12；6 + \underline{4} = 10。 把差额代入。}
+\begin{align*}
+	(20 \;?\; 10) \;?\; (12 \;?\; 6) &= 10 \;?\; 6 \\
+	                                 &= 4
+\end{align*}
+\paragraph{}写到这里，我就在想，现在是不是给减法下定义的好时机。回顾加法的定义，加法的定义是\eqref{add:0}\eqref{add:1}。在那个加法定义中，定义了一个和我们一般使用的加法(a + b = c)不是那么一回事的一个规则。这是为什么呢？因为在那个时间点，我们手里只有公理体系中的几个公理，以及皮亚诺自然数公理，所以我们可以依赖的基础有限，我们不能凭空捏造或者不清不楚的把加法推到前台。我们希望把数学建立在坚实的基础上，夯实地一步一步搭建起来。加法正是在这种情况下定义的，\eqref{add:0}依赖外延公理，说明任何自然数加上0还是那个自然数；\eqref{add:1}依赖后继的运算，说明任何自然数加上一个数的后继是这两个自然数加后和的后继。而且这个加法定义能够完全的适用于所有的自然数。在我们经过证明加法和它的运算规则后，我们就可以合法的使用我们通常意义下的加法了。虽然利用严格偏序的定义，已经有朦胧的“差”的概念，但还是不能给他下定义，因为这个“差”在(0, 2)这样小于的数对情况下，会超出自然数的范围，那么这种“差”就还不能引入，因为“差”出现了异常。所以我认为应该先把整数定义起来，而依赖的知识，只能是自然数，数对，等价类，加法、乘法函数。
+\begin{definision}
+	当且仅当($\iff$)以下条件满足，定义整数$\mathbb{Z}$为，以数对(a, b)为元素的集合，a, b$\in$ $\mathbb{N}$。
+	\begin{align}
+		& \text{(a, b)$\in$[(c, d)]$_{a + d = b + c}$ \quad \quad (a, b, c, d $\in$ $\mathbb{N}$)}  \label{df:int1} \tag{df:int1}\\
+		& \text{存在整数等价类元素映射自然数的函数，输入[(a, 0)]等价类元素，输出a：} \notag \\
+		& \text{\quad \quad \quad \quad f((x, y), a) \quad \quad (x, y)$\in$[(a, 0)]$_{y+a=x}$ $\in \mathbb{Z}$} \label{df:int2} \tag{df:int2}
+	\end{align}
+\end{definision}
+\paragraph{}\eqref{df:int1}利用等价类，把一盘散沙一样的数对，组成有规则的结构。目的有两个，一是把二元的，两个维度的数对，根据等价规则，压缩成一个维度；二是可以利用(a, b)和(c, d)的等价关系(a + d = b + c)，可以推导出整数的加法和乘法。
+\paragraph{}\eqref{df:int2}把整数和自然数对应起来，确保整数能继承自然数。
+\paragraph{}例如以下是整数集合，其中的每一行是一个等价类。枚举的4行，刚好可以对应自然数0、1、2、3 ：
+\begin{align*}
+	\{&\cdots \\
+	&(0, 0), (1, 1), (2, 2)\cdots\,\\
+	&(1, 0), (2, 1), (3, 2)\dots\, \\
+	&(2, 0), (3, 1), (4, 2)\dots\, \\
+	&(3, 0), (4, 1), (5, 2)\dots\, \\
+	& \cdots\}
+\end{align*}
+\subsection{整数的加法和乘法}
+\begin{definision}
+	整数加法：(a, b) + (c, d) = (a + c, b + d)
+\end{definision}
+\begin{verification}
+	根据整数定义：存在($b_{1}, a_{1}$)和(a, b)等价；($d_{1}, c_{1}$)和(c, d)等价。
+	\begin{align}
+		& \text{$a + a_{1} = b + b_{1}$} & \text{根据\eqref{df:int1}} \label{it:add1} \\
+		& \text{$c + c_{1} = d + d_{1}$} & \text{根据\eqref{df:int1}} \label{it:add2} \\
+		& \text{$a + a_{1} + c + c_{1} = b + b_{1} + d + d_{1}$} & \text{根据\eqref{it:add1}\eqref{it:add2}\eqref{co:add5}} \label{it:add3} \\
+		& \text{$(a + c) + (a_{1} + c_{1}) = (b + d) + (b_{1} + d_{1})$} & \text{根据\eqref{it:add3}\eqref{add:asso}} \label{it:add4} \\
+		& \text{(a, b) + (c, d) = (a + c, b + d)} &\text{根据\eqref{df:int1}} \label{it:add5}
+	\end{align}
+	\eqref{it:add5}满足整数定义\eqref{df:int1}，还需要证明是否满足\eqref{df:int2}。根据整数定义\eqref{df:int2}：存在
+	\begin{align}
+		& \text{(e, 0)，(a, b) $\in$ [(e, 0)]$_{b + e = a}$} \label{it:add6} \\
+		& \text{(f, 0)，(c, d) $\in$ [(f, 0)]$_{d + f = c}$} \label{it:add7} \\
+		& \text{b + e + d + f = a + c + 0} &\text{根据\eqref{it:add6}\eqref{it:add7}} \label{it:add8} \\
+		& \text{(a + c, b + d) $\in$ [(e + f, 0)]$_{b + d + e + f = a + c}$} &\text{根据\eqref{it:add8}\eqref{df:int2}} \label{it:add9}
+	\end{align}
+\end{verification}
+\paragraph{}因为整数的加法是数对里的自然数相加，所以整数的加法维持了自然数加法交换律和结合律：
+\begin{align}
+	(a, b) + (c, d) &= (c, d) + (a, b) & \text{整数加法交换律} \label{intadd:ex}\\
+	((a, b) + (c, d)) + (e, f) &= (a, b) + ((c, d) + (e, f)) & \text{整数加法结合律}  \label{intadd:asso}
+\end{align}
+\begin{definision}
+	整数乘法：(a, b) $\times$ (c, d) = (a$\times$c + b$\times$d, a$\times$d + b$\times$c)
+\end{definision}
+\paragraph{}这个乘法太怪了，我想了两天，才有点着边际。这个乘法规则，明显是知道答案，然后推导过程得来的。要搞懂这个，牵扯到矩阵的乘法，以上整数乘法用矩阵表示是：
+$\begin{pmatrix}
+	a & b
+\end{pmatrix}
+\times
+\begin{pmatrix}
+	c & d \\ 
+	d & c 
+\end{pmatrix}
+$。
+\paragraph{}这里顺带介绍下矩阵，矩阵运算是解释图像移动、旋转、伸缩最直观的方式。例如：经过坐标轴
+$
+\begin{pmatrix}
+	5 & 2 \\ 
+	2 & 5 
+\end{pmatrix}
+$变换，原始坐标系中(2, 3)的点，被移动到了(16, 19)。如下图所示：
+\paragraph{}\includegraphics[width=0.6\textwidth]{matrix_transformation_1.png}
+\paragraph{}找到旧坐标系（蓝色）的(5, 2)的点，它是新坐标系的x轴的单位1；找到旧坐标系（蓝色）的(2，5)的点，它是新坐标系的y轴的单位1。
+$
+\begin{pmatrix}
+	2 & 3  
+\end{pmatrix}
+\times
+\begin{pmatrix}
+	5 & 2 \\ 
+	2 & 5 
+\end{pmatrix}
+$
+，首先把旧坐标系x轴的单位1的点，线性映射到
+$
+\begin{pmatrix}
+	5 \\ 
+	2  
+\end{pmatrix}
+$
+，把旧坐标系y轴的单位1的点，线性映射到
+$
+\begin{pmatrix}
+	2 \\ 
+	5  
+\end{pmatrix}
+$
+；然后在新坐标系中找
+$
+\begin{pmatrix}
+	2 & 3  
+\end{pmatrix}
+$
+的点，最后以旧坐标系的角度看是
+$
+\begin{pmatrix}
+	16 & 19  
+\end{pmatrix}
+$。
+\paragraph{}写成等式是：
+\begin{equation}
+	\begin{pmatrix}
+		2 & 3  
+	\end{pmatrix}
+	\times
+	\begin{pmatrix}
+		5 & 2 \\ 
+		2 & 5 
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		16 & 19
+	\end{pmatrix}
+\end{equation}
+\paragraph{}以图像变换的角度看待这个矩阵乘：每一列对应坐标系的一个轴，例如2、
+$
+\begin{pmatrix}
+	5\\
+	2 
+\end{pmatrix}
+$、16，把它们看做是x轴上的数字，第二列对应y轴。
+\paragraph{}计算矩阵乘法只要记住：第一个矩阵确保结果有几行，第二个矩阵确保结果有几列；第一个矩阵提供行号，第二个矩阵提供列号；行乘列相加是结果。以下面的计算为例：
+\begin{equation}
+	\begin{pmatrix}
+		8 & 7 & 6\\
+		5 & 4 & 3\\
+		2 & 1 & 0  
+	\end{pmatrix}
+	\times
+	\begin{pmatrix}
+		1 & 2\\
+		3 & 4\\
+		5 & 6\\
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		59 & 80\\
+		32 & 44\\
+		8  & 8
+	\end{pmatrix}
+\end{equation}
+\paragraph{}首先，第一个矩阵确保结果有几行，第二个矩阵确保结果有几列。第一个矩阵有3行，所以结果是3行；第二个矩阵有2列，所以结果是2列。查看结果确实是3行2列。
+\paragraph{}然后，第一个矩阵提供行号，第二个矩阵提供列号；行乘列相加是结果。我们看结果第一行第一列的数字是怎么算的：把第一个矩阵的第一行乘以矩阵的第一列，然后相加。	
+$
+\begin{pmatrix}
+	8 & 7 & 6  
+\end{pmatrix}_{1}
+\times
+\begin{pmatrix}
+	1\\
+	3\\
+	5\\
+\end{pmatrix}_{1}
+= 8 \times 1 + 7 \times 3 + 6 \times 5 = 59_{1,1}$。再看结果第三行第二列的结果，方法是从第一个矩阵中拿出第三行乘上第二个矩阵的第二列，然后相加。$
+\begin{pmatrix}
+	2 & 1 & 0  
+\end{pmatrix}_{3}
+\times
+\begin{pmatrix}
+	2\\
+	4\\
+	6\\
+\end{pmatrix}_{2}
+= 2 \times 2 + 1 \times 4 + 0 \times 6 = 8_{3,2}$。
+\paragraph{}回到整数的乘法：
+\begin{equation}
+	(a, b) \times (c, d) = (a \times c + b \times d, a \times d + b \times c)
+\end{equation}
+\paragraph{}以矩阵的角度看是：
+\begin{equation}
+	\begin{pmatrix}
+		a & b
+	\end{pmatrix}
+	\times
+	\begin{pmatrix}
+		c & d \\ 
+		d & c 
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		a \times c + b \times d & a \times d + b \times c
+	\end{pmatrix}
+\end{equation}
+\begin{verification}
+	根据整数定义：存在($b_{1}, a_{1}$)和(a, b)等价。
+	\begin{align}
+		& \text{$(b_{1}, a_{1})\times(c, d) = (a, b)\times(c, d)$} & \text{根据等价定义} \label{it:mul1} \\
+		& \text{(b$_{1}\times$c + a$_{1}\times$d, b$_{1}\times$d + a$_{1}\times$c) = } & \text{} \notag \\
+		& \text{(a$\times$c + b$\times$d, a$\times$d + b$\times$c)}  &\text{根据\eqref{it:mul1}和整数乘法} \label{it:mul2} \\
+		& \text{b$_{1}\times$c + a$_{1}\times$d + a$\times$d + b$\times$c =} & \text{} \notag \\
+		& \text{b$_{1}\times$d +a$_{1}\times$c + a$\times$c + b$\times$d} & \text{根据\eqref{df:int1}} \label{it:mul3} \\
+		& \text{(b$_{1}$ + b) $\times$ c + (a$_{1}$ + a) $\times$ d = } & \text{} \notag \\
+		& \text{(b$_{1}$ + b) $\times$ d + (a$_{1}$ + a) $\times$ c} & \text{根据\eqref{it:mul3}和分配律} \label{it:mul4} \\
+		& \text{$a + a_{1} = b + b_{1}$} & \text{根据\eqref{df:int1}} \label{it:mul5} \\
+		& \text{\eqref{it:mul4}成立} & \text{根据\eqref{it:mul4}\eqref{it:mul5}}
+	\end{align}
+	\eqref{it:mul1}满足整数定义\eqref{df:int1}，还需要证明是否满足\eqref{df:int2}。根据整数定义\eqref{df:int2}：存在
+	\begin{align}
+		& \text{(e, 0)，(a, b) $\in$ [(e, 0)]$_{b + e = a}$} \label{it:mul6} \\
+		& \text{(f, 0)，(c, d) $\in$ [(f, 0)]$_{d + f = c}$} \label{it:mul7} \\
+		& \text{(a, b) $\times$ (b, c) 和 (e, 0) $\times$ (f, 0) 等价} & \text{根据整数的等价} \label{it:mul8} \\
+		& \text{(a, b) $\times$ (c, d) = (a$\times$c + b$\times$d, a$\times$d +b$\times$c)} & \text{根据整数乘法} \label{it:mul9} \\
+		& \text{(a$\times$c + b$\times$d, a$\times$d +b$\times$c) = } \notag \\
+		& \text{((b+e)$\times$(d+f)+b$\times$d, (b+e)$\times$d+b$\times$(d+f)} & \text{根据\eqref{it:mul6}\eqref{it:mul7}\eqref{it:mul9}} \label{it:mul10} \\
+		& \text{(e, 0) $\times$ (f, 0) = (e $\times$ f, 0)} & \text{根据整数乘法} \label{it:mul11} \\
+		& \text{\eqref{it:mul11} 和 \eqref{it:mul10} 等价} & \text{根据\eqref{it:mul8}}  \label{it:mul12}\\
+		& \text{e$\times$f+(b+e)$\times$d+b$\times$(d+f)=} \notag \\
+		& \text{0+(b+e)$\times$(d+f)+b$\times$d} & \text{根据\eqref{it:mul12}和\eqref{df:int1}}
+	\end{align}
+\end{verification}
+\paragraph{}整数的乘法和自然数的乘法形态上差异很大，那么是否还可以兼容自然数的乘法交换律、结合律，乘法和加法的分配律呢？
+\paragraph{}\textit{整数乘法交换律: (a, b) $\times$ (c, d) = (c, d) $\times$ (a, b)}
+\begin{verification}
+	\begin{align}
+		& 	\text{$
+		\begin{pmatrix}
+			a & b
+		\end{pmatrix}
+		\times
+		\begin{pmatrix}
+			c & d \\ 
+			d & c 
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			a \times c + b \times d & a \times d + b \times c
+		\end{pmatrix}
+		$} \label{it:mul17} \\
+		& \text{$
+			\begin{pmatrix}
+				c & d
+			\end{pmatrix}
+			\times
+			\begin{pmatrix}
+				a & b \\ 
+				b & a 
+			\end{pmatrix}
+			=
+			\begin{pmatrix}
+				c \times a + d \times b & c \times b + d \times a
+			\end{pmatrix}
+			$} \label{it:mul18} \\
+		& \text{\eqref{it:mul17}和\eqref{it:mul18}等号右边相等，所以整数乘法满足交换律}
+	\end{align}
+\end{verification}
+\paragraph{}\textit{整数乘法结合律: ((a, b) $\times$ (c, d)) $\times$ (e, f) = (c, d) $\times$ ((a, b) $\times$ (e, f))}
+\begin{verification}
+	\begin{align}
+		& \text{(a, b) $\times$ (c, d)) $\times$ (e, f) = } \notag \\
+		& \text{(ace+bde+adf+bcf, acf+bdf+ade+bce)} & \text{省略$\times$} \label{it:mul19} \\
+		& \text{(a, b) $\times$ ((c, d)) $\times$ (e, f)) = } \notag \\
+		& \text{(ace+adf+bcf+bde, acf+ade+bce+bdf)} & \text{省略$\times$} \label{it:mul20} \\
+		& \text{\eqref{it:mul19}和\eqref{it:mul20}等号右边相等，所以整数乘法满足结合律}
+	\end{align}
+\end{verification}
+\paragraph{}\textit{整数分配律律:} 
+\begin{align*}
+	& \text{((a, b) + (c, d)) $\times$ (e, f) = (a, b) $\times$ (e, f) + (c, d) $\times$ (e, f)} \\
+	& \text{(a, b) $\times$ ((c, d) + (e, f)) = (a, b) $\times$ (c, d) + (a, b) $\times$ (e, f)}
+\end{align*}
+\begin{verification}
+	\begin{itemize}[label=$\circ$]
+		\item ((a, b) + (c, d)) $\times$ (e, f) = (a, b) $\times$ (e, f) + (c, d) $\times$ (e, f)
+	\begin{align}
+		& \text{((a, b) + (c, d)) $\times$ (e, f) = } \notag \\
+		& \text{(ae+ce+bf+df, af+cf+be+de)}  \label{it:mul21} \\
+		& \text{(a, b) $\times$ (e, f) + (c, d) $\times$ (e, f) = } \notag \\
+		& \text{(ae+bf+ce+df, af+be+cf+de)} \label{it:mul22} \\
+		& \text{\eqref{it:mul21}和\eqref{it:mul22}等号右边相等，所以整数满足左分配律} 
+	\end{align}
+		\item  (a, b) $\times$ ((c, d) + (e, f)) = (a, b) $\times$ (c, d) + (a, b) $\times$ (e, f)
+	\begin{align}
+		& \text{(a, b) $\times$ ((c, d) + (e, f)) = } \notag \\
+		& \text{(ac+ae+bd+bf, ad+af+bc+be)}  \label{it:mul23} \\
+		& \text{(a, b) $\times$ (c, d) + (a, b) $\times$ (e, f) = } \notag \\
+		& \text{(ac+bd+ae+bf, ad+bc+af+be)} \label{it:mul24} \\
+		& \text{\eqref{it:mul23}和\eqref{it:mul24}等号右边相等，所以整数满足右分配律} 
+	\end{align}		
+	\end{itemize}
+\end{verification}
+\paragraph{}漂亮，一切都那么顺利，利用数对，定义了整数及整数的加法、乘法及运算律，并且兼容自然数及自然数的加法、乘法及运算律。接下来，我们就可以定义数对里的数具有小于关系的为负数，然后定义正数和负数互为相反数，把减法定义为加相反数。并且用(n, 0)和\mbox{(0, n)} n $\in$ $\mathbb{N}$来代表它们的等价类，最后用n和-n简写(n, 0)和(0, n)整数。
+\begin{definision}
+	整数(x, y) x, y$\in$ $\mathbb{N}$ $\land$ x $>$ y 为正整数。(x, y) $\in$ [(n, 0)]$_{n + y = x}$ \mbox{x,y,n $\in$ $\mathbb{N}$}，把(x, y)简写为n。
+\end{definision}
+\begin{definision}
+	整数(x, y) x, y$\in$ $\mathbb{N}$ $\land$ x $<$ y 为负数。(x, y) $\in$ [(0, n)]$_{x + n = y}$ \mbox{x,y,n $\in$ $\mathbb{N}$}，把\mbox{(x, y)}简写为-n。
+\end{definision}
+\begin{definision}
+	整数(x, y) x, y$\in$ $\mathbb{N}$ $\land$ x $=$ y简写为0。
+\end{definision}
+\paragraph{}\textit{任意x $\in$ $\mathbb{Z}$，以下三种情况有且只有一个成立：}
+	\begin{equation}
+		\textit{x是正整数} \quad \textit{x是负数} \quad \textit{x是0} \label{int:th1}
+	\end{equation}
+\begin{Proof}
+	\begin{align}
+		& \text{任意的整数(x, y) x, y $\in$ $\mathbb{N}$} & \text{根据整数定义} \label{int:th2} \\
+		& \text{有且只有x$>$y，x$<$y，x=y，三种情况之一。} & \text{根据\eqref{nor:sort3}} \label{int:th3} \\
+		& \text{x$>$y对应正整数，x$<$y对应负数，x=y对应0} & \text{根据\eqref{int:th2}和定义} \label{int:th4} \\
+		& \text{\eqref{int:th1}得证} & \text{根据\eqref{int:th3}\eqref{int:th4}}
+	\end{align}
+\end{Proof}
+\begin{definision}
+	整数(x, y) x, y $\in$ $\mathbb{N}$的相反数为(y, x)。-为取相反数的运算。
+\end{definision}
+\begin{corollary}
+	正整数的相反数是负整数；负整数的相反数是正整数。
+\end{corollary}
+\begin{Proof}
+	\begin{align}
+		& \text{正整数(x, y) x, y$\in$ $\mathbb{N}$ $\land$ x $>$ y 为正整数} & \text{根据正整数定义} \label{int:tth1} \\
+		& \text{(x, y)的相反数是(y, x)} & \text{根据相反数定义} \label{int:tth2} \\
+		& \text{(y, x)是负整数} & \text{根据y$<$x和负整数定义} \notag \\
+		& \text{证得：正整数相反数为负整数} \notag \\
+		& \text{同理可证：负整数相反数是正整数} \notag
+	\end{align}
+\end{Proof}
+\begin{definision}
+	x 减 y 等价： x 加 y的相反数。x - y = x + (-y) \quad \quad (x,y,-y $\in$ $\mathbb{Z}$)
+\end{definision}
+\paragraph{}终于，我们把减法带进了整数。那么整数经过加法、乘法和减法的运算，它们会不会得到一个超过整数范围的数呢?
+\begin{equation}
+	\textit{整数加、减、乘的运算结果还是整数}  \label{int:stint}
+\end{equation}
+\begin{Proof}
+	\begin{align}
+		& \text{(x, y)，(w, z) $\in$ $\mathbb{Z}$ (x, y, w, z $\in$ $\mathbb{N}$)} & \text{根据整数定义} \label{int:stint1} \\
+		& \text{(x, y) + (w, z) = (x + w, y + z)}  & \text{根据整数加法定义} \label{int:stint2} \\
+		& \text{(x + w) $\in$ $\mathbb{N}$ $\land$ (y + z) $\in$ $\mathbb{N}$} & \text{根据\eqref{nor:addstnor}} \label{int:stint3} \\
+		& \text{(x + w, y +z) $\in$ $\mathbb{Z}$ \quad 整数加法得证} & \text{根据\eqref{int:stint3}和整数定义} \label{int:stint4} \\
+		& \text{(x, y) $\times$ (w, z) = (x$\times$w+y$\times$z, x$\times$z+y$\times$w)} & \text{根据整数乘法定义} \label{int:stint5} \\
+		& \text{(x$\times$w+y$\times$z) $\in$ $\mathbb{N}$ $\land$  (x$\times$z+y$\times$w) $\in$ $\mathbb{N}$} & \text{根据\eqref{nor:mulnor}\eqref{nor:addstnor}} \label{int:stint6} \\
+		& \text{(x$\times$w+y$\times$z, x$\times$z+y$\times$w) $\in$ $\mathbb{Z}$ 整数乘法得证} & \text{根据\eqref{int:stint6}} \label{int:stint7} \\
+		& \text{(x, y) - (w, z) = (x, y) + (z, w)} & \text{根据减法定义} \label{int:stint8} \\
+		& \text{(x + z, y + w) $\in$ $\mathbb{Z}$ \quad 整数减法得证} & \text{根据\eqref{int:stint8}\eqref{int:stint4}}
+	\end{align}
+\end{Proof}
+\subsection{比大小，谁更多}
+\paragraph{}根据自然数的套路，现在要开始比大小了。比大小很简单，先不管自己是不是比对方牛，先踩上对方一百脚，踩着踩着对方就矮了。你说什么，比参数？来，我跟你说：你用得爽，情绪价值就高，情绪价值高跟参数没一点关系，对不对。参数是机密，不让说参数，是避免被其他势力利用。你再说参数就是黑我，你是黑粉，你对得起你的脊梁骨吗？哦，不好意思，出戏了。回到整数比大小。
+\begin{definision}
+	m - n 的结果是正整数，那么m $>$ n；m - n 的结果是负数，那么m $<$ n。
+\end{definision}
+\paragraph{}\textit{对任意m,n $\in \mathbb{Z}$，以下三种情况有且只有一个成立：}
+\begin{equation}
+	m < n \quad \quad m = n \quad \quad m > n \label{int:th6}
+\end{equation}
+\begin{Proof}
+	\begin{align}
+		& \text{整数经过减法运算结果还是整数} & \text{根据\eqref{int:stint}} \label{int:th5} \\
+		& \text{整数有且只有正整数、负数、0} & \text{根据\eqref{int:th1}} \label{int:th7}\\
+		& \text{\eqref{int:th6}得证} & \text{根据\eqref{int:th5}\eqref{int:th7}}
+	\end{align}
+\end{Proof}
+\begin{corollary}
+	$a > b > 0 \Rightarrow b + (-a) < 0$
+\end{corollary}
+\begin{Proof}
+取a、b正整数的等价整数对(a, 0)、(b, 0)
+	\begin{align}
+		b + (-a) &= (b, 0) + (0, a)  \notag \\
+			   &= (b, a) \notag \\
+		b < a &\Rightarrow (b, a) < 0 \notag \\
+			   &\Rightarrow b + (-a) < 0 \notag
+	\end{align}
+\end{Proof}
+\paragraph{}我喜欢和自然数打交道，它有底线，没上限。整数就像个轻言大义者，说的没上线,做的没底线。有些坏人，你都不用黑他，只要把他干过的事，说了一遍就可以。
+\begin{equation}
+	\textit{0是自然数里最小值，自然数没有最大值；整数没有最小值} \label{int:nlng}
+\end{equation}
+\begin{Proof}
+	\begin{itemize}[label=$\circ$]
+		\item 0是自然数里的最小值
+		\begin{align}
+			& \text{反证法：假设存在a$<$0 a $\in$ $\mathbb{N}$} & \text{} \notag \\
+			& \text{$\forall$x$\in$ $\mathbb{N}$ (S(x) $\neq$ 0)} & \text{皮亚诺公理P3} \label{int:nlng1} \\
+			& \text{a + S(x) = 0 \quad $\exists$x(x$\in$$\mathbb{N}$)}
+			& \text{根据假设和\eqref{df:compare}\eqref{int:nlng1}} \label{int:nlng2} \\
+			& \text{a + S(x) = S(a + x)} & \text{根据\eqref{df:add2}} \label{int:nlng3} \\
+			& \text{S(a + x) $\neq$ 0}  & \text{根据皮亚诺公理P3} \label{int:nlng4} \\
+			& \text{\eqref{int:nlng2}与\eqref{int:nlng4}矛盾}
+		\end{align}
+		\item 自然数没有最大值
+		\begin{align}
+			& \text{反证法：假设存在a是最大的自然数} & \text{} \notag \\
+			& \text{$\forall n \in \mathbb{N}$($\exists$!n$\in$$\mathbb{N}$(S(n)$\in$$\mathbb{N}$))} & \text{皮亚诺公理P2} \label{int:nlng5} \\
+			& \text{S(a) $\in$ $\mathbb{N}$} & \text{根据假设和\eqref{int:nlng5}} \label{int:nlng6} \\
+			& \text{S(a) = S(a + 0) = a + S(0)} & \text{根据\eqref{df:add2}} \label{int:nlng7} \\
+			& \text{S(a) $>$ a} & \text{根据\eqref{int:nlng7}\eqref{df:compare}} \label{int:nlng8} \\
+			& \text{\eqref{int:nlng8}和a是最大的自然数矛盾} & \text{}
+		\end{align}
+		\item 整数没有最小值
+		\begin{align}
+			& \text{反证法：假设存在n是最小的整数} & \text{} \notag \\
+			& \text{构造整数m - 1，(m - 1)$\in$$\mathbb{Z}$} & \text{根据\eqref{int:stint}} \label{int:nlng9} \\
+			& \text{$\exists$(x, y)等价m} & \text{根据整数定义} \label{int:nlng10} \\
+			& \text{m - (m - 1) = (x, y) - ((x, y) + (1, 0))} & \text{根据\eqref{int:nlng10}} \label{int:nlng11} \\
+			& \text{(x, y)-((x, y)+(0, 1)) = (x+y+1, x+y)} & \text{根据\eqref{int:nlng11}和加法} \label{int:nlng12} \\
+			& \text{(x+y+1, x+y)、(1, 0)等价且是正整数} & \text{整数及正整数定义} \label{int:nlng13} \\
+			& \text{m $>$ (m -1) 与m是最小值矛盾} & \text{根据\eqref{int:nlng11}\eqref{int:nlng13}}
+		\end{align}
+	\end{itemize}
+\end{Proof}
+\paragraph{}又轮到比谁多谁少的环节了。自然数和整数谁多，多多少？可以肯定的是整数不会少于自然数。(x, y) ,y$\in$$\mathbb{N}$表示的整数，可以有多少个呢？这是个排列组合问题。
+\paragraph{}会排列组合的人，智商都不会低；会排列组合的女孩子，更懂得精打细算地把自己打扮得漂漂亮亮。聪明的男人了解了排列组合，也就明白了为什么女孩子的衣服越买越多。例如：陪着女孩逛商场，看上了一件衣服，执意要买一件衣服。傻傻的你劝说：你已经有3件衣服、2件裤子、3双鞋了。再买就4件了，穿不完；再说，你一件衣服，都购买我6件的（是的，我现在穿的衣服是100元三件，同色同款）。会商会量的女孩告诉男生：我买这一件，能穿出你6件的效果。你看，我三件衣服，就有3种和2个裤子搭配的选择，有3$\times$2=6个样式，这6个样式又可以和3款鞋子搭配，那就是6$\times$3=18个样式。如果再买一件衣服，马上就有4（衣服）$\times$3（裤子）$\times$2（鞋子）=24种样式。加一件衣服，就多了24-18=6种样式。1件比你6件强，你说划不划得来。
+\paragraph{}那是不是自然数有N个，(x, y)表示的整数有N $\times$ N个呢？自然数的基数是$\aleph_{0}$，(x, y)表示的整数有$\aleph_{0}$ $\times$ $\aleph_{0}$个。
+\begin{equation}
+	\textit{(x, y) ,y$\in$$\mathbb{N}$表示的整数和自然数一样多，它们的基数相同}
+\end{equation}
+\begin{Proof}
+只要两个集合元素能一一对应，那么它们的基数是相等的。根据\eqref{df:bijection}，只要函数满足\eqref{df:One-to-One}和\eqref{df:Onto}即可。
+\paragraph{}首先要构造一个能够遍历整数的方法：
+\paragraph{}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+	\hline
+	& 1 & 2 & 3 & 4 & 5 & 6\\
+	\hline
+	0 &  & & & & & \\
+	\hline
+	1 & (0, 0)$_{0}$ &  &  & & & \\
+	\hline
+	2 & (0, 1)$_{1}$ & (1, 0)$_{2}$ & & & & \\
+	\hline
+	3 & (0, 2)$_{3}$ & (1, 1)$_{4}$ & (2, 0)$_{5}$ & & & \\
+	\hline
+	4 & (0, 3)$_{6}$ & (1, 2)$_{7}$ & (2, 1)$_{8}$ & (3, 0)$_{9}$ & & \\
+	\hline
+	5 & (0, 4)$_{10}$ & (1, 3)$_{11}$ & (2, 2)$_{12}$ & (3, 1)$_{13}$ & (4, 0)$_{14}$ & \\
+	\hline
+	6 & (0, 5)$_{15}$ & (1, 4)$_{16}$ & (2, 3)$_{17}$ & (3, 2)$_{18}$ & (4, 1)$_{19}$ & (5, 0)$_{20}$ \\
+	\hline
+\end{tabular}
+\paragraph{}一眼证明的方法是从上往下，一行一行地从左往右遍历整数，并且用自然数数。可以把每个整数和一个自然数一一对应。这种方法，我还是不太放心，想用一一对应的算式函数证明。
+\paragraph{}首先构建一个函数。例如我要求(3, 1)$_{13}$。
+\begin{itemize}[label=$\circ$]
+	\item 它在第5行，先求前4行三角形里多少个整数：
+	\begin{equation}
+		4 \times (4 + 1) / 2 \notag
+	\end{equation}
+	\item 再加上(3, 1)的列4：
+	\begin{equation}
+		4 \times (4 + 1) / 2 + 4  \notag
+	\end{equation}
+	\item 再减去数数时不数的0：
+	\begin{equation}
+		4 \times (4 + 1) / 2 + 4 - 1 = 13 \notag
+	\end{equation}
+	13正好是(3, 1)$_{13}$的序号。
+\end{itemize}
+\paragraph{}把行设成x，把列设成y，三角形包含的整数个数是底乘以高除以2：x $\times$ (x + 1)/ 2，再加上列y：x $\times$ (x + 1)/ 2 + y，再减去没算自然数0：x $\times$ (x + 1)/ 2 + y - 1，得到的是对应的自然数序数，并且y $<$ x + 1。
+\begin{equation}
+	f((x,y), n): x \times (x + 1) / 2 + y - 1 = n \quad (x,y,n \in \mathbb{N} \land x > 0 \land y \geq 0 \land y < x + 1) \label{int:comint}
+\end{equation}
+\begin{align}
+	& \text{$y = \frac{2n + 2 - x^2 - x}{2}$} & \text{根据\eqref{int:comint}} \label{int:comint1} \\
+	& \text{$x^2 + x \leq 2n + 2$} & \text{根据y$\geq$0和\eqref{int:comint1}} \label{int:comint2} \\
+	& \text{$x^2 + 3x > 2n$} & \text{根据y$<$x+1和\eqref{int:comint1}} \label{int:comint3} \\
+	& \text{x $\leq \frac{-1 + \sqrt{9 + 8n}}{2}$} & \text{根据\eqref{int:comint2}和x$\in$$\mathbb{N}$} \label{int:comint4} \\
+	& \text{x $>$ -1 +  $\frac{-1 + \sqrt{9 + 8n}}{2}$} & \text{根据\eqref{int:comint3}} \label{int:comint5} \\
+	& \text{设$\frac{-1 + \sqrt{9 + 8n}}{2}$ = z $\geq$ 1} & \text{} \label{int:comint6} \\
+	& \text{-1 + z $>$ x $\leq$ z  (z $\geq$ 1)} & \text{根据\eqref{int:comint4}\eqref{int:comint5}\eqref{int:comint6}} \label{int:comint7} \\
+	& \text{当n确定，则x存在且唯一($\exists$!x)} & \text{根据\eqref{int:comint7}} \label{int:comint8} \\
+	& \text{当n确定，$\exists$!x，则$\exists$!y} & \text{根据\eqref{int:comint8}\eqref{int:comint1}} \label{int:comint9}
+\end{align}
+\begin{itemize}[label=$\circ$]
+	\item 单射: 若$f((x_{1},y_{1}), n_{1})$和$f((x_{2}, y_{2}), n_{2})$，$n_{1} = n_{2}$。根据\eqref{int:comint9}，可得$x_{1} = x_{2}$和$y_{1} = y_{2}$。
+	\item 满射：\eqref{int:comint} n $\in$ $\mathbb{N}$，且根据\eqref{int:comint9}n都能找到合适的x，y满足函数\eqref{int:comint}。
+\end{itemize}	
+\end{Proof}
+\section{比例数}
+\subsection{比例数}
+\paragraph{}从数学的历史看人类文明的发展，文明刚出现时就像眼里有光的初生牛犊；过了新手保护期，立马招到社会毒打，直到怀疑人生，抑郁了几千年；小有所成后，已经是个磨平棱角、瞻前顾后、唯唯诺诺的社会人了。6000多年前就建立了王朝，有了计量系统和数学符号；4000多年前用提前发育的野路子，把二次方程给解了；3000多年前建立几何公理体系。然后，然后的3000年，文明营养不良，人类不给喂饭了，全世界的人类开始琢磨起了人心。向前一步是神，向后一步是兽，文明就这样原地徘徊了3000年。直到最近的几百年，物质的丰富，让文明再次爆发出了生命力；然而思想的禁锢还是裹住了文明发展的脚步，即使衣食无忧确还是996地工作，即使银行卡里的数字够几辈子的花销，却还要攫取更多；哀而不自知。
+\paragraph{}比例数在5000多年前便被认可和使用，好奇的是负数却一直是编外人员，直到近几百年才被勉强接受。也许虚无的负数，伤害了人的自尊；承认一个不存在的东西，感觉自己是个傻子。
+\paragraph{}还是老套路。首先用数对的形式创造比例数，然后介绍加法、乘法、减法，除法最后探讨比例数的性质。特别是它的性质这么完美，以至于人类使用了至少5000多年，也不需要为它打补丁。
+\begin{definision}
+	当且仅当($\Leftrightarrow$)以下条件满足，定义比例数$\mathbb{Q}$为，以数对(a, b)$_{/}$为元素的集合，a，b$\in$ $\mathbb{Z}$ $\land$ b $\neq$ 0。
+	\begin{align}
+		& \text{(a, b) $\in$ [(c, d)]$_{a \times d=b \times c}$ \quad \quad a,b,c,d $\in$ $\mathbb{Z}$ $\land$ b,d $\neq$ 0} \label{df:rat1} \tag{df:ration1} \\
+		& \text{存在比例数等价类元素映射整数数的函数，输入[(a, 1)]等价类元素，输出a：} \notag \\
+		& \text{\quad \quad \quad \quad f((x, y), a) \quad \quad (x, y)$\in$[(a, 1)]$_{x=y \times a}$ $\in \mathbb{Q}$} \label{df:rat2} \tag{df:ration2}
+	\end{align}
+\end{definision}
+\begin{definision}
+	比例数的加法：(a, b) + (c, d) = (ad + bc, bd)
+\end{definision}
+\begin{definision}
+	比例数的乘法：(a, b) $\times$ (c, d) = (ac, bd)
+\end{definision}
+\begin{definision}
+	比例数的相反数：-(a, b) = (-a, b)
+\end{definision}
+\begin{definision}
+	比例数的减法：(a, b) 减 (c, d) 等价： (a, b) 加 (c, d)的相反数。
+\end{definision}
+\begin{definision}
+	比例数的倒数：(a, b)的倒数为(a, b)$^{-1}$，(a, b)$^{-1}$ = (b, a)
+\end{definision}
+\begin{definision}
+	比例数的除法：(a, b) 除 (c, d) 等价：(a, b) 乘 (c, d)的倒数。
+\end{definision}
+\begin{corollary}\label{cor:ration1}
+	\textit{比例数加、减、乘、除的运算结果还是比例数。}
+\end{corollary}
+\paragraph{}以上比例数的加、减、乘的证明可以仿照整数的加、减、乘的思路实现。同时也不加证明的给出比例数的运算律。总之，比例数兼容整数，不管是整数的元素还是整数的运算和运算律。
+\begin{align}
+	&\text{(a, b) + (c, d) = (c, d) + (a, b)} & \text{加法交换律} \\
+	&\text{((a, b)+(c, d))+(e, f) = (a, b)+((c, d)+(e, f))} & \text{加法结合律} \\
+	&\text{(a, b) $\times$ (c, d) = (c, d) $\times$ (a, b)} & \text{乘法交换律} \\
+	&\text{((a, b)$\times$(c, d))$\times$(e, f) = (a, b)$\times$((c, d)$\times$(e, f))} & \text{乘法结合律} \\
+	&\text{((a, b)+(c, d))$\times$(e, f) = (a, b)$\times$(e, f)+(c, d)$\times$(e, f)} \notag \\
+	&\text{(e, f)$\times$((a, b)+(c, d)) = (e, f)$\times$(a, b)+(e, f)$\times$(c, d)}	& \text{分配律}
+\end{align}
+\begin{definision}
+	比例数(x, y) x, y$\in$ $\mathbb{Z}$ $\land$ (x,y$>$0 $\lor$ x,y$<$0)为正比例数。
+\end{definision}
+\begin{definision}
+	比例数(x, y) x, y$\in$ $\mathbb{Z}$ $\land$ ((x$<$0$\land$y$>$0)$\lor$(x$>$0$\land$y$<0$))为负比例数。
+\end{definision}
+\begin{definision}
+	比例数(x, y) x, y$\in$ $\mathbb{Z}$ $\land$ (x=0$\land$y$\neq$0)为0。
+\end{definision}
+\paragraph{}任意x $\in$ $\mathbb{Q}$，以下三种情况有且只有一个成立：
+\begin{equation}
+	\text{x是负比例数} \quad \text{x是正比例数} \quad \text{x是0} \label{rat:rat1}
+\end{equation}
+\begin{definision}
+	m,n $\in$ $\mathbb{Q}$，m - n 的结果是正比例数，那么m $>$ n；m - n 的结果是负比例数，那么m $<$ n。
+\end{definision}
+\paragraph{}\textit{对任意m,n $\in \mathbb{Q}$，以下三种情况有且只有一个成立：}
+\begin{equation}
+	m < n \quad \quad m = n \quad \quad m > n \label{rat:rat2}
+\end{equation}
+\paragraph{}以上的证明最好在脑袋里过一遍，确保我没有骗你，证明方法请翻看整数部分的证明。
+\begin{corollary}
+	a,b $\in$ $\mathbb{Q}$，a $>$ b $>$ 0 $\Rightarrow$ $a^{-1} < b^{-1}$。
+\end{corollary}
+\begin{Proof}
+取a、b比例数的等价比例数对(a, 1)、(b, 1)
+\begin{align}
+	a^{-1} - b^{-1} &= (1, a) - (1, b) & \text{} \notag \\
+	      &= (b-a, a \times b) & \text{} \notag \\
+	a>b>0 &\Rightarrow a \times b > 0 \land b - a < 0 & \text{} \label{rat:ratt1} \\
+	& \text{(b - a, a $\times$ b)是负比例数} & \text{根据\ref{rat:ratt1}} \label{rat:ratt2} \\
+	& \text{得证 $a^{-1}<b^{-1}$} & \text{} \notag
+\end{align}
+\end{Proof}
+\subsection{数一数比例数}
+\paragraph{}首先构造遍历比例数的方法。仿照整数的样子，让数对的和按照自然数的顺序枚举出来。但由于构成比例数的是整数，那么含有负数的情况做数对的和，会增加困难。例如我们需要遍历和是1的情况，如果有负数参与的话，那么2+(-1)、3+(-2)，这样的话，单单一个和是1就没办法简单枚举出来。所以我们希望把负整数转为正整数的情况来计算数对和。引入绝对值运算。
+\begin{definision}
+	对于任何比例数(a, b)，它的绝对值是$|(a, b)|$。\\
+    \centering{	$|(a, b)|$= 
+	$\begin{cases}
+		(a, b) &\text{a $\geq$ 0} \\
+		(-a, b) &\text{a $<$ 0}
+	\end{cases}$ }
+	\\
+	对于任何整数a，它的绝对值是$|a|$。\\
+	\centering{ $|a|$=
+	$\begin{cases}
+		a & \text{a $\geq$ 0} \\
+		-a & \text{a $<$ 0}
+	\end{cases}$}
+\end{definision}
+\paragraph{}按照$|(a, b)|$，按照数对和枚举比例数：
+\paragraph{}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\hline
+	& 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	\hline
+	1 & (0, 1)$_{0}$ &  &  & & & & \\
+	\hline
+	2 & (0, 2)$_{1}$ & (1, 1)$_{2}$ & (-1, 1)$_{3}$& & & & \\
+	\hline
+	3 & (0, 3)$_{4}$ & (1, 2)$_{5}$ & (-1, 2)$_{6}$ & (2, 1)$_{7}$ & (-2, 1)$_{8}$& & \\
+	\hline
+	4 & (0, 4)$_{9}$ & (1, 3)$_{10}$ & (-1, 3)$_{11}$ & (2, 2)$_{12}$ & (-2, 2)$_{13}$ & (3, 1)$_{14}$ & (-3, 1)$_{15}$ \\
+	\hline
+\end{tabular}
+\paragraph{}计算第n行能有几个数对：首先是都是整数的(1, n-1)、(2, n-2)\dots(n-2, 2)、(n-1, 1)，共n-1个，再加上它们的相对数n-1，共n+n-2。再加一个(0, n)，得n+n-1个。测试：和是4的第4行：4 + 4 - 1 = 7，测试没问题。查看表格，发现好像每行是等差的，都差2个。验证，用第n+1行减去第n行：
+\begin{equation}
+	((n + 1) + (n + 1) -1) - (n + n -1) = 2 \notag
+\end{equation}
+等差数列的计算方法，可以用梯形面积公式：上底加下底的和乘以高，除以2。统计从数对和是1到n一共有:
+\begin{equation}
+	Count(n) = \frac{(1 + (n + n - 1)) \times n}{2}=n \times n \notag
+\end{equation}
+把x设为行，y设为列则比例数对应自然数的算式是：
+\begin{equation}
+	x \times x - 1 + y = n \quad \quad (x,y,n\in \mathbb{N} \land x > 0 \land y \leq (x \times 2 + 1)) \label{rat:ratnor}
+\end{equation}
+为了确定n对应x的唯一性，然后确定y的唯一性，做以下合理限制：x取小于$\sqrt{n+1}$的最大的自然数。根据\eqref{rat:ratnor}和x的限制可以证明n唯一的确定了x，然后根据确定的n和x，能够唯一的确定y，这样就证明了单射。然后根据\eqref{rat:ratnor}，所有的n都能找到合适的x，y满足\eqref{rat:ratnor}。
+\paragraph{}前面我们比较的是比例数和自然数的数量，其实不相等的比例数之间的比例数个数也是和自然数一样多，这个特性也叫稠密性。也正是稠密这个特性让人类认为，数到比例数就够了，因为它能足够的接近需要的值，而把无理数排除在数之外，只认为无理数是一个量。以0到1之间的比例数为例：
+\paragraph{}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+	\hline
+	& 1 & 2 & 3 & 4 & 5 & 6 \\
+	\hline
+	1 & (1, 2)$_{0}$ &  &  & & & \\
+	\hline
+	2 & (1, 3)$_{1}$ & (2, 3)$_{2}$ & & & & \\
+	\hline
+	3 & (1, 4)$_{3}$ & (2, 4)$_{4}$ & (3, 4)$_{5}$ & & & \\
+	\hline
+	4 & (1, 5)$_{6}$ & (2, 5)$_{7}$ & (3, 5)$_{8}$ & (4, 5)$_{9}$ & & \\
+	\hline
+	5 & (1, 6)$_{10}$ & (2, 6)$_{11}$ & (3, 6)$_{12}$ & (4, 6)$_{13}$ & (5, 6)$_{14}$& \\
+	\hline
+	6 & (1, 7)$_{15}$ & (2, 7)$_{16}$ & (3, 7)$_{17}$ & (4, 7)$_{18}$ & (5, 7)$_{19}$& (6, 7)$_{20}$\\
+\hline
+\end{tabular}
+\paragraph{}可以看出来，上面排列成的形状和枚举整数排列的形状是一样的，那么证明它和自然数一一对应和证明整数和自然数一一对应是一模一样的。
+\paragraph{}更一般性地可以表示为：{\itshape可数集里的无限集也是可数集}。然而这个证明需要用到选择公理这种霸道规则，想想还是先算了，毕竟生活里不讲规则、不讲逻辑的事多了，选择公理就以后再说吧。
+\subsection{数量战胜质量}
+\paragraph{}当解决了有没有的问题后，数量必然会战胜质量。推崇天才、个人崇拜的行为在现在的信息化社会，让人看起来很无语。因为你和所谓的天才具有一样的基础、能力，唯一或缺的仅仅是外部的条件，跟个人能力没多大关系。让那些天才、伟人干铁人三项（外卖、滴滴、快递），干个100年也翻不了身，算法算死了不留一点思考的时间，回到家倒头只想睡觉，想翻身门都没有。而把天才、伟人的环境给你3到6个月熟悉，你也是天才、伟人。有些人创业，失败100次，他还有101次的本钱；而有些人，失败了一次，这一辈子都得还债。数量堆出质量，数量战胜质量，这个观点是公理：
+\begin{center}
+	\begin{tcolorbox}[
+		colback=white,
+		colframe=blue!50!black,
+		arc=3mm,
+		boxrule=1pt,
+		width=0.9\textwidth, % 框的宽度
+		center, % 框内内容居中
+		enlarge left by=0mm,
+		enlarge right by=0mm,
+		top=3mm,
+		bottom=3mm,
+		]
+		阿基米德公理：任意的大于0的a，b的两个数，则必然存在一个正整数n，使得a $\times$ x $>$ b。
+		
+		数学语言：$\forall$a$\in$$\mathbb{Q}^{+}$$\forall$b$\in$$\mathbb{Q}^{+}$$\exists$x$\in$$\mathbb{N}$(a $\times$ x $>$ b)
+	\end{tcolorbox}
+\end{center}
+\begin{Proof}
+	\begin{convension}
+		比例数(a, b)简写为$\frac{a}{b}$
+	\end{convension}
+	设两个比例数为$\frac{p}{q}$、$\frac{r}{s}$  (p、q、r、s $\in$ $\mathbb{N}$ $\land$ q、s$\neq$ 0)，我们要证明存在一个自然数n，n $\times$ $\frac{p}{q}$ $>$ $\frac{r}{s}$，也就是只要构造出一个符合条件的数就可以。
+	\paragraph{}那还不简单，n只要是大于$\frac{r + 1}{s}$ $\times$ $\frac{q}{p}$的自然数，都满足条件。
+\end{Proof}
+\paragraph{}一般的教科书，都会有一个名词：无穷小，所以很多人会把无穷小带到标准微积分的学习。这个公理告诉我们：没有无穷小，没有无穷小，没有无穷小，重要的事情说三遍。读那种教材，模糊的认为：无穷小和任何比例数的积任然是无穷小，无穷大是无穷小的倒数。很显然，无穷小和阿基米德公理相矛盾。阿基米德说：存在一个数，乘上任意小的数能大于确定的数；而非标准分析说存在一种任意小的数“无穷小”，任何比例数乘它，还是无穷小。
+\paragraph{}其实，阿基米德公理适用的范围远远超过比例数的范围，实数、欧几里得几何都遵守阿基米德公理。
+\subsection{连分数}
+\paragraph{}我们在小学的时候，老师就灌输：分数分为有限小数，无限不循环小数。例如比例数$\frac{1}{2}$的小数是有限小数0.5，$\frac{1}{3}$表示的小数是无限循环小数0.33$\dot{3}$。$\frac{1}{3}$就只能表示为无限不循环小数吗？其实千人千面，纯粹的好人很少，纯粹的坏人更少；皆为利来，皆为利往；为什么富豪和高层领导都是老好人、面善，那是因为层次太低，没有触碰他的利益。当10进制时，$\frac{1}{3}$表示的小数是无限循环小数0.33$\dot{3}$，那3进制呢？进制的意思是把一个单位，分成几份。10进制是把一个单位分成10份，3进制是把一个单位分成3分。
+\paragraph{}\includegraphics[width=1\textwidth]{unit_line_divisions.png}
+\paragraph{}通过图看出来，虽然在同一个单位线段里，标识出同一个位置的点。但由于采用的进制的不同，有些表示的是无限循环小数，有的表示的是有限小数。例如图上10进制的$\frac{1}{3}$是无限循环小数0.33$\dot{3}$，而在3进制下$\frac{1}{3}$表示的是0.1。
+\paragraph{}相对于无限循环，我们更偏向有限。那有没有一种表现简单的方式，并且有限的方式来表示比例数呢？有的，那就是连分数。
+\begin{definision}
+\[
+a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{\cdots + \cfrac{1}{a_n}}}}
+\]
+其中，\(a_0\) 是整数，\(a_1, a_2, \dots, a_n\) 是正整数，该形式称为{\itshape有限连分数}，记为 \([a_0; a_1, a_2, \dots, a_n]\)。
+\end{definision}
+\begin{definision}
+\[
+\alpha = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{\ddots}}}}
+\]
+其中，\(a_0\) 是整数，\(a_1, a_2, \dots\) 是正整数，该形式称为{\itshape无限连分数}，\\ 记为 \([a_0; a_1, a_2, \dots]\)。
+\end{definision}
+\paragraph{}我们以$\frac{76}{13}$为例，$\frac{76}{13}$用小数表示是：无限循环小数5.846153$\overline{846153}$。把$\frac{76}{13}$转化为有限连分数的过程如下：
+\begin{align}
+	% 第一步：76除以13，商5余11
+	\frac{76}{13} &= 5 + \frac{11}{13} \quad \text{（因 } 76 = 13 \times 5 + 11, \, 0 \leq 11 < 13\text{）} \label{rat:sep1} \\
+	% 第二步：处理余数倒数13/11，商1余2
+	&= 5 + \cfrac{1}{\frac{13}{11}} \quad \text{（因 } \frac{11}{13} = \cfrac{1}{\frac{13}{11}}\text{）} \label{rat:sep2} \\
+	&= 5 + \cfrac{1}{1 + \frac{2}{11}} \quad \text{（因 } 13 = 11 \times 1 + 2, \, 0 \leq 2 < 11\text{）} \notag \\
+	% 第三步：处理余数倒数11/2，商5余1
+	&= 5 + \cfrac{1}{1 + \cfrac{1}{\frac{11}{2}}} \quad \text{（因 } \frac{2}{11} = \cfrac{1}{\frac{11}{2}}\text{）} \notag \\
+	&= 5 + \cfrac{1}{1 + \cfrac{1}{5 + \frac{1}{2}}} \quad \text{（因 } 11 = 2 \times 5 + 1, \, 0 \leq 1 < 2\text{）} \notag \\
+	% 第四步：处理余数倒数2/1，商2余0（终止）
+	&= 5 + \cfrac{1}{1 + \cfrac{1}{5 + \cfrac{1}{2}}} \quad \text{（因 } 2 = 1 \times 2 + 0\text{，过程终止）} \notag
+\end{align}
+
+因此，\( \frac{76}{13} \) 的连分数表示为：
+\[
+\frac{76}{13} = [5; 1, 5, 2]
+\]
+\paragraph{}以上比例数化简为连分数的关键点在求商和余数。例如在求$\frac{76}{13}$的第一步\ref{rat:sep1}中，关键是在76 = a $\times$ 13 + b中，求出a和b，最重要的是求出的b(11)会小于13。然后在下一步把b(11)和13做倒数，再求出13 = c $\times$ b + e，e(2)又小于b(11)，也就是会形成这样的一个不等式$76 > 13 > b > e >\dots > x \geq 0$。直到余数是0，那么求连分数的过程就结束了。
+\begin{convension}
+	$\lfloor$$\frac{a}{b}$$\rfloor$：不大于$\frac{a}{b}$的最大整数，例如：$\lfloor$4.6$\rfloor$ = 4、$\lfloor$-4.6$\rfloor$=-5。
+\end{convension}
+\begin{definision}
+	连分数的展开规则：
+	\[
+	\frac{a}{b} = \lfloor\frac{a}{b}\rfloor + \frac{c}{b}  \quad \quad (a \in \mathbb{Z} \land b, c \in \mathbb{N} \land c < b \land a,b\text{已知})
+	\]
+	除首项$\lfloor\frac{a}{b}\rfloor$是除0外的任意整数，其他项$\lfloor\frac{a}{b}\rfloor$是正整数。\\
+	当c = 0，展开结束。
+\end{definision}
+\begin{Proof}
+	证明展开规则，等价证明欧几里得带余数除法：\\
+	\begin{equation}
+		a = b \times q + r  \quad a,b \in \mathbb{Z} \land r, q \in \mathbb{ N} \land q \neq 0 \land 0 \leq r < q \land a,q\text{已知} \notag
+	\end{equation}
+	首先根据约束证明b、r存在性：
+	\begin{align}
+		0 \leq r &\Rightarrow 0 \leq a - b \times q \Rightarrow b \times q \leq a  & \text{}\label{ed:ed1} \\
+		r < q &\Rightarrow a - b \times q < q \Rightarrow a < (1 + b) \times q  & \text{}\label{ed:ed2}  \\
+		&b \times q \leq a < (1 + b) \times q & \text{根据\ref{ed:ed1} \ref{ed:ed2}} \label{ed:ed3}
+	\end{align}
+	\paragraph{}根据\ref{ed:ed3}和q $\neq$ 0 $\land$ q $\in$ $\mathbb{N}$，只要a、b都是负整数，a、b都是正整数，a、b都是0，这个等式成立。所以当a已知时，一定有合适的b符合条件。这时a、b已知，q属于非0的自然数，r能够根据\mbox{a - b $\times$ q}得到。\\
+	反证法证明b、r唯一性：
+	假设有两个b、r可以对应已知的a、q。
+	\begin{align}
+		a &= b_{1} \times q + r_{1} \quad 0 \leq r_{1} < q & \text{} \label{ed:ed4} \\
+		a &= b_{2} \times q + r_{2} \quad 0 \leq r_{2} < q & \text{} \label{ed:ed5} \\
+		b_{1}  \times q + r_{1} &= b_{2} \times q + r_{2} & \text{根据\ref{ed:ed4}\ref{ed:ed5}} \label{ed:ed6} \\
+		r_{1} - r_{2} &= b_{2} \times q - b_{1} \times q & \text{根据\ref{ed:ed6}} \label{ed:ed7} \\
+		r_{1} - r_{2} &= (b_{2} - b_{1}) \times q & \text{根据\ref{ed:ed7}} \\
+		0 \leq r_{1} < q &\land  0 \leq r_{2} < q \Rightarrow 0 \leq |r_{1} - r_{2}| < q & \text{} \label{ed:ed8} \\
+		0 \leq (b_{2} &- b_{1}) \times q < q & \text{根据\ref{ed:ed7}\ref{ed:ed8}}  \label{ed:ed9} \\
+		b_{2} - b_{1} = 0 &\Rightarrow b_{2} = b_{1} & \text{根据\ref{ed:ed8}} \label{ed:ed10}
+	\end{align}
+	根据\ref{ed:ed10}的$b_{2} = b_{1}$代入\ref{ed:ed4}和\ref{ed:ed5}得到$r_{1} = r_{2}$。
+\end{Proof}
+\begin{theorem}
+	比例数都可以化为有限连分数。
+\end{theorem}
+\begin{Proof}
+	证明分两步。\\ 
+	第一步证明根据连分数展开规则，余数非0时存在以下关系：
+	\[
+	0 \leq \dots < c_{n+2} < c_{n+1} < c_{n} < \dots < c < b
+	\]
+	第二步，证明当b确定后，上面的不等式c$_{index}$的个数是有限的。\\
+	使用归纳证明第一步：
+	\begin{itemize}
+		\item 当k = 0时，根据展开规则得到：$0 \leq r < b$ 
+		\begin{align*}
+			& \text{r = 0 则展开结束 $\Rightarrow$ 连分数有限。} \\
+			& \text{r $\neq$ 0 则接着归纳证明。}
+		\end{align*}
+		\item 当k = n $\land$ $c_{n} \neq$ 0时，假设存在：$0 \leq c_{n+1} < c_{n}$。
+		\item 证k = n+1 $\land$ $c_{n+1} \neq$ 0，$0 \leq c_{n+2} < c_{n+1}$。
+		\begin{align*}
+			& \text{根据展开规则第n+1次展开是：} \\
+			& \cfrac{c_{n}}{c_{n+1}} = \lfloor\cfrac{c_{n}}{c_{n+1}}\rfloor + \cfrac{c_{n+2}}{c_{n+1}}  \quad 0 \leq c_{n+2} < c_{n+1}
+		\end{align*}
+	\end{itemize}
+	得证：连分数展开规则的余数是严格偏序的自然数序列：
+	\[
+	0 \leq \dots < c_{n+2} < c_{n+1} < c_{n} < \dots < c < b
+	\]
+	证明第二步：\\
+	构造集合A = $\{b, c \dots c_{n}, c_{n+1}, c_{n+2} \dots 0\}$，这个集合的所有元素都是自然数，且集合A有最大值b，根据定理“有最大值的自然数子集是有限集”。所以集合A是有限集合，也就是比例数的连分数展开是有限的。
+\end{Proof}
+\paragraph{}根据刚才的介绍，连分数会有两个有趣的作用。一是判断是否是比例数，能用有限连分数表示的数是比例数，不能用有限连分数表示的数，说明超出了比例数的范围。另一个用处是有限集合的每次展开，不断接近最终的值。例如
+\[
+\frac{76}{13} = 5.846153\overline{846153}
+\]
+\begin{align*}
+	\frac{76}{13} &= [5, 1, 5, 2] \\
+	 [5] &= 5 \\
+	 [5, 1] &= 6 \\
+	 [5, 1, 5] &= 5.83\overline{3} \\
+	 [5, 1, 5, 2] &= 5.846153\overline{846153}
+\end{align*}
+\begin{theorem}
+	有限连分数渐进每次计算都在接近，被展开为该连分数的比例数。
+\end{theorem}
+\begin{Proof}
+	\begin{align*}
+	x_{0}  &= \cfrac{p_0}{q_0} = [a_{0};]		\\
+	x_{1}  &= \cfrac{p_1}{q_1} = [a_{0};a_{1}] \\
+	      &\vdots 			\\
+	x_{n}  &= \cfrac{p_n}{q_n} = [a_{0};a_{1}, a_{2}, a_{3} \dots a_{n}] \\
+	x_{n+1}  &= \cfrac{p_{n+1}}{q_{n+1}} = [a_{0};a_{1}, a_{2}, a_{3} \dots a_{n}, a_{n+1}] \\
+	x  &= \cfrac{p}{q} = [a_{0};a_{1}, a_{2}, a_{3} \dots a_{n}, a_{n+1} \dots, b]
+	\end{align*}
+	命题的意思是
+	\[
+	|x - x_{n+1}| < |x - x_{n}| < \dots < |x - x_{1}| < |x - x_{0}|
+	\]
+	证明这个问题，我们先分析每次展开的p$_{i}$和q$_{i}$的规律。
+	\begin{align*}
+	p_{0} &= a_{0} &\quad q_{0} &= 1 \\
+	p_{1} &= a_{0} \cdot a_{1} + 1 &\quad q_{1} &= a_{1} \\
+	p_{2} &= a_{2} \cdot(a_{0} \cdot a_{1} + 1) + a_{0} &\quad q_{2} &= a_{2} \cdot a_{1} + 1 \\
+	      &= a_0 \cdot a_1 \cdot a_2 + a_0 + a_2 &\quad &= a_2 \cdot a_1 + 1 \\
+	p_{3} &= a_3(a_0 \cdot a_1 \cdot a_2 + a_0 + a_2) + (a_0 \cdot a_1 + 1) &\quad q_{3} &= a_3(a_1 \cdot a_2 + 1) + a_1 \\
+	p_n &= a_n p_{n-1} + p_{n-2} &\quad q_n &= a_n q_{n-1} + q_{n-2}
+\end{align*}
+需要先证明n $\geq$ 2时，下列等式成立：
+\[
+ \boxed{p_n = a_n p_{n-1} + p_{n-2} \quad q_n = a_n q_{n-1} + q_{n-2}}
+\]
+以归纳法证明等式。k等于0，1，2已经枚举成立。
+\paragraph{}假设 k = n 成立，
+\begin{align}
+	\cfrac{p_n}{q_n} = \cfrac{a_n \cdot p_{n-1} + p_{n-2}}{a_n \cdot q_{n-1} + q_{n-2}} \label{ed:ed11}
+\end{align}
+需要证明k+1时也成立。因为等式中$p_{n}, p_{n-1}, p_{n-2}和q_{n}, q_{n-1}, q_{n-2}$经过假设都是已知量。k+1就是要再次展开一层，那么只要把$a_n$展开一层就行。
+\begin{align}
+	a_n = a_n + \cfrac{1}{a_{n+1}} \label{ed:ed12}
+\end{align}
+把展开的\ref{ed:ed12}代入到\ref{ed:ed11}的右边就相当于，在n层的基础上再展开一层到n+1：$\cfrac{p_{n+1}}{q_{n+1}}$
+\begin{align}
+	\cfrac{p_{n+1}}{q_{n+1}} &= \cfrac{\left(a_n + \cfrac{1}{a_{n+1}}\right) \cdot p_{n-1} + p_{n-2}}{\left(a_n + \cfrac{1}{a_{n+1}}\right)  \cdot q_{n-1} + q_{n-2}}  \notag \\
+	&= \cfrac{a_n \cdot p_{n-1} + \cfrac{p_{n-1}}{a_{n+1}} + p_{n-2}}{a_n \cdot q_{n-1} + \cfrac{q_{n-1}}{a_{n+1}} + q_{n-2}} \notag \\
+	&= \cfrac{a_n \cdot p_{n-1} \cdot a_{n+1} + p_{n-1} + p_{n-2} \cdot a_{n+1}}{a_n \cdot q_{n-1} \cdot a_{n+1} + q_{n-1} + q_{n-2} \cdot a_{n+1}} \notag \\
+	&= \cfrac{a_{n+1} \cdot (a_n \cdot p_{n-1} + p_{n-2}) + p_{n-1}}{a_{n+1} \cdot (a_n \cdot q_{n-1} + q_{n-2}) + q_{n-1}} \notag \\
+	&= \cfrac{a_{n+1} \cdot p_{n} + p_{n-1}}{a_{n+1} \cdot q_{n} + q_{n-1}} \notag
+\end{align}
+求得:	$p_{n+1} = a_{n+1} \cdot p_n + p_{n-1} \quad q_{n+1} = a_{n+1} \cdot q_n + q_{n-1}$。
+\begin{tcolorbox}[colback=white,boxrule=1pt]
+正是待证等式：
+\begin{align}
+	p_n &= a_n \cdot p_{n-1} + p_{n-2} &\quad \quad q_n = a_n \cdot q_{n-1} + q_{n-2} \label{ed:ed13} \\
+	p_{n+1} &= a_{n+1} \cdot p_{n} + p_{n-1} &\quad \quad q_{n+1} = a_{n+1} \cdot q_{n} + q_{n-1} \label{ed:ed14}
+\end{align}
+\end{tcolorbox}
+设$x_{n}$是连分数的余项
+\[
+x_n = a_n + \cfrac{1}{a_{n+1} + \cfrac{1}{a_{n+2} + \cfrac{1}{\cdots+\cfrac{1}{b}}}}
+\]
+
+把连分数的余项代入到\ref{ed:ed14}就等于计算目标值的p和q：
+\begin{align}
+	x &= \cfrac{x_{n+1} \cdot p_{n} + p_{n-1}}{x_{n+1} \cdot q_{n} + q_{n-1}} \notag 
+\end{align}
+计算$|x - \cfrac{p_n}{q_n}|$的值：
+\begin{align}
+	x - \cfrac{p_n}{q_n} &= \cfrac{x_{n+1} \cdot p_{n} + p_{n-1}}{x_{n+1} \cdot q_{n} + q_{n-1}} - \cfrac{p_n}{q_n} \notag \\
+	&= \cfrac{x_{n+1} \cdot p_n \cdot q_n + p_{n-1} \cdot q_n - p_n \cdot x_{n+1} \cdot q_n - p_n \cdot q_{n-1}}{(x_{n+1} \cdot q_n + q_{n-1}) \cdot q_n} \notag \\
+	&= \cfrac{p_{n-1} \cdot q_n - p_n \cdot q_{n-1}}{(x_{n+1} \cdot q_n + q_{n-1}) \cdot q_n} \label{ed:ed15}
+\end{align}
+计算\ref{ed:ed15}里$p_{n-1} \cdot q_n - p_n \cdot q_{n-1}$的值：\\
+就不给出这个式子的证明了，证明采用归纳法证得：
+\begin{align}
+	p_n \cdot q_{n-1} - p_{n-1} \cdot q_n = (-1)^{n} \label{ed:ed16}
+\end{align}
+结合\ref{ed:ed15}和\ref{ed:ed16}可得:
+\begin{align}
+	\left|x - \cfrac{p_n}{q_n}\right| = \left|\cfrac{(-1)^{n+1}}{(x_{n+1} \cdot q_n + q_{n-1}) \cdot q_n}\right| \label{ed:ed17} \\
+	\left|x - \cfrac{p_{n+1}}{q_{n+1}}\right| = \left|\cfrac{(-1)^{n+2}}{(x_{n+2} \cdot q_{n+1} + q_{n}) \cdot q_{n+1}}\right|  \label{ed:ed18}
+\end{align}
+
+\begin{tcolorbox}[
+	colback=white, % 背景色
+	boxrule=1pt % 边框粗细
+	]
+	根据\ref{ed:ed17}，分母$(-1)^{n+1}$的n偶数时小于0，奇数时大于0。
+	\[
+	x - \cfrac{p_n}{q_n} = \cfrac{(-1)^{n+1}}{(x_{n+1} \cdot q_n + q_{n-1}) \cdot q_n}
+	\]
+	\begin{theorem}
+			偶数次渐进分数大于最终值，奇数次渐进分数小于最终值。
+	\end{theorem}
+\end{tcolorbox}
+比较\ref{ed:ed17} \ref{ed:ed18}大小，可以通过比较
+\begin{align}
+	D_{n} &= |(x_{n+1} \cdot q_n + q_{n-1}) \cdot q_n|  \label{ed:ed19}\\
+	D_{n+1} &= |(x_{n+2} \cdot q_{n+1} + q_{n}) \cdot q_{n+1}| \label{ed:ed20}
+\end{align}
+来实现。首先把$x_{n+1}$消掉，转换成$x_{n+2}$
+\begin{align}
+	x_{n+1} = a_{n+1} + \cfrac{1}{x_{n+2}} \label{ed:ed21}
+\end{align}
+	把\ref{ed:ed21}代入\ref{ed:ed19}
+\begin{align}
+	D_{n} &= \left(\left(a_{n+1} + \cfrac{1}{x_{n+2}}\right) \cdot q_n + q_{n-1}\right) \cdot q_n \notag \\
+	&= a_{n+1} \cdot q_n \cdot q_n + \cfrac{q_n \cdot q_n}{x_{n+2}} + q_{n-1} \cdot q_n \notag \\
+	&= q_n \cdot (a_{n+1} \cdot q_n + q_{n-1}) + \cfrac{q_n \cdot q_n}{x_{n+2}} \notag \\
+	&= q_n \cdot q_{n+1} + \cfrac{q_n \cdot q_n}{x_{n+2}} 
+\end{align}
+根据比例数设定$\cfrac{p}{q}$里q $\in$ $\mathbb{N}$，因为自然数的加、乘还是自然数；而且连分数是否正负数由$a_{0}$决定，$x_{n}$(n$>$0)是正比例数，所以$D_n$和$D_{n+1}$都是正比例数。
+\begin{align}
+	D_{n} - D_{n+1} &= \left(q_n \cdot q_{n+1} + \cfrac{q_n \cdot q_n}{x_{n+2}}\right) - (x_{n+2} \cdot q_{n+1} + q_{n}) \cdot q_{n+1} \notag \\
+	&= q_n \cdot q_{n+1} + \cfrac{q_n \cdot q_n}{x_{n+2}} - x_{n+2} \cdot q_{n+1} \cdot q_{n+1} - q_{n} \cdot q_{n+1} \notag \\
+	&= \cfrac{q_n \cdot q_n}{x_{n+2}} - x_{n+2} \cdot q_{n+1} \cdot q_{n+1}  \notag \\
+	&= \cfrac{q_n \cdot q_n - x_{n+2} \cdot x_{n+2} \cdot q_{n+1} \cdot q_{n+1}}{x_{n+2}} \label{ed:ed22}
+\end{align}
+现在证明$q_{n} < q_{n+1}$
+\begin{align}
+	\text{当k=0,1时} \quad \quad & &\text{} \notag \\
+	q_{0}=1, q_{1}=a_{1}, a_{n} > 1 &\Rightarrow q_{0} < q_{1}  &\text{} \notag \\
+	\text{当k=n时} \quad \quad & &\text{} \notag \\
+	q_{n+1} &= a_{n+1} \cdot q_n + q_{n-1} &\text{} \notag \\
+	q_{n+1} - q_n &= (a_{n+1} \cdot q_n + q_{n-1}) - q_n &\text{} \notag \\
+	&=(a_{n+1} - 1) \cdot q_n + q_{n-1} &\text{} \notag \\
+	a_{n+1} > 1 \quad q_{n},q_{n-1} \in \mathbb{N} &\Rightarrow (a_{n+1} - 1) \cdot q_n + q_{n-1} > 0 &\text{} \notag\\
+	&\Rightarrow q_{n} < q_{n+1} &\text{} \notag
+\end{align}
+再证明$x_{n+2} > 1$
+\begin{align}
+	x_{n+2} &= a_{n+2} + \cfrac{1}{x_{n+3}} \notag \\
+	a_{n+2} \geq 1 &\Rightarrow x_{n+2} \geq 1 \notag
+\end{align}
+再次回头接近$D_{n} - D_{n-1}$。我们已经证明了：$q_{n} < q_{n+1}$，$x_{n+2}$ $\geq$ 1。
+\begin{align}
+	D_{n} - D_{n-1} &=  \cfrac{q_n \cdot q_n - x_{n+2} \cdot x_{n+2} \cdot q_{n+1} \cdot q_{n+1}}{x_{n+2}} &\text{} \notag \\
+	&\Rightarrow D_{n} - D_{n-1} < 0 &\text{} \label{ed:ed23}\\
+	&\Rightarrow \cfrac{1}{D_{n}} > \cfrac{1}{D_{n-1}} &\text{根据\ref{ed:ed23}和D$>$0} \label{ed:ed24} \\
+	\left|x - \cfrac{p_n}{q_n}\right| &= \cfrac{1}{D_n} &\text{根据\ref{ed:ed17}\ref{ed:ed19}} \label{ed:ed25}\\
+	\left|x - \cfrac{p_{n+1}}{q_{n+1}}\right| &= \cfrac{1}{D_{n+1}} &\text{根据\ref{ed:ed18}\ref{ed:ed20}} \label{ed:ed26}
+\end{align}
+根据\ref{ed:ed24} \ref{ed:ed25} \ref{ed:ed26}：
+\[
+\left|x - \cfrac{p_n}{q_n}\right| > \left|x - \cfrac{p_{n+1}}{q_{n+1}}\right|
+\]
+得证：有限连分数渐进的每次计算都在接近，被展开为该连分数的比例数。
+\end{Proof}
+\paragraph{}根据定理“有限连分数渐进的每次计算都在接近最终值”和定理“偶数次渐进分数大于最终值，奇数次渐进分数小于最终值”得到：
+\begin{theorem}
+	有限连分数渐进分数与最终值的关系如下：
+		\[
+\cfrac{p_1}{q_1}<\cfrac{p_3}{q_3}<\cdots<\cfrac{p_{n+1}}{q_{n+1}}<\cdots \leq x \leq \cdots<\cfrac{p_n}{q_n}<\cdots<\cfrac{p_2}{q_2}<\cfrac{p_0}{q_0}
+\]
+奇数次渐进连分数递增，偶数次渐进连分数递减。
+\end{theorem}
+
+\paragraph{}
+\paragraph{}
+\paragraph{}{\itshape我非常开心，介绍完比例数，就差最后一步就要把数给完整的介绍完了。我喜欢完美的结局，就像过春节，即使一年没赚到钱，也要把压箱底的大金链子戴起来，牌面拉满。连分数除了有限，还有无限，无限是最后的结局，也是完备的结局。}
+
+
+
+
+
+
+
+
+
+
