@@ -266,7 +266,7 @@
 \contentsline {paragraph}{}{92}{section*.292}%
 \contentsline {paragraph}{}{93}{section*.293}%
 \contentsline {paragraph}{}{93}{section*.294}%
-\contentsline {paragraph}{}{93}{section*.295}%
+\contentsline {paragraph}{}{94}{section*.295}%
 \contentsline {paragraph}{}{94}{section*.296}%
 \contentsline {subsection}{\numberline {4.0.2}极限的基础和扩展}{95}{subsection.4.0.2}%
 \contentsline {paragraph}{}{95}{section*.297}%
@@ -274,7 +274,5 @@
 \contentsline {paragraph}{}{95}{section*.299}%
 \contentsline {paragraph}{}{95}{section*.300}%
 \contentsline {paragraph}{}{95}{section*.301}%
-\contentsline {paragraph}{}{95}{section*.302}%
-\contentsline {paragraph}{}{96}{section*.303}%
-\contentsline {chapter}{\numberline {5}积分}{97}{chapter.5}%
-\contentsline {chapter}{\numberline {6}推导高中微分方程}{99}{chapter.6}%
+\contentsline {chapter}{\numberline {5}积分}{99}{chapter.5}%
+\contentsline {chapter}{\numberline {6}推导高中微分方程}{101}{chapter.6}%

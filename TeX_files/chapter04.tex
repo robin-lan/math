@@ -227,7 +227,7 @@
 	(s < \alpha < s') \land (s < \beta < s') \land ((s' - s) < e)
 	\]
 \end{Proof}
-\paragraph{}回顾0.99$\dot{9}$等于1。0.99$\dot{9}$可以用无限循环小数的形式表示，前面还提到$\sqrt{2}$可以用连分数[1;2,2,$\dot{2}$]表示。然而无理数确没办法用无限循环小数表示，并且连分数也有无限不循环的形式。数学界需要新的概念来表示这种形式的运算，19世纪的法国数学家柯西提出这是一个函数形式的序列，输入是整数集合的一个整数，输出是集合$\{x_{n}\}_{n=1}^{n=\infty}$中输入整数n对应的项。$\infty$是无限的意思，当使用场景是自然数时，表示的是自然数的无限；场景是整数时，有负数的无限：-$\infty$。场景是实数时，$\infty$表示正实数的无限，相应的-$\infty$表示负的实数的无限。自然数的$\infty$可以认为它的值是$\aleph_{0}$。
+\paragraph{}回顾0.99$\dot{9}$等于1。0.99$\dot{9}$可以用无限循环小数的形式表示，前面还提到$\sqrt{2}$可以用连分数[1;2,2,$\dot{2}$]表示。然而无理数却没办法用无限循环小数表示，并且连分数也有无限不循环的形式。数学界需要新的概念来表示这种形式的运算，19世纪的法国数学家柯西提出这是一个函数形式的序列，输入是整数集合的一个整数，输出是集合$\{x_{n}\}_{n=1}^{n=\infty}$中输入整数n对应的项。$\infty$是无限的意思，当使用场景是自然数时，表示的是自然数的无限；场景是整数时，有负数的无限：-$\infty$。场景是实数时，$\infty$表示正实数的无限，相应的-$\infty$表示负的实数的无限。自然数的$\infty$可以认为它的值是$\aleph_{0}$。
 \paragraph{}例如0.99$\dot{9}$的序列是：
 \begin{align}
 	\{0.9_{1},\quad0.9_{1}9_{2},\quad0.9_{1}9_{2}9_{3}\quad \dots \}_{n=1}^{n=\infty} \label{list:1}
@@ -259,6 +259,10 @@ $\cfrac{1}{n}$的序列是：
 	若对任意给定的正实数$\epsilon$，都存在一个正整数N，使得\mbox{$n>N$}的正整数n，都满足不等式$|a_n - A|<\epsilon$，则称数列${a_n}$极限为实数A，记作：
 	\[
 		\lim\limits_{n \to \infty}a_n = A
+	\]
+	逻辑语言是：
+	\[
+		\forall \epsilon \in \mathbb{R}^+, \exists N \in \mathbb{N}, \forall n > N:(|a_n - A| < \epsilon) \Leftrightarrow \lim\limits_{n \to \infty}a_n = A
 	\]
 \end{definision}
 \paragraph{}当时我看到这个定义的时候，我在想：我要证明这个定义。后来我想明白了，\textbf{定义}是不需要证明，是为了统一标准而人为设定的。那为什么这个极限定义这么别扭：又是任意，又是存在；能不能把存在放前面，把任意放后面。回答是：这个定义必须这样，不能有任何改动，真的！改了这个定义就不能用了。原因有两个，一个是逻辑上的严密，另一个是可以证明、计算。
@@ -321,28 +325,65 @@ $\cfrac{1}{n}$的序列是：
 	N & \quad10\quad & \quad100\quad & \quad1000\quad & \quad10000\quad & \dots \\
 	\bottomrule % 底部粗横线
 \end{tabular}
-\paragraph{}所以为了严格确定$\{a_n\}_{n=1}^{n=\infty}$实数数列是否有极限。出生于法国大革命那年（1789年）的巴黎人柯西，为了推动数学分析严格化（我们现在看到的微积分99\%的的结论在当时都已经得出，但需要剔除主观的、模糊的定义。例如无穷小、逐渐接近等。），于1821年，在他的著作《分析教程》中，为解决 “级数收敛性判断” 问题，首次描述了 “柯西序列”：
+\paragraph{}所以为了严格确定$\{a_n\}_{n=1}^{n=\infty}$实数数列是否有极限。出生于法国大革命那年（1789年）的巴黎人柯西，他推动数学分析严格化（我们现在看到的微积分99\%的的结论在当时都已经得出，但还有一些主观的、模糊的定义。例如无穷小、逐渐接近等。），于1821年，在他的著作《分析教程》中，为解决 “级数收敛性判断” 问题，首次描述了 “柯西序列”：
 \begin{definision}
 若对任意小的正数$\epsilon$，存在正整数N，使得当$n > N$且$p > 0$时，有$|S_n - S_{n+p}| < \epsilon$，则称部分和数列$\{S_n\}$有极限。
 \end{definision}
 \paragraph{}然而，前面这种定义反而增加了一个步骤，还得求部分和。所以经过改造后，柯西数列的定义如下：
-\begin{definision}
-若对任意给定的正实数$\epsilon$，总存在一个正整数N，使得当$i > N$且$j > N$时，都满足不等式$|a_i - a_j| < \epsilon$，则称数列$a_n$为柯西数列。
+\begin{definision}\label{df:Cauchy_sequence}
+若对任意给定的正实数$\epsilon$，总存在一个正整数N，使得当$i > N$且$j > N$时，都满足不等式$|a_i - a_j| < \epsilon$，则称数列$a_n$为实数柯西数列。
 \end{definision}
-\paragraph{}\itshape{有极限的实数数列必然是柯西数列吗？}
+\begin{corollary}
+	有极限的实数数列必然是实数柯西数列。
+\end{corollary}
 \begin{Proof}
-	首先根据实数的四则运算，任意的一个大于0的实数$\epsilon$，都存在一个大于0的实数$\epsilon'$。
+	根据实数的四则运算，任意的一个大于0的实数$\epsilon$，都存在一个大于0的实数$\epsilon'$。
 	\[
-		\epsilon' = \cfrac{\epsilon}{2}
+		\forall \epsilon \in \mathbb{R}^+, \exists \epsilon':\epsilon' = \cfrac{\epsilon}{2}
 	\]
-	把上面的命题用逻辑语言表示：
-	\[
-	\forall \epsilon \in \mathbb{R}^+, \exists \epsilon' \in \mathbb{R}^+ (\epsilon' = \cfrac{\epsilon}{2})
-	\]
-	一般人都会有疑问：$\epsilon'$是否保持了任意（$\forall$）的属性，毕竟$\epsilon'$前面的量词是存在（$\exists$）。这个问题要回到任意（$\forall$）的本质，$\forall$这个符号在英文中是\itshape{for all}，\itshape{for all}的意思是对于范围内的所有，集合的说法是对于集合的所有元素。
-	
-	\paragraph{}根据极限定义：若对任意给定的正实数$\epsilon$，都存在一个正整数N，使得\mbox{$n>N$}的正整数n，都满足不等式$|a_n - A|<\epsilon$，则称数列${a_n}$极限为实数A，记作：
+	$\epsilon$可以取遍$\mathbb{R}^+$的实数，那$\epsilon'$也能取遍$\mathbb{R}^+$的实数。证明的方法很简单，回顾第一章“数一数，看谁多”里的\textbf{定义\ref{dff:bijection}}，只要证明$\epsilon' = \cfrac{\epsilon}{2}$中$\epsilon$和$\epsilon'$在集合$\mathbb{R}^+$里可以一一对应（特别是$\epsilon'$在$\mathbb{R}^+$值域满射），那么$\epsilon'$也覆盖了整个$\mathbb{R}^+$。\\
+	\indent 根据极限定义：若对任意给定的正实数$\epsilon$，都存在一个正整数N，使得\mbox{$n>N$}的正整数n，都满足不等式$|a_n - A|<\epsilon$，则称数列${a_n}$极限为实数A，记作：
 	\[
 	\lim\limits_{n \to \infty}a_n = A
 	\]
+		逻辑语言是：
+	\[
+	\forall \epsilon \in \mathbb{R}^+, \exists N \in \mathbb{N}, \forall n > N:(|a_n - A| < \epsilon) \Leftrightarrow \lim\limits_{n \to \infty}a_n = A
+	\]
+	根据数列极限的定义，关于$\epsilon$有两个关键的信息：
+	\begin{enumerate}[label=\Roman*]
+		\item $\epsilon$是任意的正实数，也就是它的取值范围是$\mathbb{R}^+$;
+		\item $\epsilon$是数列极限逻辑步骤的第一步：给出$\epsilon$这个正实数。
+	\end{enumerate}
+	结合
+	\[
+		\forall \epsilon \in \mathbb{R}^+, \exists \epsilon' \in \mathbb{R}^+:\epsilon' = \cfrac{\epsilon}{2}
+	\]
+	上面逻辑语言中的$\epsilon'$取值范围也是$\mathbb{R}^+$，如果把$\epsilon'$放到极限逻辑的第一步，那么我们可以改造数列的极限定义：\\
+	\indent 任意一个正实数$\epsilon$，都存在一个正实数$\epsilon'$且$\epsilon' = \cfrac{\epsilon}{2}$，若对给定的$\epsilon'$，都存在一个正整数N，使得\mbox{$n>N$}的正整数n，都满足不等式$|a_n - A|<\epsilon'$，则称数列${a_n}$极限为实数A，记作：
+	\[
+	\lim\limits_{n \to \infty}a_n = A
+	\]
+	根据改造的数列极限定义：\\
+	取大于N的m、n满足
+	\begin{align}
+		|a_m - A| &< \epsilon',\quad |a_n - A| < \epsilon' \label{lim:cl_1} \\
+		|a_m - a_n| &= |a_m - A + A - a_n| = |(a_m - A) + (A - a_n)| \label{lim:cl_2} \\
+		|a_m - a_n| &= |(a_m - A) + (A - a_n)| \leq |a_m - A| + |a_n - A| \label{lim:cl_3}
+	\end{align}
+	根据\ref{lim:cl_1}和\ref{lim:cl_3}可得：
+	\begin{align}
+		|a_m - a_n| &\leq |a_m - A| + |a_n - A| < \epsilon' + \epsilon' \label{lim:cl_4}
+	\end{align}
+	再根据$\epsilon' = \cfrac{\epsilon}{2}$和\ref{lim:cl_4}：
+	\[
+		|a_m - a_n| < \epsilon
+	\]
+	对照\textbf{柯西数列的定义\ref{df:Cauchy_sequence}}，命题得证。
+\end{Proof}
+\begin{corollary}
+	实数柯西数列有界。
+\end{corollary}
+\begin{Proof}
+	
 \end{Proof}
