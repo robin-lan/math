@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  3 DEC 2025 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  3 DEC 2025 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1274,23 +1274,30 @@ BK.sfd}{Unicode.sfd}) [1
 
 
 ]
+<brother.jpg, id=177, 1027.84pt x 1371.1225pt>
+File: brother.jpg Graphic file (type jpg)
+<use brother.jpg>
+Package pdftex.def Info: brother.jpg  used on input line 93.
+(pdftex.def)             Requested size: 234.00238pt x 312.15053pt.
 
-[2
 
-] (./main.toc
+[2 <./brother.jpg>] (./main.toc
 
-[3])
+[1
+
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
 
-[4]
+[2]
 \openout2 = `./TeX_files/chapter00.aux'.
 
  (./TeX_files/chapter00.tex
 
-[5
+[3
 
 
 ]
@@ -1298,7 +1305,7 @@ Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
 e (quanjiao) on input line 12.
 )
 
-[6]
+[4]
 \openout2 = `./TeX_files/chapter01.aux'.
 
  (./TeX_files/chapter01.tex
@@ -1308,6 +1315,13 @@ Underfull \vbox (badness 1629) has occurred while \output is active []
 
 
 
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 \paragraph
+               {}简单的说，如果让你来告诉我，什么是自然�...
 [1
 
 
@@ -1322,7 +1336,13 @@ Package pdftex.def Info: countapple.png  used on input line 23.
 (pdftex.def)             Requested size: 312.00119pt x 311.97728pt.
 
 
-[2 <./countapple.png (PNG copy)>]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \section
+             {再认识自然数} [2 <./countapple.png (PNG copy)>]
 Overfull \hbox (0.69945pt too wide) in paragraph at lines 30--31
  [][] \C70/rm/m/n/12/73 � \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/5c 1\OT1/cmr/m/n/1
 2 0\C70/rm/m/n/12/5c ^ \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/5c ^ \C70/rm/m/n/12
@@ -1337,7 +1357,7 @@ Overfull \hbox (0.69945pt too wide) in paragraph at lines 30--31
 
 
 [3]
-<liberty_leading_people.png, id=491, 532.389pt x 419.76825pt>
+<liberty_leading_people.png, id=490, 532.389pt x 419.76825pt>
 File: liberty_leading_people.png Graphic file (type png)
 <use liberty_leading_people.png>
 Package pdftex.def Info: liberty_leading_people.png  used on input line 44.
@@ -1587,7 +1607,7 @@ rm/m/it/12/30 ^^B| \C70/rm/m/it/12/68 9 \C70/rm/m/it/12/63 n \C70/rm/m/it/12/65
  t p \C70/rm/m/it/12/5b � \C70/rm/m/it/12/4e I[]|\C70/rm/m/it/12/ff ^^Z|
  []
 
-<matrix_transformation_1.png, id=1837, 1498.398pt x 1542.36224pt>
+<matrix_transformation_1.png, id=1836, 1498.398pt x 1542.36224pt>
 File: matrix_transformation_1.png Graphic file (type png)
 <use matrix_transformation_1.png>
 Package pdftex.def Info: matrix_transformation_1.png  used on input line 106.
@@ -1705,7 +1725,7 @@ l.636 \paragraph
                 {}]
 
 [54]
-<unit_line_divisions.png, id=2631, 995.3988pt x 353.8821pt>
+<unit_line_divisions.png, id=2630, 995.3988pt x 353.8821pt>
 File: unit_line_divisions.png Graphic file (type png)
 <use unit_line_divisions.png>
 Package pdftex.def Info: unit_line_divisions.png  used on input line 687.
@@ -1924,7 +1944,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--337
 
  (./TeX_files/chapter04.tex
 Chapter 4.
-<splitcircle.png, id=3145, 715.2321pt x 714.2685pt>
+<splitcircle.png, id=3144, 715.2321pt x 714.2685pt>
 File: splitcircle.png Graphic file (type png)
 <use splitcircle.png>
 Package pdftex.def Info: splitcircle.png  used on input line 4.
@@ -1937,7 +1957,7 @@ Package pdftex.def Info: splitcircle.png  used on input line 4.
 
 
  <./splitcircle.png>]
-<pi_equal_4.png, id=3155, 351.3125pt x 495.8525pt>
+<pi_equal_4.png, id=3154, 351.3125pt x 495.8525pt>
 File: pi_equal_4.png Graphic file (type png)
 <use pi_equal_4.png>
 Package pdftex.def Info: pi_equal_4.png  used on input line 6.
@@ -1982,7 +2002,7 @@ t/12/5b � \C70/rm/m/it/12/60 '|\C70/rm/m/it/12/ff ^^L| $\OML/cmm/m/it/12 $\C70
 /rm/m/it/12/54 �$\OML/cmm/m/it/12 ^^L$\C70/rm/bx/it/12/4e K
  []
 
-<resplit2.png, id=3218, 860.013pt x 426.393pt>
+<resplit2.png, id=3217, 860.013pt x 426.393pt>
 File: resplit2.png Graphic file (type png)
 <use resplit2.png>
 Package pdftex.def Info: resplit2.png  used on input line 146.
@@ -2130,11 +2150,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5078339359F9A938026B4577635FE274;3403.
  ) 
 Here is how much of TeX's memory you used:
- 37064 strings out of 473190
- 704062 string characters out of 5712651
+ 37097 strings out of 473190
+ 704678 string characters out of 5712651
  1210307 words of memory out of 5000000
- 58161 multiletter control sequences out of 15000+600000
- 706068 words of font info for 579 fonts, out of 8000000 for 9000
+ 58184 multiletter control sequences out of 15000+600000
+ 709308 words of font info for 591 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,22n,106p,1538b,1236s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
@@ -2194,28 +2214,28 @@ ws/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><
 c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sims
 un.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fo
 nts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wi
-ndows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.tt
-c><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
+ndows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.tt
+f><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
 imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
 /Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:
-/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei
-.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
-s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wind
+/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
+.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
+s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Wind
 ows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
-sun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/F
-onts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/W
-indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
-tf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
+hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
+onts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/W
+indows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.t
+tc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
 simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
-s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
-:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
-n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
-ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
-dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf
-><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/si
-mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
-Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
+s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c
+:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhe
+i.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
+ts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
+dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/si
+msun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/
+Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
 Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
 ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts
 /simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windo
@@ -2239,10 +2259,10 @@ latxfont/line10.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msam10.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb><d:/Program Files/texlive/2025/texmf-di
 st/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (108 pages, 9522949 bytes).
+Output written on main.pdf (108 pages, 9636113 bytes).
 PDF statistics:
- 4301 PDF objects out of 5155 (max. 8388607)
- 2447 compressed objects within 25 object streams
- 817 named destinations out of 1000 (max. 500000)
- 648 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4299 PDF objects out of 5155 (max. 8388607)
+ 2444 compressed objects within 25 object streams
+ 815 named destinations out of 1000 (max. 500000)
+ 653 words of extra memory for PDF output out of 10000 (max. 10000000)
 

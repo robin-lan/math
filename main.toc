@@ -1,15 +1,15 @@
-\contentsline {chapter}{前言}{v}{chapter*.2}%
-\contentsline {paragraph}{}{v}{section*.3}%
-\contentsline {paragraph}{}{v}{section*.4}%
-\contentsline {paragraph}{}{v}{section*.5}%
-\contentsline {paragraph}{}{v}{section*.6}%
-\contentsline {paragraph}{}{v}{section*.7}%
-\contentsline {paragraph}{}{vi}{section*.8}%
-\contentsline {paragraph}{}{vi}{section*.9}%
-\contentsline {paragraph}{}{vi}{section*.10}%
-\contentsline {paragraph}{}{vi}{section*.11}%
-\contentsline {paragraph}{}{vi}{section*.12}%
-\contentsline {paragraph}{}{vi}{section*.13}%
+\contentsline {chapter}{前言}{iii}{chapter*.2}%
+\contentsline {paragraph}{}{iii}{section*.3}%
+\contentsline {paragraph}{}{iii}{section*.4}%
+\contentsline {paragraph}{}{iii}{section*.5}%
+\contentsline {paragraph}{}{iii}{section*.6}%
+\contentsline {paragraph}{}{iii}{section*.7}%
+\contentsline {paragraph}{}{iv}{section*.8}%
+\contentsline {paragraph}{}{iv}{section*.9}%
+\contentsline {paragraph}{}{iv}{section*.10}%
+\contentsline {paragraph}{}{iv}{section*.11}%
+\contentsline {paragraph}{}{iv}{section*.12}%
+\contentsline {paragraph}{}{iv}{section*.13}%
 \contentsline {chapter}{\numberline {1}自然数}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}你认为的自然数}{1}{section.1.1}%
 \contentsline {paragraph}{}{1}{section*.14}%
