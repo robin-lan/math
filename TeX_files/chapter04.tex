@@ -332,6 +332,9 @@ $\cfrac{1}{n}$的序列是：
 \paragraph{}然而，前面这种定义反而增加了一个步骤，还得求部分和。所以经过改造后，柯西数列的定义如下：
 \begin{definision}\label{df:Cauchy_sequence}
 若对任意给定的正实数$\epsilon$，总存在一个正整数N，使得当$i > N$且$j > N$时，都满足不等式$|a_i - a_j| < \epsilon$，则称数列$a_n$为实数柯西数列。
+\[
+	\forall \epsilon \in \mathbb{R}^+, \exists N \in \mathbb{N}, \forall m, n > N, |a_m - a_n| < \epsilon
+\]
 \end{definision}
 \begin{corollary}
 	有极限的实数数列必然是实数柯西数列。
@@ -385,5 +388,41 @@ $\cfrac{1}{n}$的序列是：
 	实数柯西数列有界。
 \end{corollary}
 \begin{Proof}
-	
+	以下是柯西数列的定义：
+	\[
+		\forall \epsilon \in \mathbb{R}^+, \exists N \in \mathbb{N}, \forall m, n > N, |a_m - a_n| < \epsilon
+	\]
+	取任意的实数$\epsilon$等于1，根据定义：
+	\begin{align}
+		|a_m - a_n| < 1
+	\end{align}
+	由于n是任意大于N的值，那么取n等于N+1：
+	\begin{align}
+		|a_m - a_{N+1}| < 1  \label{lim:cs_1}
+	\end{align}
+	根据绝对值计算可得：
+	\begin{align}
+		|a_m| - |a_{N+1}| \leq |a_m - a_{N+1}| \label{lim:cs_2} 
+	\end{align}
+	根据\ref{lim:cs_1}和\ref{lim:cs_2}得：
+	\begin{align}
+		|a_m| - |a_{N+1}| \leq |a_m - a_{N+1}| < 1 \label{lim:cs_3}
+	\end{align}
+	根据\ref{lim:cs_3}可得：
+	\begin{align}
+		|a_m| < 1 + |a_{N+1}| \label{lim:cs_4}
+	\end{align}
+	取
+	\[
+		L = \max\{|a_0|,|a_1|\dots a_{N+1}\}
+	\]
+	当$m \leq n$时
+	\[
+		|a_m| \leq L
+	\]
+	当 $m > n$时
+	\[
+		|a_m| < 1 + L
+	\]
+	所以证明柯西数列是有界的。
 \end{Proof}
